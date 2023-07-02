@@ -1,0 +1,717 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0422_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="794"
+    Height="1126"
+    mc:Ignorable="d"
+    d:DesignHeight="1126"
+    d:DesignWidth="794">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <!-- Row#0 -->
+            <RowDefinition Height="100" />
+            <!-- Row#1 -->
+            <RowDefinition Height="100" />
+            <!-- Row#2 -->
+            <RowDefinition Height="40" />
+            <!-- Row#3-->
+            <RowDefinition Height="40" />
+            <!-- Row#4-->
+            <RowDefinition Height="40" />
+            <!-- Row#5-->
+            <RowDefinition Height="40" />
+            <!-- Row#7-->
+            <RowDefinition Height="auto" />
+            <!-- Row#8-->
+            <RowDefinition Height="60" />
+            <!-- Row#9-->
+            <RowDefinition Height="150" />
+            <!-- Row#9-->
+            <RowDefinition Height="325" />
+            <!-- Row#9-->
+            <RowDefinition Height="*" />
+            <!-- Row#9-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle
+            Grid.RowSpan="16"
+            Grid.Column="0"
+            Fill="{StaticResource DarkBrush}" />
+
+        <!-- begin Row#1 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="1"  Grid.Row="0" 
+                HorizontalAlignment="right" 
+                VerticalAlignment="Center" 
+                Grid.ColumnSpan="2"
+                FontSize="26" 
+                FontWeight="Bold"
+                TextAlignment="Right">
+                Nýsköpun - samstarfsverkefni
+
+            </TextBlock>
+            <TextBlock Grid.Column="1"  Grid.Row="1" 
+                HorizontalAlignment="right" 
+                VerticalAlignment="Center" 
+                Grid.ColumnSpan="2"
+                FontSize="14px" 
+                FontWeight="Bold"
+                TextAlignment="Right">
+                Aukið styrkhæfi skv. 15 gr. laga nr. 152/2009
+            </TextBlock>
+            <TextBlock Grid.Column="1"  Grid.Row="3" 
+                HorizontalAlignment="right" 
+                VerticalAlignment="Bottom" 
+                Grid.ColumnSpan="2"
+                FontSize="13px" 
+                TextAlignment="Right">
+               Fylgiskjal með skattframtali 2022
+            </TextBlock>
+        </Grid>
+        <!--#endregion-->
+        <!-- end #Row1 -->
+
+        <!-- begin Row#2 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="240"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="1" Grid.Column="0" Background="Transparent" BorderThickness="1 1 1 1">
+                <DockPanel Background="Transparent">
+                    <TextBlock DockPanel.Dock="Top" Padding="5 0 0 0" FontSize="10px" Height="15">Nafn framteljanda</TextBlock>
+                    <Border DockPanel.Dock="Bottom" Background="Transparent" Padding="5 0 0 5" BorderThickness="0">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Background="Transparent" BorderThickness="0 1 1 1">
+                <DockPanel Background="Transparent">
+                    <TextBlock DockPanel.Dock="Top" Padding="5 0 0 0" FontSize="10px" Height="15">Kennitala</TextBlock>
+                    <Border DockPanel.Dock="Bottom" Background="Transparent" Padding="5 0 0 5" BorderThickness="0">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0" Background="Transparent" BorderThickness="1 0 1 1">
+                <DockPanel Background="Transparent">
+                    <TextBlock DockPanel.Dock="Top" Padding="5 0 0 0" FontSize="10px" Height="15">Heimilisfang</TextBlock>
+                    <Border DockPanel.Dock="Bottom" Background="Transparent" Padding="5 0 0 5" BorderThickness="0">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="1" Background="Transparent" BorderThickness="0 0 1 1">
+                <DockPanel Background="Transparent">
+                    <TextBlock DockPanel.Dock="Top" Padding="5 0 0 0" FontSize="10px" Height="15">Sveitarfélag</TextBlock>
+                    <Border DockPanel.Dock="Bottom" Background="Transparent" Padding="5 0 0 5" BorderThickness="0">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#2 -->
+
+        <!-- begin Row#3 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="88*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Background="Transparent" BorderThickness="1 1 0 1" >
+                <TextBlock Padding="5" FontSize="11px"  VerticalAlignment="Center">
+                    Tegund verkefnis
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1" Background="Transparent" BorderThickness="1 1 0 1">
+                <RadioButton 
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Project_type_option1" 
+                    Margin="5" 
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    GroupName="Project Type" 
+                    Content="Þróunarverkefni" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" Background="Transparent" BorderThickness="0 1 1 1" >
+                <RadioButton 
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Project_type_option2" 
+                    Margin="5" 
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    GroupName="Project Type" 
+                    Content="Rannsóknarverkefni" />
+            </Border>
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#3 -->
+
+        <!-- begin Row#4 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="88*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Background="Transparent" BorderThickness="1 0 0 1" >
+                <TextBlock Padding="5" FontSize="11px"  VerticalAlignment="Center">
+                    Stærð fyrirtækis
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1" Background="Transparent" BorderThickness="1 0 0 1">
+                <RadioButton 
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Company_size_option1" 
+                    Margin="5" 
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    GroupName="Company size" 
+                    Content="Lítið" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" Background="Transparent" BorderThickness="0 0 0 1" >
+                <RadioButton 
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Company_size_option2" 
+                    Margin="5" 
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    GroupName="Company size" 
+                    Content="Meðalstórt" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="3" Background="Transparent" BorderThickness="0 0 0 1" >
+                <RadioButton 
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Company_size_option3" 
+                    Margin="5" 
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    GroupName="Company size" 
+                    Content="Stórt" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="4" Background="Transparent" BorderThickness="0 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px"  VerticalAlignment="Center">
+                    Skilgreiningar á stærð fyrirtækja er að finna á bakhlið.
+                </TextBlock>
+            </Border>
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#4 -->
+
+        <!-- begin Row#5 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="88*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Background="Transparent" BorderThickness="1 0 0 1" >
+                <TextBlock Padding="5" FontSize="11px"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Opinber birting á rannsóknarverkefni
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="1" Background="Transparent" BorderThickness="1 0 0 1" >
+                <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="2" Background="Transparent" BorderThickness="0 0 1 1" >
+                <TextBlock Padding="5 0 20 0" FontSize="11px"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Niðurstöðum verður dreift með birtingu í vísinda- eða tækniritum, á ráðstefnum, gegnum opin gagnasöfn eða í gegnum ókeypis eða opinn hugbúnað.
+                </TextBlock>
+            </Border>
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#5 -->
+
+        <!-- begin Row#6 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="1" Grid.Column="0" Background="Transparent" BorderThickness="0" >
+                <TextBlock Padding="10 0 10 0" FontSize="11px" TextAlignment="Right" FontWeight="Bold" VerticalAlignment="Center" TextWrapping="Wrap">
+                    Heildarkostnaður alls verkefnisins í kr.
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Background="Transparent" BorderThickness="2">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+
+
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#6 -->
+
+        <!-- begin Row#7 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                FontWeight="Bold" FontSize="14px" >
+                Eigendur samstarfsverkefnis
+            </TextBlock>
+
+            <TextBlock 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                FontSize="11px" >
+                Hér skal skrá alla samstarfsaðila að nýsköpunarverkefni, en tilgreina útlagðan kostnað og fengna styrki á <Run FontStyle="Italic">Greinargerð um skattfrádrátt, RSK 4.21</Run>
+            </TextBlock>
+
+            <Border Grid.Row="2" Grid.Column="0" Background="Transparent" BorderThickness="1 1 1 1" >
+                <DataGrid
+                    DataContext="{Binding RSK422_SAMSTARFSV_EIGENDUR}"
+                    BorderThickness="0" 
+                    Grid.Row="1"
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=BLADANR}"
+                            Header="Teljari fyrir fjölda blaða pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T422_SE_EIGANDI}"
+                            Header="Eigandi"/>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K422_SE_KT_EIGANDA}"
+                            Header="Kennitala eiganda"/>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=R422_SE_LAND}"
+                            Header="Land"/>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=R422_SE_STAERD_FYRIRTAEKIS}"
+                            Header="Stærð fyrirtækis"/>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N422_SE_EIGNARHLUTI}"
+                            Header="Eignarhluti"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#7 -->
+
+        <!-- begin Row#8 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                FontWeight="Bold" FontSize="14px" Padding="20 0 5 5">
+                Aukið styrkhæfi - samstarfsverkefni
+            </TextBlock>
+
+            <TextBlock 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                FontSize="11px" TextWrapping="Wrap" Padding="20 0 5 5">
+                Þegar tvö eða fleiri óskyld félög standa að samstarfsverkefni um nýsköpun getur opinber stuðningur orðið hærra hlutfall af styrkhæfum kostnaði, sbr. töflu. Með opinberum stuðningi er átt við skattfrádrátt og styrki frá opinberum aðilum, samanlagt.
+            </TextBlock>
+
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#8 -->
+
+        <!-- begin Row#9 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="9">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Background="LightGray" BorderThickness="1 1 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Stærð<LineBreak/>fyrirtækis
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="4" Background="LightGray" BorderThickness="1 1 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Styrkhæft - hámark opinbers stuðnings
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Rannsóknarverkefni
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Þróunarverkefni
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="8px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Almennt
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="3" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="8px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Aukið
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="4" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="8px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Almennt
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="5" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="8px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Aukið
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="1" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Lítið
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="2" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    70%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="3" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    80%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="4" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    45%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="5" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    60%
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="4" Grid.Column="1" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Meðalstórt
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="2" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    60%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="3" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    75%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="4" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    35%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="5" Background="LightGray" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    50%
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="5" Grid.Column="1" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    Stórt
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="2" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    50%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="3" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    65%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="4" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    25%
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="5" Background="Transparent" BorderThickness="1 0 1 1" >
+                <TextBlock Padding="5" FontSize="11px" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap">
+                    40%
+                </TextBlock>
+            </Border>
+
+
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#9 -->
+
+        <!-- begin Row#10 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+                Grid.Row="0" 
+                Grid.Column="1" 
+                FontWeight="Bold" FontSize="14px" Padding="20 0 5 5">
+                Skilyrði fyrir auknu styrkhæfi samstarfsverkefnis
+            </TextBlock>
+
+            <TextBlock 
+                Grid.Row="1" 
+                Grid.Column="1" 
+                FontWeight="Normal" FontSize="10px" Padding="20 0 5 5" TextWrapping="Wrap">
+                Til að nýsköpunarverkefni geti talist samstarfsverkefni þarf það að vera í eigu a.m.k. tveggja óskyldra aðila og uppfylla eitthvert eftirtalinna skilyrða:
+            </TextBlock>
+
+            <TextBlock 
+                Grid.Row="2" 
+                Grid.Column="1" 
+                FontWeight="Normal" FontSize="10px" Padding="40 0 5 5" TextWrapping="Wrap">
+                • Að verkefnið feli í sér samvinnu í það minnsta eins lítils eða eins stórs fyrirtækis, eða samstarf yfir landamæri við félag í öðru EES landi og að ekkert fyrirtæki fari með meira en 70% af styrkhæfum kostnaði.
+            </TextBlock>
+            <TextBlock 
+                Grid.Row="3" 
+                Grid.Column="1" 
+                FontWeight="Normal" FontSize="10px" Padding="40 0 5 5" TextWrapping="Wrap">
+                • Að verkefnið feli í sér samstarf við rannsóknarstofnun sem fer með a.m.k. 10% hlut og hefur rétt til að birta niðurstöður verkefnisins.
+            </TextBlock>
+            <TextBlock 
+                Grid.Row="4" 
+                Grid.Column="1" 
+                FontWeight="Normal" FontSize="10px" Padding="40 0 5 5" TextWrapping="Wrap">
+                • Að um sé að ræða rannsóknarverkefni þar sem niðurstöður verða birtar með almennum hætti og dreift ókeypis. (Slík birting eykur styrkhæfi einkaverkefnis á sama hátt.)
+            </TextBlock>
+            <TextBlock 
+                Grid.Row="5" 
+                Grid.Column="1" 
+                FontWeight="Normal" FontSize="10px" Padding="40 0 5 5" TextWrapping="Wrap">
+                • Að umsækjandi sé stórt fyrirtæki sem vinnur verkefni í samvinnu við að minnsta kosti eitt lítið eða eitt stórt fyrirtæki, eða að verkefnið sé samstarf yfir landamæri við félag í öðru EES landi.
+            </TextBlock>
+
+            <TextBlock 
+                Grid.Row="7" 
+                Grid.Column="1" 
+                FontWeight="Normal" FontSize="10px" Padding="20 0 5 5" TextWrapping="Wrap">
+                Sjá nánar í 15. grein laga nr. 152/2009 um stuðning við nýsköpunarfyrirtæki.
+            </TextBlock>
+
+            <TextBlock 
+                Grid.Row="8" 
+                Grid.Column="1" 
+                FontWeight="Bold" FontSize="14px" Padding="20 0 5 5">
+                Stærð fyrirtækja
+            </TextBlock>
+            
+            <TextBlock 
+                Grid.Row="9" 
+                Grid.Column="1" 
+                FontSize="10px" Padding="20 0 5 5" TextWrapping="Wrap">
+                <Run FontWeight="Bold">Lítið fyrirtæki:</Run> Fyrirtæki sem er með færri en 50 starfsmenn og er með árlega veltu undir 10 milljónum evra og/eða efnahagsreikning undir 10 milljónum evra, sbr. I. viðauka við reglugerð framkvæmdastjórnarinnar ESB nr. 651/2014 frá 17. júní 2014.
+            </TextBlock>
+            <TextBlock 
+                Grid.Row="10" 
+                Grid.Column="1" 
+                FontSize="10px" Padding="20 0 5 5" TextWrapping="Wrap">
+                <Run FontWeight="Bold">Meðalstórt fyrirtæki:</Run> Fyrirtæki sem er með á bilinu 50–250 starfsmenn og er með árlega veltu undir 50 milljónum evra og/eða
+efnahagsreikning undir 43 milljónum evra, sbr. I. viðauka við reglugerð framkvæmdastjórnarinnar ESB nr. 651/2014.
+            </TextBlock>
+            <TextBlock 
+                Grid.Row="11" 
+                Grid.Column="1" 
+                FontSize="10px" Padding="20 0 5 5" TextWrapping="Wrap">
+                <Run FontWeight="Bold">Stórt fyrirtæki: </Run>Fyrirtæki sem er með fleiri en 250 starfsmenn, sbr. I. viðauka við reglugerð framkvæmdastjórnarinnar ESB nr. 651/2014.
+            </TextBlock>
+            <TextBlock 
+                Grid.Row="12" 
+                Grid.Column="1" 
+                FontSize="10px" Padding="20 0 5 5" TextWrapping="Wrap">
+                Skilgreining laga 152/2009 með tilvísun í framangreindan viðauka felur í <Run FontWeight="Bold">sér að horfa þarf til allrar samstæðunnar þegar stærð fyrirtækjanna er ákvörðuð,</Run> ekki bara umsóknarfyrirtækisins (dótturfélag) hér á landi. Sjá nánar:
+https://www.efta.int/media/documents/legal-texts/eea/other-legal-documents/translated-acts/icelandic/i32014R0651.pdf
+            </TextBlock>
+            
+            
+
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#10 -->
+
+
+
+        <!-- begin Row#15 -->
+        <!--#region-->
+        <Grid Grid.Column="2" Grid.Row="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Border Grid.Row="0" Grid.Column="0" Background="Transparent" BorderThickness="0" >
+                <TextBlock Padding="0 10 0 5" FontSize="8px" TextAlignment="Left" FontWeight="Bold" VerticalAlignment="Bottom" TextWrapping="Wrap">
+                    RSK 4.22 <Run FontWeight="Normal" FontSize="6px">14-1-2022</Run>
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1" Background="Transparent" BorderThickness="0" >
+                <TextBlock Padding="0 10 0 5" FontSize="8px" TextAlignment="Right" FontWeight="Bold" VerticalAlignment="Bottom" TextWrapping="Wrap">
+                   
+                </TextBlock>
+            </Border>
+
+        </Grid>
+        <!--#endregion-->
+        <!-- end Row#15 -->
+
+
+
+    </Grid>
+</Page>

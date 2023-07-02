@@ -1,0 +1,761 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0408_03View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="RSK0408_03View"
+    d:DesignHeight="1320"
+    d:DesignWidth="910"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="390" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="240" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="390" />
+            <RowDefinition Height="90" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Rectangle Grid.RowSpan="13" Grid.Column="0" />
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                FontFamily="Arial"
+                FontSize="18"
+                FontWeight="UltraBold">
+                Rekstrarreikningur ársins 2004 - framhald
+            </TextBlock>
+            <Border Grid.Column="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Margin="5,0"
+                        FontFamily="Arial"
+                        FontSize="12"
+                        FontWeight="Normal">
+                        Kennitala
+                    </TextBlock>
+                    <TextBox
+                        Grid.Row="1"
+                        HorizontalContentAlignment="Right"
+                        BorderThickness="0" />
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="650" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="ÖNNUR REKSTRARGJÖLD" />
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    37 Reiknað endurgjald
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    38 Laun (greidd laun og hlunnindi)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    39 Mótframlag í lífeyrissjóð
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    40 Önnur launatengd gjöld
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    41 Tryggingar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    42 Búnaðargjald
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="7" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    43 Félagsgjöld
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="8" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    44 Bifreiðakostnaður skv. rekstraryfirliti fólksbifreiðar RSK 4.03
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="9" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    45 Almennar fyrningar skv. eignaskrá RSK 4.01
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="10" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    46 Aukafyrningar skv. eignaskrá RSK 4.01
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="11" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    47
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="11"
+                Margin="490,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Rekstrargjöld samtals
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="12" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    48
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="12"
+                Margin="370,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Rekstrartekjur mínus rekstrargjöld (+/-)
+                </TextBlock>
+            </Border>
+
+            <controls:IntegerControl
+                Name="N408_REIKNAD_ENDURGJALD_1"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_REIKNAD_ENDURGJALD_1}" />
+            <controls:IntegerControl
+                Name="N408_LAUN"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_LAUN}" />
+            <controls:IntegerControl
+                Name="N408_MOTFRAMLAG_LIFEYRISSJOD"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_MOTFRAMLAG_LIFEYRISSJOD}" />
+            <controls:IntegerControl
+                Name="N408_LAUNATENGD_GJOLD"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_LAUNATENGD_GJOLD}" />
+            <controls:IntegerControl
+                Name="N408_TRYGGINGAR"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_TRYGGINGAR}" />
+            <controls:IntegerControl
+                Name="N408_BUNADARGJALD"
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BUNADARGJALD}" />
+            <controls:IntegerControl
+                Name="N408_FELAGSGJOLD"
+                Grid.Row="7"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_FELAGSGJOLD}" />
+            <controls:IntegerControl
+                Name="N408_BIFREIDAKOSTNADUR"
+                Grid.Row="8"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BIFREIDAKOSTNADUR}" />
+            <controls:IntegerControl
+                Name="N408_ALM_FYRNINGAR_SKV_EIGNAS"
+                Grid.Row="9"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ALM_FYRNINGAR_SKV_EIGNAS}" />
+            <controls:IntegerControl
+                Name="N408_AUKAFYRN_SKV_EIGNASKRA"
+                Grid.Row="10"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_AUKAFYRN_SKV_EIGNASKRA}" />
+            <Border Grid.Row="11" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_REKSTRARGJOLD_SAMTALS"
+                Grid.Row="11"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_REKSTRARGJOLD_SAMTALS}" />
+            <Border Grid.Row="12" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_REKSTRARTEK_MIN_REKSTRARG"
+                Grid.Row="12"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_REKSTRARTEK_MIN_REKSTRARG}" />
+
+
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="650" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="AÐRAR TEKJUR OG GJÖLD" />
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    49 Vaxtatekjur og aðrar fjármunatekjur
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    50 Vaxtagjöld og önnur fjármagnsgjöld (-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    51 Birgðabreyting skv. birgðatöflu (+/-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    52 Bústofnsbreyting skv. bústofnstöflu (+/-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    53 Sölutap skv. eignaskrá RSK 4.01
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    54
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="6"
+                Margin="440,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Aðrar tekjur og gjöld samtals
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="7" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    55
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="7"
+                Margin="460,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Hagnaður/tap ársins (+/-)
+                </TextBlock>
+            </Border>
+
+            <controls:IntegerControl
+                Name="N408_ADRAR_FJARMUNATEKJUR"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_FJARMUNATEKJUR}" />
+            <controls:IntegerControl
+                Name="N408_ONNUR_FJARMAGNSGJOLD"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ONNUR_FJARMAGNSGJOLD}" />
+            <controls:IntegerControl
+                Name="N408_BIRGDABREYTING"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BIRGDABREYTING}" />
+            <controls:IntegerControl
+                Name="N408_BUSTOFNSBREYTING_1"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BUSTOFNSBREYTING_1}" />
+            <controls:IntegerControl
+                Name="N408_SOLUTAP"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_SOLUTAP}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_TEKJUR_GJOLD_SAMT"
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_TEKJUR_GJOLD_SAMT}" />
+            <Border Grid.Row="7" Grid.Column="1" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding NTB_01}" />
+            <Border Grid.Row="8" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_HAGNADUR_TAP_REKSTUR"
+                Grid.Row="8"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_HAGNADUR_TAP_REKSTUR}" />
+
+
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="650" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="SKATTALEGAR FÆRSLUR / LEIÐRÉTTINGAR Á TEKJUM" />
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    56 Niðurfærsla viðskiptakrafna í upphafi árs skv. skattalögum
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    57 Niðurfærsla viðskiptakrafna í lok árs skv. skattalögum (-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    58 Niðurfærsla birgða í upphafi árs skv. skattalögum
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    59 Niðurfærsla birgða í lok árs skv. skattalögum (-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    60 Frestaður söluhagnaður skv. eignaskrá RSK 4.01 (-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    61 Tekjufærsla söluhagnaðar frá fyrri árum
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="7" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    62 Álag vegna frestaðs söluhagnaðar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="8" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    63 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="9" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    64 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="10" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    65 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="11" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    66 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="12"
+                Grid.Column="0"
+                Background="{DynamicResource MediumBrush}">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    67
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="12"
+                Margin="270,0,0,0"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Hreinar tekjur/yfirfæranlegt tap (færist í línu 4 á bls. 1)
+                </TextBlock>
+            </Border>
+
+            <controls:IntegerControl
+                Name="N408_NIDURF_VKR_UPPH_ARS"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_NIDURF_VKR_UPPH_ARS}" />
+            <controls:IntegerControl
+                Name="N408_NIDURF_VKR_LOK_ARS"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_NIDURF_VKR_LOK_ARS}" />
+            <controls:IntegerControl
+                Name="N408_NIDURF_BIRG_UPPHAFI_ARS"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_NIDURF_BIRG_UPPHAFI_ARS}" />
+            <controls:IntegerControl
+                Name="N408_NIDURF_BIRG_LOK_ARS"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_NIDURF_BIRG_LOK_ARS}" />
+            <controls:IntegerControl
+                Name="N408_FRESTUN_SOLUHAGNADAR"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_FRESTUN_SOLUHAGNADAR}" />
+            <controls:IntegerControl
+                Name="N408_TEKJUF_SOLUH_FRA_FYRRI_AR"
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_TEKJUF_SOLUH_FRA_FYRRI_AR}" />
+            <controls:IntegerControl
+                Name="N408_ALAG_V_FRESTADS_SOLUH"
+                Grid.Row="7"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ALAG_V_FRESTADS_SOLUH}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_02}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_03}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_04}" />
+            <Border Grid.Row="11" Grid.Column="1" />
+            <Border Grid.Row="12" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_HR_TEKJU_YFIRF_TAP_T_N_AR"
+                Grid.Row="12"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_HR_TEKJU_YFIRF_TAP_T_N_AR}" />
+
+
+        </Grid>
+        <Grid Grid.Row="8" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Column="0"
+                Padding="0,0,0,8"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontFamily="Arial"
+                FontSize="14"
+                FontWeight="Normal">
+                Bls. 3
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Page>

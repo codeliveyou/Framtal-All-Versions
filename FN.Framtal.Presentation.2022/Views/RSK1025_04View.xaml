@@ -1,0 +1,254 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK1025_04View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="1390" d:DesignWidth="910"
+      Title="RSK1025_04View">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="35"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="1"
+            FontSize="24"
+            FontWeight="UltraBold"
+            FontFamily="Arial" HorizontalAlignment="Center" VerticalAlignment="Center">
+            Leiðbeiningar um  útfyllingu eyðublaðsins
+        </TextBlock>
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="3"
+            FontSize="15"
+            FontWeight="Normal"
+            FontFamily="Arial">
+            Þeir sem stunduðu virðisaukaskattsskylda starfsemi á árinu 2004 skulu senda viðkomandi skattstjóra 
+            <Run FontWeight="Bold">samanburðarskýrslu</Run><LineBreak/>
+            <Run FontWeight="Bold">virðisaukaskatts</Run> með skattframtali 2005.
+            <Run FontWeight="Bold">Skila skal einni samanburðarskýrslu fyrir hvert virðisaukaskattsnúmer.</Run>
+        </TextBlock>
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="5"
+            FontSize="15"
+            FontWeight="Normal"
+            FontFamily="Arial">
+            Ekki þarf að skila samanburðarskýrslu ef notast er við skattframtal rekstraraðila (RSK 1.04) eða landbúnaðarskýrslu<LineBreak/>
+            (RSK 4.08) við tekjuskattsuppgjör. Þessi undanþága er þó háð því að rekstraraðili sé aðeins með eitt virðisaukaskattsnúmer.
+        </TextBlock>
+        <Grid Grid.Column="1" Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock 
+                        Grid.Row="0"
+                        FontSize="14"
+                        Text="Stafliður A" FontWeight="Bold">                        
+                    </TextBlock>
+                    <TextBlock 
+                        Grid.Row="1"
+                        FontSize="14">
+                        Þennan hluta eyðublaðsins skal fylla út í samræmi við áritun<LineBreak/>
+                        á virðisaukaskattsskýrslu. Í reitinn „Atvinnugrein“ skal<LineBreak/>
+                        tilgreina aðalatvinnugrein starfseminnar. Vakin er athygli á<LineBreak/>
+                        því að ef um rekstur einstaklingsfyrirtækis er að ræða skal<LineBreak/>
+                        rita nafn og kennitölu eiganda fyrirtækisins í reitina „Nafn<LineBreak/>
+                        rekstraraðila“ og „Kennitala rekstraraðila“.
+                    </TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock 
+                        Grid.Row="0"
+                        FontSize="14"
+                        Text="Stafliður B" FontWeight="Bold">
+                    </TextBlock>
+                    <TextBlock 
+                        Grid.Row="1"
+                        FontSize="14">
+                        Hér er óskað eftir samanburði á þegar innsendum virðisauka-<LineBreak/>
+                        skattsskýrslum við bókhald og ársreikning.<LineBreak/>
+                        <LineBreak/>
+                        Ef fram kemur mismunur í staflið B skal sundurliða þann<LineBreak/>
+                        mismun eftir uppgjörstímabilum með útfyllingu leiðréttingar-<LineBreak/>
+                        skýrslu <Run FontWeight="Bold">RSK 10.26.</Run>
+                    </TextBlock>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock 
+                        Grid.Row="0"
+                        FontSize="14"
+                        Text="Stafliður C" FontWeight="Bold">
+                    </TextBlock>
+                    <TextBlock 
+                        Grid.Row="1"
+                        FontSize="14">
+                         Hér skal sundurliða skattskylda veltu eftir skatthlutfalli,<LineBreak/>
+                        tegund sölu og atvinnugrein. Hafi starfsemin fleiri en þrjár<LineBreak/>
+                        atvinnugreinar, skal nota fleiri eyðublöð.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 1 skal tilgreina sölu á skattskyldri vöru og þjónustu í<LineBreak/>
+                        24,5% þrepi, þ.e. sölu í hinni reglulegu starfsemi fyrir-<LineBreak/>
+                        tækisins.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 2 skal tilgreina fengnar innborganir fyrir afhendingu<LineBreak/>
+                        vegna sölu í 24,5% þrepi.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 3 skal tilgreina úttekt eiganda úr eigin fyrirtæki á vöru,<LineBreak/>
+                        vinnu og þjónustu í 24,5% þrepi. Ef teknar eru út vörur, vinna<LineBreak/>
+                        og þjónusta til annarra nota, t.d. úr skattskyldum hluta<LineBreak/>
+                        rekstrar til nota í óskattskyldum hluta (svokölluðum<LineBreak/>
+                        blönduðum rekstri) og sú úttekt er ekki færð sem sala í<LineBreak/>
+                        skattskylda hlutanum, skal færa hana hér.<LineBreak/>                        
+                        <LineBreak/>
+                        Í línu 4 skal draga frá sannanlega tapaðar viðskiptakröfur<LineBreak/>
+                        vegna sölu í 24,5% þrepi.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 5 skal tilgreina sölu á skattskyldri vöru og þjónustu í<LineBreak/>
+                        14% þrepi, þ.e. sölu í hinni reglulegu starfsemi fyrirtækisins.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 6 skal tilgreina fengnar innborganir fyrir afhendingu<LineBreak/>
+                        vegna sölu í 14% þrepi.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 7 skal tilgreina úttekt eiganda úr eigin fyrirtæki á vöru<LineBreak/>
+                        og þjónustu í 14% þrepi. Ef teknar eru út vörur, vinna og<LineBreak/>
+                        þjónusta til annarra nota, t.d. úr skattskyldum hluta rekstrar<LineBreak/>
+                        til nota í óskattskyldum hluta (svokölluðum blönduðum<LineBreak/>
+                        rekstri) og sú úttekt er ekki færð sem sala í skattskylda<LineBreak/>
+                        hlutanum, skal færa hana hér.
+                    </TextBlock>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="185"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock 
+                    Grid.Row="0"
+                    FontSize="14" Padding="0,4,0,0">
+                    Í línu 8 skal draga frá sannanlega tapaðar viðskiptakröfur<LineBreak/>
+                    vegna sölu í 14% þrepi.<LineBreak/>
+                    <LineBreak/>
+                    Í línu 9 skal færa sölu á fastafjármunum, en hér er átt við þá<LineBreak/>
+                    fjármuni fyrirtækisins, sem hafa verið færðir á fyrningar-<LineBreak/>
+                    skýrslur.<LineBreak/>
+                    <LineBreak/>
+                    Í línu 10 skal færa aðra skattskylda sölu, s.s. sölu á rekstrar-<LineBreak/>
+                    fjármunum sem ekki hafa verið færðir á fyrningarskýrslur.<LineBreak/>
+                    <LineBreak/>
+                    Í línu 11 skal færa samtölur úr línum 1-10.<LineBreak/>
+                    <LineBreak/>
+                </TextBlock>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock 
+                        Grid.Row="0"
+                        FontSize="14"
+                        Text="Stafliður D" FontWeight="Bold">
+                    </TextBlock>
+                    <TextBlock 
+                        Grid.Row="1"
+                        FontSize="14">
+                        Hér skal færa aðra veltu fyrirtækisins.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 1 skal færa undanþegna veltu skv. 1., 2. og 4. mgr. 12.<LineBreak/>
+                        gr. virðisaukaskattslaga, s.s. útflutning.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 2 skal færa undanþegna starfsemi fyrirtækisins skv. 2.<LineBreak/>
+                        gr. laganna, s. s. fólksflutninga.<LineBreak/>
+                    </TextBlock>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock 
+                        Grid.Row="0"
+                        FontSize="14"
+                        Text="Stafliður E" FontWeight="Bold">
+                    </TextBlock>
+                    <TextBlock 
+                        Grid.Row="1"
+                        FontSize="14">
+                        Hér skal sundurliða innskatt eftir skatthlutfalli og notkun.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 1 skal færa innskatt í 24,5% þrepi vegna kaupa á vöru<LineBreak/>
+                        og þjónustu til hinnar reglulegu starfsemi fyrirtækisins og sem<LineBreak/>
+                        ætluð er til endursölu.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 2 skal færa innskatt í 24,5% þrepi vegna alls annars<LineBreak/>
+                        rekstrarkostnaðar.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 3 skal færa innskatt í 14% þrepi vegna kaupa á vöru og<LineBreak/>
+                        þjónustu til hinnar reglulegu starfsemi fyrirtækisins og sem<LineBreak/>
+                        ætluð er til endursölu.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 4 skal færa innskatt í 14% þrepi vegna alls annars<LineBreak/>
+                        rekstrarkostnaðar.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 5 skal tilgreina innskatt vegna fastafjármuna sem keyptir<LineBreak/>
+                        hafa verið og eru færðir á fyrningarskýrslur.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 6 skal færa innskatt vegna byggingarframkvæmda, hér<LineBreak/>
+                        með talið viðhald og endurbætur á fasteign, til nota í hinni<LineBreak/>
+                        skattskyldu starfsemi.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 7 skal færa leiðréttingar á innskatti af varanlegum<LineBreak/>
+                        rekstrarfjármunum. Hér er átt við leiðréttingar á innskatti skv.<LineBreak/>
+                        IV. kafla reglugerðar nr. 192/1993, um innskatt, með síðari<LineBreak/>
+                        breytingum.<LineBreak/>
+                        <LineBreak/>
+                        Í línu 8 skal færa samtölur úr línum 1-7.
+                    </TextBlock>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

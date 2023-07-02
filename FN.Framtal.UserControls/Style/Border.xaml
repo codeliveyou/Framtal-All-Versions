@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="SimpleBorderStyle" TargetType="Border">
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderColorBrush}" />
+        <Setter Property="Padding" Value="3" />
+        <Setter Property="Background" Value="{DynamicResource LightBrush}" />
+    </Style>
+    <Style
+        x:Key="FillBorder"
+        BasedOn="{StaticResource SimpleBorderStyle}"
+        TargetType="Border">
+        <Style.Resources>
+            <SolidColorBrush x:Key="LightBrush" Color="{DynamicResource MediumColor}" />
+        </Style.Resources>
+        <Setter Property="Margin" Value="10,0,0,0" />
+    </Style>
+</ResourceDictionary>

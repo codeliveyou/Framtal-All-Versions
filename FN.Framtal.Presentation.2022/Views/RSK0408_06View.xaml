@@ -1,0 +1,2726 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0408_06View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="RSK0408_06View"
+    d:DesignHeight="1320"
+    d:DesignWidth="910"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="1140" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Rectangle Grid.RowSpan="13" Grid.Column="0" />
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="65" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="UltraBold"
+                    Text="BÚSTOFN" />
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="1"
+                BorderThickness="1,1,1,1" />
+            <Border
+                Grid.Row="0"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Bústofnseign í ársbyrjun" />
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Bústofnseign í árslok" />
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="6"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Vanhalda-skepnur
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="7"
+                Grid.ColumnSpan="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Keypt búfé á árinu" />
+            </Border>
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="0"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="UltraBold"
+                    Text="TEGUND BÚFJÁR" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Skattmat" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Fjöldi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Matsverð" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Fjöldi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Matsverð" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="6"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Fjöldi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="7"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Fjöldi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="8"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Text="Kaupverð" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Mjólkurkýr
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    85.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Holdakýr og naut
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    62.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="4"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Kvígur 1 1/2 árs og eldri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    51.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="5"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Geldneyti
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    33.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="6"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Kálfar yngri en 1/2 árs
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    9.900
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="7"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Ær og sauðir
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    5.100
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="8"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Hrútar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="8"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    8.300
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="9"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Gemlingar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="9"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    4.600
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="10"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Hross á 14. vetri og eldri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="10"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    15.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="11"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Hross á 5.-13. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="11"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    30.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="12"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Verðlaunahross á 5.-13. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="12"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    150.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="13"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Fulltamin reiðhr. á 5.-13. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="13"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    110.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="14"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Önnur reiðhross á 5.-13. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="14"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    55.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="15"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Kynbótahestar á 5.-13. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="15"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    220.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="16"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Verðl. kynbótah. á 5.-13. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="16"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    320.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="17"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Trippi á 2.-4. vetri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="17"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    10.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="18"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Folöld
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="18"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    7.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="19"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Hænsni eldri en 6 mán.
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="19"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    750
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="20"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Varphænsni 6 mán. og yngri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="20"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    460
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="21"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Kjúklingar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="21"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    150
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="22"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Endur
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="22"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    680
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="23"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Gæsir
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="23"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    1.200
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="24"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Kalkúnar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="24"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    1.700
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="25"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Gyltur
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="25"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    30.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="26"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Geltir
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="26"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    45.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="27"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Grísir
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="27"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    5.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="28"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Kanínur
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="28"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    2.900
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="29"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Minkar: karldýr
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="29"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    4.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="30"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Minkar: kvendýr
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="30"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    2.400
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="31"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Minkar: hvolpar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="31"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    0
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="32"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Refir: Karl- og kvendýr
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="32"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    7.000
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="33"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Refir: hvolpar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="33"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    0
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="34"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    Önnur ótilgreind dýr nýtt í rekstri
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="34"
+                Grid.Column="1"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Normal">
+                    3.200
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="35"
+                Grid.Column="0"
+                BorderThickness="1,0,0,1">
+                <TextBlock
+                    Padding="0,0,8,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="35"
+                Grid.Column="1"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="2"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="4"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="6"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="7"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,1" />
+            <Border
+                Grid.Row="35"
+                Grid.Column="8"
+                BorderThickness="0,0,1,1" />
+
+            <Border
+                Grid.Row="36"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Padding="0,0,20,16"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Mismunur:
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="36"
+                Grid.Column="2"
+                Padding="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="5,0"
+                    Padding="0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold">
+                    Bústofns-<LineBreak />
+                    aukning</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="36"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1" Background="#FFF0F4F7">
+                <TextBlock
+                    Padding="1,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Right">
+
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="36"
+                Grid.Column="4"
+                Padding="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="5,0"
+                    Padding="0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold">
+                    Bústofns-<LineBreak />
+                    skerðing</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="36"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1" Background="#FFF0F4F7">
+                <TextBlock
+                    Padding="1,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Right">
+
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="37"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="1,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="37"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1" Background="#FFF0F4F7">
+                <TextBlock
+                    Padding="1,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Right">
+                    
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="37"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="1,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="37"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1" Background="#FFF0F4F7">
+                <TextBlock
+                    Padding="1,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Right">
+
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="36"
+                Grid.RowSpan="2"
+                Grid.Column="6"
+                Grid.ColumnSpan="3"
+                BorderThickness="0">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="9"
+                    FontWeight="Normal">
+                    Bústofnsaukning fer sem plústala í línu 52 á bls. 3<LineBreak />
+                    en bústofnsskerðing fer sem mínustala í sömu línu.</TextBlock>
+            </Border>
+
+
+
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_01}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_02}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_03}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_04}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_05}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_06}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_07}" />
+
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_08}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_09}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_010}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_011}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_012}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_013}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_014}" />
+
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_015}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_016}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_017}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_018}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_019}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_020}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_021}" />
+
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_022}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_023}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_024}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_025}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_026}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_027}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_028}" />
+
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_029}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_030}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_031}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_032}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_033}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_034}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_035}" />
+
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_036}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_037}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_038}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_039}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_040}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_041}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_042}" />
+
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_043}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_044}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_045}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_046}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_047}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_048}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_049}" />
+
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_050}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_051}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_052}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_053}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_054}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_055}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_056}" />
+
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_057}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_058}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_059}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_060}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_061}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_062}" />
+            <controls:IntegerControl
+                Grid.Row="10"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_063}" />
+
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_064}" />
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_065}" />
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_066}" />
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_067}" />
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_068}" />
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_069}" />
+            <controls:IntegerControl
+                Grid.Row="11"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_070}" />
+
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_071}" />
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_072}" />
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_073}" />
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_074}" />
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_075}" />
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_076}" />
+            <controls:IntegerControl
+                Grid.Row="12"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_077}" />
+
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_078}" />
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_079}" />
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_080}" />
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_081}" />
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_082}" />
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_083}" />
+            <controls:IntegerControl
+                Grid.Row="13"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_084}" />
+
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_085}" />
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_086}" />
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_087}" />
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_088}" />
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_089}" />
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_090}" />
+            <controls:IntegerControl
+                Grid.Row="14"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_091}" />
+
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_092}" />
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_093}" />
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_094}" />
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_095}" />
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_096}" />
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_097}" />
+            <controls:IntegerControl
+                Grid.Row="15"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_098}" />
+
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_099}" />
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0100}" />
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0101}" />
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0102}" />
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0103}" />
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0104}" />
+            <controls:IntegerControl
+                Grid.Row="16"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0105}" />
+
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0106}" />
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0107}" />
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0108}" />
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0109}" />
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0110}" />
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0111}" />
+            <controls:IntegerControl
+                Grid.Row="17"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0112}" />
+
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0113}" />
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0114}" />
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0115}" />
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0116}" />
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0117}" />
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0118}" />
+            <controls:IntegerControl
+                Grid.Row="18"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0119}" />
+
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0120}" />
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0121}" />
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0122}" />
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0123}" />
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0124}" />
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0125}" />
+            <controls:IntegerControl
+                Grid.Row="19"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0126}" />
+
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0127}" />
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0128}" />
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0129}" />
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0130}" />
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0131}" />
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0132}" />
+            <controls:IntegerControl
+                Grid.Row="20"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0133}" />
+
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0134}" />
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0135}" />
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0136}" />
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0137}" />
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0138}" />
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0139}" />
+            <controls:IntegerControl
+                Grid.Row="21"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0140}" />
+
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0141}" />
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0142}" />
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0143}" />
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0144}" />
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0145}" />
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0146}" />
+            <controls:IntegerControl
+                Grid.Row="22"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0147}" />
+
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0148}" />
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0149}" />
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0150}" />
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0151}" />
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0152}" />
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0153}" />
+            <controls:IntegerControl
+                Grid.Row="23"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0154}" />
+
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0155}" />
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0156}" />
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0157}" />
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0158}" />
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0159}" />
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0160}" />
+            <controls:IntegerControl
+                Grid.Row="24"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0161}" />
+
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0162}" />
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0163}" />
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0164}" />
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0165}" />
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0166}" />
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0167}" />
+            <controls:IntegerControl
+                Grid.Row="25"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0168}" />
+
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0169}" />
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0170}" />
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0171}" />
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0172}" />
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0173}" />
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0174}" />
+            <controls:IntegerControl
+                Grid.Row="26"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0175}" />
+
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0176}" />
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0177}" />
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0178}" />
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0179}" />
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0180}" />
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0181}" />
+            <controls:IntegerControl
+                Grid.Row="27"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0182}" />
+
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0183}" />
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0184}" />
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0185}" />
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0186}" />
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0187}" />
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0188}" />
+            <controls:IntegerControl
+                Grid.Row="28"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0189}" />
+
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0190}" />
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0191}" />
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0192}" />
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0193}" />
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0194}" />
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0195}" />
+            <controls:IntegerControl
+                Grid.Row="29"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0196}" />
+
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0197}" />
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0198}" />
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0199}" />
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0200}" />
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0201}" />
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0202}" />
+            <controls:IntegerControl
+                Grid.Row="30"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0203}" />
+
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0204}" />
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0205}" />
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0206}" />
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0207}" />
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0208}" />
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0209}" />
+            <controls:IntegerControl
+                Grid.Row="31"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0210}" />
+
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0211}" />
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0212}" />
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0213}" />
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0214}" />
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0215}" />
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0216}" />
+            <controls:IntegerControl
+                Grid.Row="32"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0217}" />
+
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0218}" />
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0219}" />
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0220}" />
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0221}" />
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0222}" />
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0223}" />
+            <controls:IntegerControl
+                Grid.Row="33"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0224}" />
+
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0225}" />
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0226}" />
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0227}" />
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0228}" />
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="6"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0229}" />
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="7"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0230}" />
+            <controls:IntegerControl
+                Grid.Row="34"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="0,0,1,1"
+                Value="{Binding NTB_0231}" />
+
+            <controls:IntegerControl
+                Grid.Row="35"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1,1,2,2" />
+            <controls:IntegerControl
+                Grid.Row="35"
+                Grid.Column="5"
+                BorderBrush="Black"
+                BorderThickness="1,1,2,2" />
+            <controls:IntegerControl
+                Grid.Row="35"
+                Grid.Column="8"
+                BorderBrush="Black"
+                BorderThickness="1,1,2,2" />
+
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="2">
+            <TextBlock
+                Grid.Column="0"
+                Margin="0,0,0,28"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontFamily="Arial"
+                FontSize="14"
+                FontWeight="Normal">
+                Bls. 6
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Page>

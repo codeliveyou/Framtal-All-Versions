@@ -1,0 +1,480 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0101.Views.RSK0101_04View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1126" d:DesignWidth="794" Width="794" Height="1126">
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="26"/>
+            <ColumnDefinition Width="688"/>
+            <ColumnDefinition Width="28"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+            <controls:Chapter1 DockPanel.Dock="Left" VerticalAlignment="Center" ChapterNumber="4" ChapterText="Eignir í árslok 2004"/>
+            <controls:Kennitala DockPanel.Dock="Left" HorizontalAlignment="Right"></controls:Kennitala>
+        </DockPanel>
+
+
+        <!--#region 4.1 -->
+        <controls:Chapter2 Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" Height="30" ChapterNumber="4.1"></controls:Chapter2>
+
+        <Grid  Grid.Column="2" Grid.Row="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Height="30" Background="{DynamicResource LightBrush}">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Grid.ColumnSpan="2" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" Text="Fasteignir skv. fasteignamati"/>
+                    </Border>
+
+                    <Border Grid.Column="2" Grid.ColumnSpan="2" Background="LightGray" >
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock FontSize="10" >
+                            Leiðréttingarreitur: Kannið Hvort fjarhæð í
+                            </TextBlock>
+                            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="10" >útfylltum reit er rétt.</TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="4" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Fasteignamat"/>
+                    </Border>
+                </Grid>
+
+
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="5" BorderThickness="1 0 1 0" Background="{StaticResource DefaultBrush}">
+                <DataGrid />
+            </Border>
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--#region 4.2 -->
+        <controls:Chapter2 Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" Height="30" ChapterNumber="4.2"></controls:Chapter2>
+
+        <Grid  Grid.Column="2" Grid.Row="4" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Height="30" Background="{DynamicResource LightBrush}">
+                <Grid  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Grid.ColumnSpan="2" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" Text="Bifreiðir"/>
+                    </Border>
+
+                    <Border Grid.Column="1" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Numer"/>
+                    </Border>
+
+                    <Border Grid.Column="2" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Kaupar"/>
+                    </Border>
+
+                    <Border Grid.Column="3" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Vero"/>
+                    </Border>
+
+                    <Border Grid.Column="4" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Numer"/>
+                    </Border>
+
+                    <Border Grid.Column="5" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Kaupar"/>
+                    </Border>
+
+                    <Border Grid.Column="6" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Vero"/>
+                    </Border>
+                </Grid>
+
+
+            </Border>
+
+            <Border Grid.Row="1"  Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="5" BorderThickness="1 0 1 0" Background="{StaticResource DefaultBrush}">
+                <DataGrid />
+            </Border>
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+
+        <!--#region 4.3 -->
+        <Border Grid.Column="1" Grid.Row="6" BorderThickness="1" VerticalAlignment="Center" Height="30" Background="{DynamicResource LightBrush}" >
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" FontWeight="Bold" Text="4.3" />
+        </Border>
+
+        <Grid  Grid.Row="6" Grid.Column="2"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="180"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Height="30" Background="{DynamicResource LightBrush}">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" Text="Aðrar eignir aður ótaldar"/>
+            </Border>
+
+            <Border Grid.Column="1" Padding="10,0,0,0" Height="30" Background="{DynamicResource DefaultBrush}" BorderThickness="0,1,0,1">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Text="Hvaoa eignir:"/>
+            </Border>
+
+            <Border Grid.Column="2" Height="30">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="15"/>
+            </Border>
+
+            <Border Grid.Column="3" Padding="3" Height="30" Background="{StaticResource LightBrush}">
+                <controls:NumericTextBox Name="N101_R15"  BorderThickness="0" Width="210"/>
+            </Border>
+
+
+        </Grid>
+        <!--#endregion-->
+
+        
+
+        <!--#region 4.4 -->
+        <Border Grid.Column="1" Grid.Row="8" BorderThickness="1" VerticalAlignment="Top" Height="30" Background="{DynamicResource LightBrush}" >
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" FontWeight="Bold" Text="4.4" />
+        </Border>
+
+        <Grid  Grid.Row="8" Grid.Column="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="180*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="{DynamicResource LightBrush}">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" Text="Hrein eign samkvæmt efnahagsreikningi - skv. samræmingarblaði RSK 4.05"/>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="3">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="01"/>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="4" Padding="3" Background="{StaticResource LightBrush}">
+                <controls:NumericTextBox Name="N101_R01"  BorderThickness="0" Width="210"/>
+            </Border>
+
+
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                <Border Background="{DynamicResource DefaultBrush}">
+                    <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Text="Staðgreiðsla af fjármagnstekjum i eigin atvinnurekstri"/>
+                </Border>
+                <Border>
+                    <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="309"/>
+                </Border>
+                <Border Padding="3" HorizontalAlignment="Right" Background="{StaticResource LightBrush}">
+                    <controls:NumericTextBox Name="N101_R309"  BorderThickness="0" Width="150"/>
+                </Border>
+            </StackPanel>
+
+
+            <Border Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Background="{StaticResource DefaultBrush}" Width="30" BorderThickness="1" >
+            </Border>
+            <Border Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" Background="{StaticResource LightBrush}" Width="180" BorderThickness="1" >
+            </Border>
+
+
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+
+        <!--#region Heading 5 -->
+        <DockPanel Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="2">
+            <controls:Chapter1 DockPanel.Dock="Left" VerticalAlignment="Center" ChapterNumber="5" ChapterText="Skuldir og vaxtagjold"/>
+            <Grid DockPanel.Dock="Right" VerticalAlignment="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Vaxtagjold" HorizontalAlignment="Center" Margin="0,0,0,10"></TextBlock>
+                <TextBlock Grid.Column="1" Text="Eftirstoovar skulda" HorizontalAlignment="Center"></TextBlock>
+
+            </Grid>
+        </DockPanel>
+        <!--#endregion-->
+
+
+        <!--#region 5.1 -->
+
+        <Border Grid.Column="1" Grid.Row="10" BorderThickness="1" VerticalAlignment="Center" Height="30" Background="{DynamicResource LightBrush}" >
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" FontWeight="Bold" Text="5.1" />
+        </Border>
+
+
+        <StackPanel  Orientation="Horizontal" Grid.Row="10" Grid.Column="2"  >
+            <Border Background="{DynamicResource LightBrush}">
+                    <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" FontSize="9">
+                    Vaxtagjold/eftirstoovar vegna kaupleiguibuoar <Run FontSize="8">skv.</Run> <Run FontSize="8">RSK 3.08</Run>
+                </TextBlock>
+            </Border>
+            <Border>
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="166"/>
+            </Border>
+            <Border Padding="3" HorizontalAlignment="Right" Background="{StaticResource LightBrush}">
+                <controls:NumericTextBox Name="N101_R166"  BorderThickness="0" Width="150"/>
+            </Border>
+            <Border>
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="167"/>
+            </Border>
+            <Border Padding="3" HorizontalAlignment="Right" Background="{StaticResource LightBrush}">
+                <controls:NumericTextBox Name="N101_R167"  BorderThickness="0" Width="195"/>
+            </Border>
+        </StackPanel>
+        <!--#endregion-->
+
+        <!--#region 5.2 -->
+        <controls:Chapter2 Grid.Column="1" Grid.Row="12" VerticalAlignment="Top" Height="20" ChapterNumber="5.2"></controls:Chapter2>
+
+        <Grid  Grid.Column="2" Grid.Row="12" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Background="{DynamicResource LightBrush}">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="WrapWithOverflow">
+                    <Run FontWeight="Bold">Lan vegna kaupa eoa byggingar ibuoarhusnaeois til eigin nota.</Run> 
+                    Ef hluti lans er nyttur til annars en oflunar ibuoarhusnaeois skal tilgreina hve hatt 
+                    <Run FontWeight="Bold">hlutfall</Run>
+                    fjarhaeoar er til oflunar ibuoarhusnaeois (reitur 1). I reiti 5 til 8 skal faera heildarfjarhaeoir (an hlutfollunar) en i dalka 9 
+                    og 10 skal aoeins faera pann hluta af vaxtagjoldum og eftirstoovum sem tilheyra oflun ibuoarhusnaeois.
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="1"  Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="5" BorderThickness="1 0 1 0" Background="{StaticResource DefaultBrush}">
+                <DataGrid />
+            </Border>
+
+        </Grid>
+        <!--#endregion-->
+
+        <!--#region 5.3 -->
+        <Border Grid.Column="1" Grid.Row="14" BorderThickness="1" VerticalAlignment="Center" Height="30" Background="{DynamicResource LightBrush}" >
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" FontWeight="Bold" Text="5.3" />
+        </Border>
+
+
+        <Grid Grid.Row="14" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Background="{DynamicResource LightBrush}">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" FontSize="9">
+                    Ef selt var og annað ekki keypt i staðinn, fyrir árslok, færast hér eftirstöðvar skulda eins og þær voru á söludegi
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="1" >
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="41"/>
+            </Border>
+            <Border Grid.Column="2" Padding="3" HorizontalAlignment="Right" Background="{StaticResource DarkBrush}">
+                <controls:NumericTextBox Name="N101_R41"  BorderThickness="0" Width="180"/>
+            </Border>
+        </Grid>
+        <!--#endregion-->
+
+
+        <!--#region 5.4 -->
+        <Border Grid.Column="1" Grid.Row="16" BorderThickness="1" VerticalAlignment="Center" Height="30" Background="{DynamicResource LightBrush}" >
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" FontWeight="Bold" Text="5.4" />
+        </Border>
+
+
+        <Grid Grid.Row="16" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Background="{DynamicResource LightBrush}">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" FontSize="9">
+                    Skuldir umfram eignir i eigin atvinnurekstri skv. samraemingarblaoi <Run FontWeight="Bold">RSK 4.05</Run>
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="1" >
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Text="165"/>
+            </Border>
+            <Border Grid.Column="2" Padding="3" HorizontalAlignment="Right" Background="{StaticResource LightBrush}">
+                <controls:NumericTextBox Name="N101_R165"  BorderThickness="0" Width="180"/>
+            </Border>
+        </Grid>
+        <!--#endregion-->
+
+
+        
+
+        <controls:Chapter2 Grid.Column="1" Grid.Row="18" VerticalAlignment="Top" Height="30" Margin="0,45,0,0" ChapterNumber="5.5"></controls:Chapter2>
+
+        <Grid  Grid.Column="2" Grid.Row="18" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="2" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="2"  Grid.ColumnSpan="3" Background="LightGray">
+                    <TextBlock HorizontalAlignment="Center">
+                        Þurfi að leiðrétta forskráðar upplýsingar, þá skal strika yfir <LineBreak/>
+                        fjarhæðirnar og skrá réttar fjárhæðir i næstu línu fyrir neðan.
+                    </TextBlock>
+                </Border>
+            </Grid>
+            
+            
+
+
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Height="30" Background="{DynamicResource LightBrush}">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Grid.ColumnSpan="2" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" FontWeight="Bold" Text="Aðrar skuldir og vaxtagjold"/>
+                    </Border>
+
+                    <Border Grid.Column="2" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Vaxtagjold"/>
+                    </Border>
+
+                    <Border Grid.Column="4" Background="{DynamicResource LightBrush}">
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Eftirstoovar skulda"/>
+                    </Border>
+                </Grid>
+
+
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="5" BorderThickness="1 0 1 0" Background="{StaticResource DefaultBrush}">
+                <DataGrid />
+            </Border>
+
+        </Grid>
+
+
+        <!--#region Bottom and right side -->
+        <TextBlock Grid.Column="1" Grid.Row="22" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 0 0" FontSize="{StaticResource Chapter2BigTextFontSize}" FontWeight="Bold">Bls. 4</TextBlock>
+        <Rectangle Grid.Column="5" Grid.RowSpan="25" Fill="{StaticResource MediumBrush}"></Rectangle>
+        <!--#endregion-->
+
+    </Grid>
+</UserControl>

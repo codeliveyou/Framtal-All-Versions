@@ -1,0 +1,224 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2004.Views.RSK0202_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="788" d:DesignWidth="1115"
+      Title="RSK0202_01View">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52"/>
+            <ColumnDefinition Width="47"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="34"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="180"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="228"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.Row="0" Grid.RowSpan="9" Fill="#D2D2D4"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right">
+            <TextBlock FontSize="26" FontWeight="Bold" HorizontalAlignment="Right">
+                Greiðslumiði
+            </TextBlock>
+            <LineBreak/>
+            <TextBlock Text="fyrir leigu eða afnot á tekjur á tekjur á tekjuárinu" FontSize="14" FontWeight="Bold"/>
+        </TextBlock>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="226"/>
+                <ColumnDefinition Width="188"/>
+                <ColumnDefinition Width="156"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1,1,1,0"/>
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1,1,1,0"/>
+            <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1,1,1,0"/>
+            <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1,1,1,1"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="1 Nafn greiðanda" Margin="10,5" FontSize="14"/>
+            <TextBox Margin="5,25,5,5" BorderThickness="0"/>
+            <Border Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" BorderThickness="1,1,1,0">
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="2 Kennitala" Padding="10,0" FontSize="14" VerticalAlignment="Top"/>
+            </Border>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5,25,5,5" BorderThickness="0"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="3 Heimili" Margin="10,5" FontSize="14"/>
+            <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,25,5,5" BorderThickness="0"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="4 Nafn viðtakanda greiðslu" Margin="10,5" FontSize="14"/>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5,25,5,5" BorderThickness="0"/>
+            <Border Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" BorderThickness="1,1,1,0">
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="5 Kennitala" Padding="10,0" FontSize="14" VerticalAlignment="Top"/>
+            </Border>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5,25,5,5" BorderThickness="0"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="6 Heimili" Margin="10,5" FontSize="14"/>
+            <TextBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,25,5,5" BorderThickness="0"/>
+
+            <Border Grid.Row="0" Grid.Column="3"/>
+            <TextBlock Grid.Row="1" Grid.Column="2" Grid.RowSpan="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,0,0,0" FontSize="15">
+                Fylla skal út greiðslumiða fyrir hvers konar<LineBreak/>
+                greiðslur á árinu sem inntar hafa verið af hendi<LineBreak/>
+                fyrir leigu eða afnot af <Run FontWeight="Bold">lausafé og fasteignum, </Run><LineBreak/>
+                svo og fyrir greiðslur fyrir sérhver önnur afnot af<LineBreak/>
+                réttindum, s.s. aflaheimildum, einkaleyfum eða<LineBreak/>
+                sérþekkingu, sbr. 4. mgr. 92. gr. laga nr. 90/2003.
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="185"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="140"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderThickness="1,1,0,1">
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" FontSize="14">
+                    7 Greidd leiga af íbúðarhúsnæði. Staðsetning íbúðar.
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="1" BorderThickness="1,1,0,1" Background="#E6E6E8">
+                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5" FontSize="14">
+                    8 Kóði<LineBreak/>
+                    <TextBlock FontWeight="Bold" Text="65" HorizontalAlignment="Center" Margin="10,0"/>
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="2" BorderThickness="1,1,0,1">
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" FontSize="14">
+                    9 Greiðsla er fyrir tímabilið
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="3" BorderThickness="1,1,1,1">
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" FontSize="14">
+                    10 Heildargreiðsla ársins
+                </TextBlock>
+            </Border>
+        </Grid>
+
+        <DataGrid Grid.Row="6" Grid.Column="2" x:Name="dtgPersons" AutoGenerateColumns="False" Background="White" Margin="0" Padding="0" RowHeaderWidth="0" RowHeight="45" ColumnHeaderHeight="47" BorderBrush="Black" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" SelectionChanged="dtgPersons_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="7 Greiðsla fyrir afnot af öðru. Hverju" Binding="{Binding Id}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="#FF000000" />
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="VerticalContentAlignment" Value="Top" />
+                            <Setter Property="Width" Value="415" />
+                            <Setter Property="FontSize" Value="14" />
+                            <Setter Property="IsTabStop" Value="False" />
+                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="8 Kóði" Binding="{Binding Id}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="#E6E6E8"/>
+                            <Setter Property="Foreground" Value="#FF000000" />
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="VerticalContentAlignment" Value="Top" />
+                            <Setter Property="Width" Value="40" />
+                            <Setter Property="FontSize" Value="14" />
+                            <Setter Property="IsTabStop" Value="False" />
+                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="DataGridCellsPanel.Background" Value="#E6E6E8" />
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="9 Greiðsla er fyrir tímabilið" Binding="{Binding Id}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="#FF000000" />
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="VerticalContentAlignment" Value="Top" />
+                            <Setter Property="Width" Value="185" />
+                            <Setter Property="FontSize" Value="14" />
+                            <Setter Property="IsTabStop" Value="False" />
+                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="10 Heildargreiðsla ársins" Binding="{Binding Id}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="#FF000000" />
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="VerticalContentAlignment" Value="Top" />
+                            <Setter Property="Width" Value="200" />
+                            <Setter Property="FontSize" Value="15" />
+                            <Setter Property="IsTabStop" Value="False" />
+                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="11 Þar af VSK hrónur" Binding="{Binding Id}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="#FF000000" />
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="VerticalContentAlignment" Value="Top" />
+                            <Setter Property="Width" Value="142" />
+                            <Setter Property="FontSize" Value="15" />
+                            <Setter Property="IsTabStop" Value="False" />
+                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="Padding" Value="0,0" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+            
+            <DataGridCellsPanel />
+            <DataGridCellsPanel />
+            <DataGridCellsPanel />
+            <DataGridCellsPanel />
+        </DataGrid>
+        <TextBlock Grid.Row="6" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,3,0">
+            <TextBlock.LayoutTransform>
+                <RotateTransform Angle="270" />
+            </TextBlock.LayoutTransform>
+            <Run FontSize="14" FontWeight="Bold">RSK 2.02 </Run>
+            <TextBlock Text=" 24-4-2020" FontSize="9"/>
+        </TextBlock>
+        <Canvas Grid.Row="8" Grid.Column="2" HorizontalAlignment="Left" Width="0" ClipToBounds="False" VerticalAlignment="Bottom">
+            <Line Margin="5,-20,10,10" Stroke="Black" StrokeDashArray="2 2" X2="600"/>
+        </Canvas>
+        <TextBlock Grid.Row="8" Grid.Column="2" FontSize="14" VerticalAlignment="Bottom" Margin="0,0,0,5">
+            Dagsetning
+            <TextBlock Text="Undirskrift" Margin="200,0,0,0"/>
+        </TextBlock>
+        <TextBlock Grid.Row="9" Grid.Column="2" Text="Frumrit til ríkisskattstjóra" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="14" FontWeight="Bold"/>
+    </Grid>
+</Page>

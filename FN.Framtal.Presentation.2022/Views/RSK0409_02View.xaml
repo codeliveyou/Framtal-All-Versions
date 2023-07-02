@@ -1,0 +1,174 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0409_02View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="840" d:DesignWidth="600"
+      Title="RSK0409_02View">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="215"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="215"/>
+            <ColumnDefinition Width="70"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="308"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="1" Content="Leiðbeiningar og skýringar" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="20" Grid.Row="1" VerticalAlignment="Center" Width="288" FontWeight="Bold" Padding="0,0,0,0" FontFamily="Arial Black" FontSize="14" Margin="121,0,0,0"/>
+        <Border Grid.Column="3" HorizontalAlignment="Left" Height="678" Grid.Row="3" VerticalAlignment="Top" Width="1" BorderThickness="0.3,0.3,0.3,0.3" Grid.RowSpan="6"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="10" TextAlignment="Justify" TextWrapping="Wrap" Margin="0,0,0,105" HorizontalAlignment="Center" Width="215">
+            Á eyðublaði þessu skal gera grein fyrir rekstrar-
+            kostnaði sérhverrar fólksbifreiðar þ.m.t. skut-
+            bifreiðar (station) og jeppa, sem telst vera
+            atvinnurekstrartæki í hendi fyrirtækisins, hvort
+            sem bifreiðin er í eigu þess og fyrna skal sam-
+            kvæmt skattalögum eða er á fjármögnunar-
+            leigusamningi.
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="10" TextAlignment="Justify" TextWrapping="Wrap" Margin="0,96,0,87" HorizontalAlignment="Center" Width="215">
+            Þær bifreiðar sem hér er um að ræða eru:
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="10" TextAlignment="Justify" TextWrapping="Wrap" Margin="0,113,0,59" HorizontalAlignment="Right" Width="200">
+            Allar fólksbifreiðar í eigu lögaðila eða eru á
+            fjármögnunarleigusamningi.
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="10" TextAlignment="Justify" TextWrapping="Wrap" Margin="0,113,0,73" HorizontalAlignment="Left" Width="15">
+            <Bold>1.</Bold>
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="10" TextAlignment="Justify" TextWrapping="Wrap" Margin="0,145,0,0" HorizontalAlignment="Right" Width="200">
+            Allar fólksbifreiðar í eigu manna eða eru á
+            fjármögnunarleigusamningi og látnar eru
+            starfsmönnum atvinnurekstrarins í té til eigin
+            afnota.
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="10" TextAlignment="Justify" TextWrapping="Wrap" Margin="0,145,0,38" HorizontalAlignment="Left" Width="15">
+            <Bold>2.</Bold>
+        </TextBlock>
+        <Label Grid.Column="1" Content="Úr 50. gr. laga nr. 90/2003" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="15" Width="122" Padding="0,0,0,0" FontSize="10" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" Grid.Row="6" FontSize="10" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="0,5,0,255">
+            <Span></Span> <Span></Span> „Til rekstrarkostnaðar skv. 31. gr. eða til frá-
+            dráttar skattskyldum tekjum á einn eða annan
+            hátt er ekki heimilt að telja:
+            <LineBreak/>
+            - - - - - - - - - -
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Right" Width="200" Grid.Column="1" Grid.Row="6" FontWeight="Normal" FontSize="10" Margin="0,62,0,127" TextWrapping="WrapWithOverflow" TextAlignment="Justify">
+            Þær greiðslur vegna fjármögnunarleigu á
+            fólksbifreiðum fyrir færri en níu menn, öðrum
+            en leigubifreiðum, sem eru umfram fyrningar
+            reiknaðar samkvæmt ákvæðum þessara laga
+            að viðbættum reiknuðum vöxtum af fyrning-
+            argrunni þegar frá hafa verið dregnar reikn-
+            aðar fyrningar fyrri ára. Ríkisskattstjóri setur
+            reglur um reikning fyrninga og vaxta í þess-
+            um tilvikum.
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Width="15" Grid.Column="1" Grid.Row="6" FontWeight="Normal" FontSize="10" Margin="0,62,0,127" TextWrapping="WrapWithOverflow" TextAlignment="Justify">
+            <Bold>4.</Bold>
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" FontSize="10" Grid.Column="1" HorizontalAlignment="Right" Margin="0,185,0,0" Grid.Row="6" VerticalAlignment="Top" Height="93" Width="200" TextWrapping="WrapWithOverflow" Padding="0,0,0,0" FontWeight="Normal">
+            Kostnað við rekstur fólksbifreiða, sem látnar
+            eru starfsmönnum atvinnurekstrar íté til eigin
+            afnota, nema að því marki sem hlunnindi af
+            notkun viðkomandi fólksbifreiðar hafa verið
+            talin til tekna, samkvæmt matsreglum ríkis-
+            skattstjóra, hjá þeim aðila sem heimilt er að
+            hafa hana til umráða í eigin þágu“.
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" FontSize="10" Grid.Column="1" HorizontalAlignment="Left" Margin="0,185,0,0" Grid.Row="6" VerticalAlignment="Top" Height="93" Width="15" TextWrapping="WrapWithOverflow" Padding="0,0,0,0" FontWeight="Normal">
+            <Bold>5.</Bold>
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" FontSize="10" Height="66">
+            Ríkisskattstjóri hefur ákveðið að eftirfarandi
+            reglur skuli gilda gjaldárið 2005 við útreikning
+            frádráttarbærs hluta leigugreiðslna vegna fjár-
+            mögnunarleigu á fólksbifreiðum fyrir færri en 9
+            menn að undanskildum leigubifreiðum:
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="15" FontSize="10" Height="13" Margin="0,79,0,0">
+            <Bold>1.</Bold>
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Right" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="10" Height="66" Margin="0,79,0,0">
+            Fyrningargrunnur telst vera kaupverð bifreið-
+            ar eins og það er ákveðið við kaup leigusala
+            (fjármögnunarleigufyrirtækis) á viðkomandi
+            bifreið að frádregnum áður fengnum fyrning-
+            um.
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="15" FontSize="10" Height="13" Margin="0,149,0,0">
+            <Bold>2.</Bold>
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Right" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="10" Height="86" Margin="0,149,0,0" Grid.RowSpan="2">
+            Til frádráttar hjá leigutaka á rekstrarárinu
+            2004 telst 20% fyrning af fyrningargrunni skv.
+            1. tölul. hér að framan, að viðbættum 8,3%
+            vöxtum reiknuðum hlutfallslega miðað við
+            upphaf eða lok leigutíma á árinu 2004. Vextir
+            reiknast af fyrningargrunni.
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" FontSize="10" Grid.Column="4" HorizontalAlignment="Left" Height="14" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Width="15">
+            <Bold>3.</Bold>
+        </TextBlock>
+        <TextBlock TextAlignment="Justify" FontSize="10" Grid.Column="4" HorizontalAlignment="Left" Height="40" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Margin="16,1,0,0" Grid.RowSpan="2">
+            Fyrning skv. 2. tölul. hér að framan er heimil
+            að fullu rekstrarárið 2004 hvort sem leigu-
+            tímabilið hefst eða því lýkur á því ári.
+        </TextBlock>
+        <TextBlock FontSize="10" TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Center" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="16" Margin="0,63,0,0">
+            <Bold>Um bifreiðahlunnindi (5. tl. 50. gr.)</Bold>
+        </TextBlock>
+        <TextBlock FontSize="10" TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Center" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="66" Margin="0,80,0,0">
+            Bifreiðahlunnindi vegna bifreiðar, sem launþegi
+            hafði til umráða frá vinnuveitanda sínum á árinu
+            2004, skal meta til tekna í samræmi við skattmat
+            í staðgreiðslu á árinu 2004 og á fjárhæð bifreiða
+            hlunninda að koma fram í reit 60 á launamiða.
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" Grid.Column="4" Grid.Row="6" FontSize="10" TextAlignment="Justify" Margin="0,149,0,95">
+            <Span/> <Span/> <Span/> Upplýsingar, sem á þarf að halda til að meta
+                bifreiðahlunnindi rétt, er að finna í bæklingi um
+                „BIFREIÐASKRÁ – skattmat í staðgreiðslu
+                2004“, sem ríkisskattstjóri hefur gefið út og hægt
+                er að fá hjá skattyfirvöldum.
+        </TextBlock>
+        <TextBlock FontSize="10" TextAlignment="Justify" Grid.Column="4" HorizontalAlignment="Center" Margin="0,220,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="214" Grid.RowSpan="2">
+            <Span></Span> <Span></Span> Ef starfsmönnum atvinnurekstrar, er látin
+            fólksbifreið íté til eigin afnota og þeim er heimilt
+            að hafa fólksbifreiðina til umráða í eigin þágu,þá
+            ber í samræmi við ofangreind lagaákvæði að
+            takmarka gjaldfærðan heildarrekstrarkostnað
+            bifreiðarinnar (án fyrninga) við tekjufærð hlunn-
+            indi þeirra.
+        </TextBlock>
+        <TextBlock FontSize="10" TextAlignment="Justify" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Height="40">
+            Reglur ríkisskattstjóra um reikning fyrninga og
+            vaxta birtust í auglýsingu ríkisskattstjóra nr.
+            2/2005 frá 7. jan. 2005 og eru þær þannig:
+        </TextBlock>
+        <TextBlock FontSize="10" TextAlignment="Justify" Margin="0,44,0,0" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Height="55">
+            „Auglýsing frá ríkisskattstjóra um reikning fyrn-
+            inga og vaxta vegna fjármögnunarleigu fólks-
+            bifreiða skv. 4. tölul. 50. gr. laga nr. 90/2003, um
+            tekjuskatt og eignarskatt.
+        </TextBlock>
+        <TextBlock FontSize="10" TextAlignment="Justify" Grid.Column="1" HorizontalAlignment="Center" Margin="0,289,0,0" Width="215" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top">
+            <Bold>Um fjármögnunarleigugreiðslur (4. tl. 50. gr.)</Bold>
+        </TextBlock>
+
+    </Grid>
+</Page>

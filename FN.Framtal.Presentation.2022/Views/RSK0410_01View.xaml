@@ -1,0 +1,429 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0410_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="1200" d:DesignWidth="724"
+      Title="RSK0410_01View">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.RowSpan="23" Fill="{StaticResource DarkBrush}"/>
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="270"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1"
+                       FontSize="36"
+                       FontWeight="ExtraBold"
+                       HorizontalAlignment="Right"
+                       >
+                Rekstraryfirlit <LineBreak/><Run FontWeight="DemiBold" FontSize="17">Fylgiskjal með skattframtali 2005</Run>
+            </TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="230"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="11"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="1" >
+                <TextBlock Padding="3,0,0,0"
+                           Text="Nafn"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_01}" />
+            <Border Grid.Row="2" >
+                <TextBlock Padding="3,0,0,0"
+                           Text="Tegund starfsemi"/>
+            </Border>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_02}" />
+
+            <Border Grid.Row="0" 
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                     Background="{DynamicResource MediumBrush}">
+
+            </Border>
+            <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Padding="5,0,0,0"
+                           Text="Kennitala"/>
+                <StackPanel Grid.Row="1" Orientation="Horizontal"  >
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="10,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                    <controls:WhiteContentWithDescription Margin="4,2,0,5" Width="20"/>
+                </StackPanel>
+            </Grid>
+            <Border Grid.Row="2" Grid.Column="1">
+                <TextBlock  Padding="3,0,0,0"
+                           Text="Atv.gr.númer"/>
+            </Border>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_03}" />
+        </Grid>
+        <TextBlock Grid.Row="5"
+                   Grid.Column="2"
+                   FontSize="20"
+                   FontWeight="DemiBold">A) Rekstur<LineBreak/><Run>Tekjur</Run>
+        </TextBlock>
+        <Grid Grid.Row="6" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0">
+                <TextBlock Padding="3,0,0,0"
+                           Text="Nafn og kennitala greiðanda"/>
+            </Border>
+
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="0" Text="{Binding TB_04}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="0" Text="{Binding TB_05}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="0" Text="{Binding TB_06}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="1" Text="{Binding TB_07}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="1" Text="{Binding TB_08}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_09}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="1" Text="{Binding TB_010}" />
+
+            <TextBlock Grid.Row="4"
+                       Grid.Column="0"
+                       Text="Tekjur samtals"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"       
+                       />
+            <controls:IntegerControl Grid.Row="4" Grid.Column="1" Value="{Binding NTB_01}" />
+
+        </Grid>
+
+        <TextBlock Grid.Row="7"
+                   Grid.Column="2"
+                   Text="Gjöld"
+                   FontSize="20"
+                   FontWeight="DemiBold"
+                   VerticalAlignment="Bottom"/>
+        <Grid Grid.Row="8" Grid.Column="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0">
+                <TextBlock Padding="3,0,0,0"
+                           VerticalAlignment="Center"
+                           Text="Reiknuð laun (til tekna í reit 24 á framtali)"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock Padding="3,0,0,0"
+                           VerticalAlignment="Center"
+                           Text="Reiknuð laun maka (til tekna í reit 24 á framtali)"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock Padding="3,0,0,0"
+                           VerticalAlignment="Center"
+                           Text="Reiknuð laun (til tekna í reit 24 á framtali)"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock Padding="3,0,0,0"
+                           VerticalAlignment="Center"
+                           Text="Greitt mótframlag í lífeyrissjóð"/>
+            </Border>
+
+            <Border Grid.Row="4" Grid.Column="0">
+                <controls:TextBoxWithBlackText VerticalAlignment="Center" Text="{Binding TB_011}" />
+            </Border>
+
+            <Border Grid.Row="5" Grid.Column="0">
+                <controls:TextBoxWithBlackText VerticalAlignment="Center" Text="{Binding TB_012}" />
+            </Border>
+
+            <TextBlock Grid.Row="6"
+                       Grid.Column="0"
+                       Text="Gjöld samtals"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"       
+                       />
+
+            <controls:IntegerControl Grid.Row="0" Grid.Column="1" Value="{Binding NTB_02}" />
+            <controls:IntegerControl Grid.Row="1" Grid.Column="1" Value="{Binding NTB_03}" />
+            <controls:IntegerControl Grid.Row="2" Grid.Column="1" Value="{Binding NTB_04}" />
+            <controls:IntegerControl Grid.Row="3" Grid.Column="1" Value="{Binding NTB_05}" />
+            <controls:IntegerControl Grid.Row="4" Grid.Column="1" Value="{Binding NTB_06}" />
+            <controls:IntegerControl Grid.Row="5" Grid.Column="1" Value="{Binding NTB_07}" />
+            <controls:IntegerControl Grid.Row="6" Grid.Column="1" Value="{Binding NTB_08}" />
+
+
+        </Grid>
+
+        <TextBlock Grid.Row="9" 
+                   Grid.Column="2"
+                   Text="Hagnaður/tap"
+                   VerticalAlignment="Bottom"
+                   FontWeight="DemiBold"/>
+
+        <Grid Grid.Row="10" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0">
+                <TextBlock 
+                   Padding="3,0,0,0"
+                   Text="Hagnaður (plústala) í reit 62 á framtali. Tap (mínustala) geymist til næsta árs."
+                   VerticalAlignment="Center"/>
+            </Border>
+
+            <controls:IntegerControl Grid.Column="1" Value="{Binding NTB_09}" />
+
+        </Grid>
+        <TextBlock Grid.Row="12"
+                   Grid.Column="2"
+                   FontSize="20"
+                   FontWeight="DemiBold">B) Efnahagur<LineBreak/><Run>Eignir</Run>
+        </TextBlock>
+        <Grid Grid.Row="13" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="0" Text="{Binding TB_013}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="0" Text="{Binding TB_014}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="0" Text="{Binding TB_015}" />
+
+
+            <TextBlock Grid.Row="6"
+                       Grid.Column="0"
+                       Text="Eignir samtals"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"       
+                       />
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="1" Text="{Binding TB_016}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="1" Text="{Binding TB_017}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_018}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="1" Text="{Binding TB_019}" />
+        </Grid>
+
+        <TextBlock Grid.Row="14"
+                   Grid.Column="2"
+                   Text="Skuldir"
+                   FontSize="20"
+                   FontWeight="DemiBold"
+                   VerticalAlignment="Bottom"/>
+
+        <Grid Grid.Row="15" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="0" Text="{Binding TB_020}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="0" Text="{Binding TB_021}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="0" Text="{Binding TB_022}" />
+
+
+            <TextBlock Grid.Row="6"
+                       Grid.Column="0"
+                       Text="Skuldir samtals"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"       
+                       />
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="1" Text="{Binding TB_023}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="1" Text="{Binding TB_024}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_025}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="1" Text="{Binding TB_026}" />
+        </Grid>
+        <Grid Grid.Row="13" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="0" Text="{Binding TB_027}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="0" Text="{Binding TB_028}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="0" Text="{Binding TB_029}" />
+
+
+            <TextBlock Grid.Row="6"
+                       Grid.Column="0"
+                       Text="Eignir samtals"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"       
+                       />
+            <controls:TextBoxWithBlackText Grid.Row="0" Grid.Column="1" Text="{Binding TB_030}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="1" Text="{Binding TB_031}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_032}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="1" Text="{Binding TB_033}" />
+        </Grid>
+
+        <TextBlock Grid.Row="16" 
+                   Grid.Column="2"
+                   Text="Hagnaður/tap"
+                   VerticalAlignment="Bottom"
+                   FontWeight="DemiBold"/>
+
+        <Grid Grid.Row="17" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0">
+                <TextBlock 
+                   Padding="3,0,0,0"
+                   Text="Hrein eign (plústala) í reit 01 á framtali. Skuld (mínustala) í reit 165 á framtali."
+                   VerticalAlignment="Center"/>
+            </Border>
+
+            <controls:IntegerControl Grid.Column="1" Value="{Binding NTB_010}" />
+
+        </Grid>
+
+        <TextBlock Grid.Row="18"
+                   Grid.Column="2"
+                   FontSize="20"
+                   FontWeight="DemiBold"
+                   VerticalAlignment="Bottom">C) Staðgreiðsla af fjármagnstekjum í rekstri
+        </TextBlock>
+
+        <Grid Grid.Row="19" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0">
+                <TextBlock 
+                   Padding="3,0,0,0"
+                   Text="Staðgreiðsla færist í reit 309 í lið 4.4 á framtali."
+                   VerticalAlignment="Center"/>
+            </Border>
+
+            <controls:IntegerControl Grid.Column="1" Value="{Binding NTB_011}" />
+
+        </Grid>
+        <TextBlock Grid.Row="21" 
+                   Grid.Column="2" 
+                   Text="RSK 4.10"
+                   FontWeight="Bold" 
+                   FontSize="12"
+                   />
+
+
+        <TextBlock Grid.Row="21" 
+                   Grid.Column="2" 
+                   Text="0501"
+                   FontSize="8"
+                   Margin="75,0,0,0"
+                   VerticalAlignment="Bottom"></TextBlock>
+    </Grid>
+</Page>

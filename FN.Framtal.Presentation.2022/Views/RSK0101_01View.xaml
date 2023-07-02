@@ -1,0 +1,653 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0101_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:control="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:customControl="clr-namespace:FN.Framtal.UserControls.Control;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="RSK0101_01View"
+    d:DesignHeight="2000"
+    d:DesignWidth="800"
+    Background="White"
+    mc:Ignorable="d">
+
+    <Page.Resources />
+    <Border Width="800">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Margin="10,0,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="1*" MinHeight="100" />
+                    <RowDefinition Height="2*" MinHeight="100" />
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="3*" MinHeight="250" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="3*" MinHeight="250" />
+                    <RowDefinition Height="1*" MinHeight="150" />
+                    <RowDefinition Height="1*" MinHeight="100" />
+                    <RowDefinition Height="auto" MinHeight="200" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBlock Style="{StaticResource HeaderTextBlock}">Skattframtal 2022</TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <UniformGrid Columns="2">
+                        <UniformGrid Grid.Row="1" Rows="2">
+                            <UniformGrid Columns="2">
+                                <control:TextBoxWithDescription
+                                    Title="Kennitala framteljanda"
+                                    BorderThickness="1,1,0,1"
+                                    TextBoxVisible="True" />
+                                <control:TextBoxWithDescription Title="Kennitala framteljanda" TextBoxVisible="True" />
+                            </UniformGrid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width=".4*" />
+                                </Grid.ColumnDefinitions>
+                                <control:TextBoxWithDescription
+                                    Title="Kennitala framteljanda"
+                                    BorderThickness="1,0,1,1"
+                                    TextBoxVisible="True" />
+                                <control:TextBoxWithDescription
+                                    Title="Kennitala framteljanda"
+                                    Grid.Column="1"
+                                    BorderThickness="0,0,1,1"
+                                    TextBoxVisible="True" />
+                            </Grid>
+                        </UniformGrid>
+                        <Border Style="{StaticResource FillBorder}">
+                            <CheckBox
+                                Content="Setjið X í reitinn ef óskað er eftir að gera upp alla álagninguna þann 1. júní, í stað þess að dreifa greiðslum á 3-7 gjalddaga (1. jún. - 1. des.)."
+                                IsChecked="{Binding R101_UPPGJOR_ALAGNINGAR}"
+                                Style="{StaticResource TextCheckBoxStyle}" />
+                        </Border>
+                    </UniformGrid>
+                </Grid>
+                <Grid Grid.Row="2" Margin="0,10,0,0">
+                    <control:ContentWithDescription Title="Nafn - póstfang" BorderThickness="1,0,1,1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height=".2*" />
+                                <RowDefinition Height="1*" />
+                            </Grid.RowDefinitions>
+                            <UniformGrid Grid.RowSpan="2" Rows="3">
+                                <control:TextBoxWithDescription Title="Nafn" />
+                                <control:TextBoxWithDescription Title="Heimilisfang" BorderThickness="1,0,1,1" />
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1.5*" />
+                                    </Grid.ColumnDefinitions>
+                                    <control:TextBoxWithDescription Title="Póstnúmer" BorderThickness="1,0,0,1" />
+                                    <control:TextBoxWithDescription
+                                        Title="Bæjarfélag "
+                                        Grid.Column="1"
+                                        BorderThickness="1,0,1,1" />
+                                </Grid>
+                            </UniformGrid>
+                            <Border
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Margin="10,0,0,0"
+                                Style="{StaticResource FillBorder}">
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <CheckBox
+                                        VerticalContentAlignment="Bottom"
+                                        FlowDirection="RightToLeft"
+                                        IsChecked="{Binding C101_SLYSATRYGGING}"
+                                        Style="{StaticResource TextAlignLeft}">
+                                        <TextBlock
+                                            FontWeight="Normal"
+                                            Style="{StaticResource SubHeaderTextBlock}"
+                                            TextAlignment="Right">
+                                            <Run>
+                                                Slysatrygging
+                                                við heimilisstörf
+                                            </Run>
+                                            <LineBreak />
+                                            <LineBreak />
+                                            <Run FontSize="10">
+                                                Setjið X í reitinn ef óskað er slysatryggingar.
+                                            </Run>
+                                        </TextBlock>
+                                    </CheckBox>
+                                </Grid>
+                            </Border>
+                            <Border
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                Margin="10,0,0,0"
+                                Style="{StaticResource FillBorder}">
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <CheckBox
+                                        VerticalContentAlignment="Top"
+                                        FlowDirection="RightToLeft"
+                                        IsChecked="{Binding C101_EINSTAETT_FOR}"
+                                        Style="{StaticResource TextAlignLeft}">
+                                        <TextBlock
+                                            FontWeight="Normal"
+                                            Style="{StaticResource SubHeaderTextBlock}"
+                                            TextAlignment="Right">
+                                            <Run>
+                                                Ef framteljandi er einstætt foreldri skal staðfesta það með þvi að með þvi að setja X i þennan reit.
+                                            </Run>
+                                            <LineBreak />
+                                            <LineBreak />
+                                            <Run FontSize="10">
+                                                Sja nanari skyringar i leiðbeiningum.
+                                            </Run>
+                                        </TextBlock>
+                                    </CheckBox>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </control:ContentWithDescription>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <control:Chapter1
+                        Grid.Row="3"
+                        VerticalAlignment="Bottom"
+                        ChapterNumber="1"
+                        ChapterText="Almennar upplýsingar " />
+                </Grid>
+                <Grid Grid.Row="4" DataContext="{Binding RSK0101_1_BORN}">
+                    <customControl:HeaderedDataGrid
+                        AutoGenerateColumns="False"
+                        Background="{DynamicResource MediumBrush}"
+                        ChapterNumber="1.1"
+                        ItemsSource="{Binding}"
+                        TitleContent="Börn fædd 2004 og síðar, með lögheimili hjá framteljanda í lok árs 2021 ">
+                        <customControl:HeaderedDataGrid.Columns>
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=T101_BO_BARN}"
+                                Header="Nafn barns" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=K101_BO_KT_BARN}"
+                                Header="Kennitala barns" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=RSK_BO_UPPRUNI}"
+                                Header="Uppruni gagna" />
+                        </customControl:HeaderedDataGrid.Columns>
+                        <customControl:HeaderedDataGrid.RowsTitleContent>
+                            <TextBlock Style="{StaticResource SubHeaderTextBlock}">
+                                <Run FontWeight="Normal">
+                                    Framteljandi
+                                    þarf að yfirfara
+                                    og leiðrétta
+                                    upplýsingar
+                                    um börn
+                                </Run> <Run Text="á framfæri hans" />
+                            </TextBlock>
+                        </customControl:HeaderedDataGrid.RowsTitleContent>
+                    </customControl:HeaderedDataGrid>
+                </Grid>
+                <Grid Grid.Row="5" Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <control:Chapter2_7
+                        Background="{StaticResource MediumBrush}"
+                        DescriptionText="Einstaklingar í óvígðri sambúð, sem uppfylla skilyrði fyrir samsköttun, geta óskað eftir samsköttun með því að merkja í reitinn hér fyrir neðan. Ekki er fallist á samsköttun nema merkt sé í reitinn hjá báðum"
+                        PrefixText="1.2"
+                        TitleText="Samsköttun"
+                        TitleTextBlockWidth="200" />
+                    <Border
+                        Grid.Row="1"
+                        BorderBrush="Black"
+                        BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="1" Text="Sja i leiðbeiningum um skilyrði fyrir samsköttun." />
+                            <CheckBox
+                                Grid.Column="2"
+                                VerticalContentAlignment="Center"
+                                FlowDirection="LeftToRight"
+                                IsChecked="{Binding C101_SAMSKOTTUN_OSK}"
+                                Style="{StaticResource TextAlignLeft}">
+                                <TextBlock
+                                    FontWeight="Normal"
+                                    Style="{StaticResource SubHeaderTextBlock}"
+                                    TextAlignment="Left">
+                                    <Run FontWeight="Bold">
+                                        Oskað er eftir samskottun.
+                                    </Run>
+                                </TextBlock>
+                            </CheckBox>
+                            <TextBlock
+                                Grid.Column="3"
+                                HorizontalAlignment="Right"
+                                FontWeight="Bold"
+                                Text="Kennitala sambuðarmanns/konu:" />
+                            <Border
+                                Grid.Column="4"
+                                BorderBrush="Black"
+                                BorderThickness="1,0,0,0">
+                                <TextBox
+                                    VerticalAlignment="Stretch"
+                                    VerticalContentAlignment="Center"
+                                    BorderBrush="{StaticResource MediumBrush}"
+                                    BorderThickness="5"
+                                    Text="{Binding K101_KENNITALA_SAMBUD}" />
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid Grid.Row="6" Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Margin="45,0,0,10"
+                        FontSize="15"
+                        Style="{StaticResource SubHeaderTextBlock}">
+                        Hjá hjónum og sambúðarfólki er nóg að annað fylli út liði 1.3 og 1.4
+                    </TextBlock>
+                    <customControl:HeaderedDataGrid
+                        Grid.Row="1"
+                        AutoGenerateColumns="False"
+                        Background="{DynamicResource MediumBrush}"
+                        ChapterNumber="1.3"
+                        ItemsSource="{Binding RSK101_1_UMSOKN_UM_LAEKKUN}">
+                        <customControl:HeaderedDataGrid.Columns>
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=T101_UL_SKOLI}"
+                                Header="Nafn skóla" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=K101_UL_R527}"
+                                Header="Kennitala ungmennis" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=N101_UL_R528}"
+                                Header="Tekjur ungmennis" />
+                        </customControl:HeaderedDataGrid.Columns>
+                        <customControl:HeaderedDataGrid.TitleContent>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Style="{StaticResource SubHeaderTextBlock}">
+                                    Umsókn um lækkun vegna
+                                    framfærslu ungmenna
+                                </TextBlock>
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Grid.ColumnSpan="3"
+                                    Style="{StaticResource InputHeaderTextBlock}">
+                                    Heimilt er að veita lækkun á tekjuskattsstofni ef framteljandi hefur á framfæri sínu ungmenni, sem hefur ekki nægar tekjur til eigin framfærslu,
+                                    t.d. vegna náms. Tilgreina skal nafn skóla eða ástæðu umsóknar. Hér er einkum átt við aldurinn 16-21 árs. Sjá nánar í leiðbeiningum.
+                                    Við afgreiðslu umsóknar verða rauntekjur skv. framtali ungmennis notaðar.
+                                </TextBlock>
+                            </Grid>
+                        </customControl:HeaderedDataGrid.TitleContent>
+                    </customControl:HeaderedDataGrid>
+                </Grid>
+                <Grid Grid.Row="7" Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <control:Chapter2_7
+                        Background="{StaticResource MediumBrush}"
+                        DescriptionText="Tilgreinið kaup og sölu hvers konar lausafjár, bifreiða, hjólhýsa o.s.frv. Sjá nánar í leiðbeiningum"
+                        PrefixText="1.4"
+                        TitleText="Greinargerð um eignabreytingar eða aðrar athugasemdir"
+                        TitleTextBlockWidth="300" />
+
+                    <TextBox
+                        Grid.Row="1"
+                        Margin="40,00,0,0"
+                        AcceptsTab="True"
+                        Text="{Binding M101_ATH2}" />
+                </Grid>
+                <Grid
+                    Grid.Row="8"
+                    Margin="0,10"
+                    DataContext="{Binding RSK101_1_ARFUR}">
+                    <customControl:HeaderedDataGrid
+                        AutoGenerateColumns="False"
+                        Background="{DynamicResource MediumBrush}"
+                        ChapterNumber="1.5"
+                        ItemsSource="{Binding}"
+                        TitleContent="Börn fædd 2004 og síðar, með lögheimili hjá framteljanda í lok árs 2021 ">
+                        <customControl:HeaderedDataGrid.Columns>
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=K101_AR_KENNITALA_ARFLATA}"
+                                Header="Fenginn arfur Kennitala arfláta" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=N101_AR_ARFUR}"
+                                Header="Arfur" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=N101_AR_ERFDAFJARSKATTUR}"
+                                Header="Greiddur erfðafjárskattur" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=RSK_AR_UPPRUNI}"
+                                Header="Uppruni gagna" />
+                        </customControl:HeaderedDataGrid.Columns>
+                    </customControl:HeaderedDataGrid>
+                </Grid>
+                <Grid Grid.Row="9" Margin="0,10,0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid Background="{StaticResource MediumBrush}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border Background="Transparent">
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                Text="1.6" />
+                        </Border>
+                        <Border
+                            Grid.Column="1"
+                            Background="Transparent"
+                            BorderThickness="0,1,1,1">
+                            <StackPanel>
+                                <TextBlock Margin="10,0" Text="Dvalartimi-buseta a Islandi hluta ur ari" />
+                                <TextBlock
+                                    Margin="10,0,0,0"
+                                    FontWeight="Bold"
+                                    Text="Residency in Iceland part of the year" />
+                            </StackPanel>
+                        </Border>
+
+                    </Grid>
+
+                    <Border
+                        Grid.Row="1"
+                        Margin="39,0,0,0"
+                        BorderThickness="1,0,1,1">
+                        <StackPanel>
+                            <Border BorderThickness="0,0,0,1">
+                                <StackPanel>
+                                    <TextBlock Margin="10,0" Text="Hanfi framteljandi ekki dvaiið a landinu allt arið 2021 þarf að skra komu-/brottlarardag og till/Ira hvaða landi var flutt." />
+                                    <TextBlock
+                                        Margin="10,0,0,0"
+                                        FontWeight="Bold"
+                                        Text="If you did not live in iceland for the entire year of 2021, you must state your arrival/departure date(s) and the other country. " />
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="5" BorderThickness="1">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid Background="{StaticResource MediumBrush}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Margin="0,2">
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="8"
+                                                Text="Tegund flutnings" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="Type of record" />
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Margin="0,2">
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="8"
+                                                Text="Dags. komu/brottfarar" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="Date of arrival/departure" />
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="2" Margin="0,2">
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="8"
+                                                Text="Land sem flutt var fra/til" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="Country" />
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="3" Margin="0,2">
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="8"
+                                                Text="Ogilda færslu" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Center"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="Invalidate record" />
+                                        </StackPanel>
+                                    </Grid>
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Border BorderThickness="0,1,0,0">
+                                            <ComboBox
+                                                Padding="0"
+                                                VerticalContentAlignment="Center"
+                                                FontSize="10"
+                                                SelectedIndex="0">
+                                                <ComboBoxItem>Flutt til islands / Moved to iceland</ComboBoxItem>
+                                            </ComboBox>
+                                        </Border>
+                                        <Border Grid.Column="2" BorderThickness="0,1,1,0">
+                                            <ComboBox
+                                                Padding="0"
+                                                VerticalContentAlignment="Center"
+                                                FontSize="10"
+                                                SelectedIndex="0">
+                                                <ComboBoxItem>Grikkland</ComboBoxItem>
+                                            </ComboBox>
+                                        </Border>
+                                        <TextBox
+                                            Grid.Column="1"
+                                            VerticalContentAlignment="Center"
+                                            BorderBrush="Black"
+                                            BorderThickness="1,1,1,0" />
+                                        <Border Grid.Column="3" BorderThickness="0,1,0,0">
+                                            <CheckBox
+                                                Margin="5,0,0,0"
+                                                VerticalContentAlignment="Center"
+                                                FontSize="10">
+                                                Ogilda færslu
+                                            </CheckBox>
+                                        </Border>
+                                    </Grid>
+                                    <Grid Grid.Row="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Border BorderThickness="0,1,0,0">
+                                            <ComboBox
+                                                Padding="0"
+                                                VerticalContentAlignment="Center"
+                                                FontSize="10"
+                                                SelectedIndex="0">
+                                                <ComboBoxItem>Flutt til islands / Moved to iceland</ComboBoxItem>
+                                            </ComboBox>
+                                        </Border>
+                                        <Border Grid.Column="2" BorderThickness="0,1,1,0">
+                                            <ComboBox
+                                                Padding="0"
+                                                VerticalContentAlignment="Center"
+                                                FontSize="10"
+                                                SelectedIndex="0">
+                                                <ComboBoxItem>Grikkland</ComboBoxItem>
+                                            </ComboBox>
+                                        </Border>
+                                        <TextBox
+                                            Grid.Column="1"
+                                            VerticalContentAlignment="Center"
+                                            BorderBrush="Black"
+                                            BorderThickness="1,1,1,0" />
+                                        <Border Grid.Column="3" BorderThickness="0,1,0,0">
+                                            <CheckBox
+                                                Margin="5,0,0,0"
+                                                VerticalContentAlignment="Center"
+                                                FontSize="10">
+                                                Ogilda færslu
+                                            </CheckBox>
+                                        </Border>
+                                    </Grid>
+                                    <Border
+                                        Grid.Row="3"
+                                        Background="{StaticResource MediumBrush}"
+                                        BorderThickness="0,1,0,0">
+                                        <Grid>
+                                            <Button
+                                                Width="60"
+                                                Height="20"
+                                                Margin="5"
+                                                Padding="0"
+                                                HorizontalAlignment="Left"
+                                                Content="Ny lina"
+                                                FontSize="9" />
+                                            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                                                <StackPanel VerticalAlignment="Center">
+                                                    <TextBlock
+                                                        Margin="0"
+                                                        HorizontalAlignment="Center"
+                                                        FontSize="8"
+                                                        Text="Davalartiml a Islandi a arinu (dagar)" />
+                                                    <TextBlock
+                                                        Margin="0"
+                                                        HorizontalAlignment="Center"
+                                                        FontSize="9"
+                                                        FontWeight="Bold"
+                                                        Text="Duration of stay in Iceland (days)" />
+                                                </StackPanel>
+                                                <TextBox
+                                                    Width="100"
+                                                    Margin="5"
+                                                    Padding="0"
+                                                    IsEnabled="False"
+                                                    Text="02"
+                                                    TextAlignment="Right" />
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </Grid>
+                            </Border>
+
+                            <Border Background="{StaticResource MediumBrush}" BorderThickness="0,1,0,0">
+                                <StackPanel>
+                                    <RadioButton Margin="10,3" VerticalContentAlignment="Center">
+                                        <StackPanel>
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Left"
+                                                FontSize="8"
+                                                Text="Eg staðfesti að framangreindur dvalartimi er rettur" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Left"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="I comfirm that the stated residence time is correct" />
+                                        </StackPanel>
+                                    </RadioButton>
+                                    <RadioButton Margin="10,3" VerticalContentAlignment="Center">
+                                        <StackPanel>
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Left"
+                                                FontSize="8"
+                                                Text="Eg devidi ekki a Islandi a arinu 2021" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Left"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="I did not live in iceland in 2021 " />
+                                        </StackPanel>
+                                    </RadioButton>
+                                    <RadioButton Margin="10,3" VerticalContentAlignment="Center">
+                                        <StackPanel>
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Left"
+                                                FontSize="8"
+                                                Text="Eg dvaidi a Islandi allt arið 2021" />
+                                            <TextBlock
+                                                Margin="0"
+                                                HorizontalAlignment="Left"
+                                                FontSize="9"
+                                                FontWeight="Bold"
+                                                Text="I lived in Iceland all year 2021 " />
+                                        </StackPanel>
+                                    </RadioButton>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+            </Grid>
+            <Rectangle
+                Width="30"
+                HorizontalAlignment="Left"
+                Fill="#39835d"
+                Stroke="#39835d" />
+        </Grid>
+    </Border>
+</Page>

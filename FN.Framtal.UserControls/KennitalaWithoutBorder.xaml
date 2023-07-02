@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.KennitalaWithoutBorder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="33" Height="33" MaxHeight="33"
+             d:DesignWidth="340" Width="340" MaxWidth="340"
+             x:Name="ssnDetails">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" >
+            <DockPanel >
+                <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2SmallTextFontSize}" Text="Kennitala framteljanda"/>
+                <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"
+                         Text="{Binding ElementName=ssnDetails, Path=DeclarantIdentityNumber}"></TextBox>
+            </DockPanel>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  BorderThickness="0 1 1 1">
+            <DockPanel >
+                <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2SmallTextFontSize}" Text="Kennitala maka"/>
+                <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"
+                         Text="{Binding ElementName=ssnDetails, Path=SpouseSSN}"></TextBox>
+            </DockPanel>
+        </Border>
+
+    </Grid>
+</UserControl>

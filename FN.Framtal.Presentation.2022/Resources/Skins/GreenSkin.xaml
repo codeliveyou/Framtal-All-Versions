@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="DarkColor">#11836a</Color>
+    <Color x:Key="LightColor">#bad8cc</Color>
+    <Color x:Key="MediumColor">#bad8cc</Color>
+</ResourceDictionary>

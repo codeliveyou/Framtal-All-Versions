@@ -1,0 +1,149 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2004.Views.RSK0112_02View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Views"
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      mc:Ignorable="d" 
+      Width="794"
+      Height="1126"
+      d:DesignHeight="1126" d:DesignWidth="794"
+      Title="RSK0112_02View">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="100"/>
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label  
+            Grid.Column="1"
+               Grid.Row="1"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            FontSize="24"
+            FontWeight="DemiBold">SKÝRINGAR</Label>
+
+        <TextBlock Grid.Column="1" Grid.Row="3"
+            ><Italic>Byggingarstig í árslok: </Italic>Hér skal tilgreina í stuttu máli stig byggingarframkvæmdar í árslok, þ. e. grunnur,
+<LineBreak/>fokhelt, tilbúið undir tréverk, íbúðarhæft en ekki fullgert, fullgert. Ef framangreind lýsing nægir ekki skal
+            <LineBreak/>
+            tilgreina hvað er umfram, t.d. fokhelt með gleri og tengdum ofnum, múrverk hafið.
+            </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="5"
+            >Keypt byggingarefni: Hér á eftir skal það sundurliðað eftir tegund, t.d. timbur, steypa, efni vegna pípu-<LineBreak/>lagnar,
+hreinlætistæki, tréverk o. s. frv.
+        </TextBlock>
+        <Grid Grid.Row="6" Grid.Column="1" >
+            <DataGrid IsReadOnly="true" 
+                      CanUserAddRows="True" 
+                      CanUserDeleteRows="True"
+                      AutoGenerateColumns="False"
+                      RowHeaderWidth="50">
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="Byggingarefni" Width="*"/>
+                    <DataGridTextColumn Header="Krónur" Width="*"/>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </Grid>
+        <Border Grid.Row="7" 
+                Grid.Column="1"
+                Margin="340,0,0,0"
+                BorderThickness="0,0,0,1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                VerticalAlignment="Bottom"
+                FontWeight="Bold"
+                >Samtals fært á lið B kr.
+            </TextBlock>
+                <controls:IntegerControl Margin="10,0,0,0" Width="115"/>
+
+            </StackPanel>
+
+        </Border>
+        <TextBlock Grid.Row="8" Grid.Column="1">
+           <Italic> Annar byggingarkostnaður:</Italic> Hér skal t.d. tilgreina gatnagerðargjald, heimæðagjald, skipulagsgjald og<LineBreak/>
+annan kostnað sem ekki færist í lið A eða B. Vaxtagjöld vegna lána til húsbyggingar er heimilt að eig-<LineBreak/>
+nfæra og telja til byggingakostnaðar. Þau myndu einnig færast hér. Vaxtagjöld sem þannig eru færð sem<LineBreak/>
+byggingarkostnaður koma ekki til útreiknings vaxtabóta.
+        </TextBlock>
+        <TextBlock Grid.Row="10" Grid.Column="1">
+            <Italic> Aukavinna við eigin íbúð:</Italic> Hér skal tilgreina aukavinnu sem eigandi leggur fram utan venjulegs vinnutíma<LineBreak/>
+við byggingu íbúðarhúsnæðis til eigin afnota.<LineBreak/>
+Vinna manns við eigin íbúð utan venjulegs vinnutíma er skattfrjáls ef hann uppfyllir eftirgreind tvö atriði:<LineBreak/>
+a) að hafa unnið fullan vinnutíma við hið eiginlega starf sitt og<LineBreak/>
+b) skilað eðlilegum árstekjum af því.
+        </TextBlock>
+
+
+        <TextBlock Grid.Row="12" Grid.Column="1">
+            <Italic>Önnur</Italic> eigin vinna og gjafavinna: Hér skal tilgreina eigin vinnu við íbúðarhúsnæði til eigin afnota, unna í<LineBreak/>
+venjulegum vinnutíma, svo og alla aðra skattskylda vinnu eiganda við húsbyggingu, svo sem við íbúðarh<LineBreak/>
+úsnæði sem ekki er ætlað til eigin afnota, sumarbústaði o.þ.h. Enn fremur verðmæti skiptivinnu í sambandi<LineBreak/>
+við eigin húsbyggingu. Þessar upphæðir ber að telja til tekna í lið 2.3 í ótölusettum reit á framtali.
+        </TextBlock>
+
+        <TextBlock Grid.Row="14" Grid.Column="1">
+            Eigin vinnu við atvinnurekstrarhúsnæði skal tilgreina hér en fjárhæðina ber að telja til tekna á<LineBreak/> rekstrarreikningi.
+        </TextBlock>
+        <TextBlock Grid.Row="16" Grid.Column="1">
+            Ríkisskattstjóri hefur metið til verðs eignaauka sem stafar af eigin vinnu sem lögð var fram á árinu 2004<LineBreak/>
+sem hér segir:<LineBreak/>
+Eigin vinna ófaglærðs manns 645 kr. pr. klst.<LineBreak/>
+Eigin vinna faglærðs manns við iðngrein sína 893 kr. pr. klst. en 645 kr. pr. klst. þegar unnin eru önnur<LineBreak/>
+störf.
+        </TextBlock>
+        <TextBlock Grid.Row="18" Grid.Column="1">
+            Ofangreindar viðmiðunartölur eru fyrst og fremst til leiðbeiningar sem almennt mat er víkja má frá ef<LineBreak/>
+ástæða er til.
+        </TextBlock>
+
+        <TextBlock Grid.Row="20" Grid.Column="1">
+            <Italic>Söluhagnaður</Italic> af íbúðarhúsnæði: Hafi maður selt íbúðarhúsnæði á árinu 2004 með skattskyldum söluhagna<LineBreak/>
+ði skal færa þá fjárhæð í lið L. Sú fjárhæð kemur til lækkunar á heildarkostnaði skv. liðum J-K. Á<LineBreak/>
+sama hátt skal færa frestaðan skattskyldan söluhagnað eða hluta hans frá árinu 2003.
+            
+        </TextBlock>
+
+        <TextBlock Grid.Row="22" Grid.Column="1">
+            Mannvirki (eða einstakir hlutar þess) er metið til fasteignamats á því ári sem það verður fokhelt og aftur<LineBreak/>
+er það verður tilbúið undir tréverk. Eftir það er mannvirkið metið þegar það er tekið í notkun og miðast<LineBreak/>
+matið þá við byggingarstig þess. Ef byggingu er þá ekki fulllokið er matið endurskoðað síðar. Mannvirki,<LineBreak/>
+sem enn er í byggingu en hefur verið metið til fasteignamats á ákveðnu byggingarstigi, skal færa til eignar<LineBreak/>
+í lið 4.1 á framtali á því fasteignamati að viðbættum byggingarkostnaði sem til hefur fallið frá viðkomandi<LineBreak/>
+byggingarstigi til ársloka 2004.
+        </TextBlock>
+    </Grid>
+
+        
+</Page>

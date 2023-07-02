@@ -1,0 +1,332 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0429_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="1250" d:DesignWidth="909">
+    <!--Title="RSK0429_01View">-->
+
+    <Page.Resources>
+        <Style TargetType="{x:Type DataGrid}">            
+            <Setter Property="Grid.ColumnSpan" Value="4" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="HeadersVisibility" Value="Column" />
+            <Setter Property="AutoGenerateColumns" Value="False" />
+        </Style>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>        
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="15"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Column="0" Grid.RowSpan="10" Fill="{StaticResource DarkBrush}"/>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="../Assets/Images/Logo_1.png" Width="216" Height="70" />
+            <TextBlock 
+                Grid.Column="2"
+                FontSize="26"
+                FontWeight="UltraBold"
+                FontFamily="Arial" 
+                Padding="0,4,0,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                TextWrapping="WrapWithOverflow">
+                Greinargerð um aflaverðmæti og rekstrarkostnað fiskiskipa
+            </TextBlock>
+        </Grid>
+        <TextBlock Grid.Row="2" Grid.Column="2"
+                    FontSize="16"                    
+                    FontFamily="Arial" HorizontalAlignment="Right" TextWrapping="Wrap">
+                    Fylgiskjal með skattframtali 2022 hjá lögaðila eða einstaklingi í útgerð.
+                    <LineBreak />
+                    Upplýsingaöflun skv. 5. gr. laga nr. 145/2018 um veiðigjald.
+        </TextBlock>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="Transparent" BorderThickness="1,1,1,0">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" Text="Nafn"/>
+                    <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"></TextBox>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" Background="Transparent" BorderThickness="0,1,1,0">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" Text="Kennitala"/>
+                    <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"></TextBox>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0" Background="Transparent" BorderThickness="1,1,1,1" >
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" Text="Heimilisfang"/>
+                    <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"></TextBox>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Background="Transparent" BorderThickness="0,1,0,1">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" Text="Póstnúmer"/>
+                    <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"></TextBox>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="2" Background="Transparent" BorderThickness="1,1,1,1">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Padding="3 0 0 1" FontSize="{DynamicResource Chapter2PrefixTextFontSize}" Text="Sveitarfélag"/>
+                    <TextBox DockPanel.Dock="Top" Margin="3 0 3 1" BorderThickness="0"></TextBox>
+                </DockPanel>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2" Margin="0,5,0,0">
+            <Grid.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Margin" Value="5,0,0,0" />
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="Skip/bátur" FontSize="13" />
+                <TextBlock Grid.Row="0" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="Skip/bátur" FontSize="13" />
+                <TextBlock Grid.Row="0" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="Skip/bátur" FontSize="13" />
+
+                <Border Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Background="#EAF0ED" />
+                <Border Grid.Row="1" Grid.Column="1" Background="Transparent" BorderThickness="0,1,1,1">
+                    <TextBlock Text="Nafn"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="2" Background="Transparent" BorderThickness="0,1,1,1">
+                    <TextBlock Text="Nafn"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="3" Background="Transparent" BorderThickness="0,1,0,1">
+                    <TextBlock Text="Nafn"/>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="1" Background="Transparent" BorderThickness="0,0,1,1">
+                    <TextBlock Text="Skipaskrárnúmer"/>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="2" Background="Transparent" BorderThickness="0,0,1,1">
+                    <TextBlock Text="Skipaskrárnúmer"/>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="3" Background="Transparent" BorderThickness="0,0,0,1">
+                    <TextBlock Text="Skipaskrárnúmer"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="4" Grid.RowSpan="2" Background="#EAF0ED">
+                    <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,5" Text="Samtals" />
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5"  BorderThickness="1" Background="#C0D8CB">
+                    <TextBlock Text="Tekjur" FontWeight="Bold" VerticalAlignment="Center"  />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Aflaverðmæti" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Aðrar tekjur" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" Background="#C0D8CB">
+                    <TextBlock Text="Tekjur samtals" VerticalAlignment="Center" FontWeight="Bold" />
+                </Border>
+                
+                <DataGrid Grid.Row="4" Grid.Column="1" Grid.RowSpan="3" />
+
+
+
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"  BorderThickness="1" Background="#C0D8CB">
+                    <TextBlock Text="Gjöld" FontWeight="Bold" VerticalAlignment="Center"  />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"  BorderThickness="1" Background="#EAF0ED">
+                    <TextBlock Text="Laun og launatengd gjöld" FontWeight="Bold" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="2.1 Laun af aflahlutum" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="2.2 Önnur laun áhafnar" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Launatengd gjöld v. 2.1 og 2.2" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Laun og launtengd gjöld samtals" FontWeight="Bold" VerticalAlignment="Center" />
+                </Border>
+
+                <DataGrid Grid.Row="2" Grid.Column="1" Grid.RowSpan="4" />
+
+                <Border Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5"  BorderThickness="1" Background="#EAF0ED">
+                    <TextBlock Text="Annar kostnaður" FontWeight="Bold" VerticalAlignment="Center" />
+                </Border>
+                <Border Grid.Row="7" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Skattaleg fyrning skips og skipsbúnaðar á árinu" VerticalAlignment="Center" Margin="15,0,0,0" TextWrapping="Wrap" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Orkukostnaður (Eldsneyti)" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="9" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Viðhaldskostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="10" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Veiðarfærakostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="11" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Frystikostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="12" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Umbúðakostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="13" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Löndunarkostnaður og hafnargjöld" VerticalAlignment="Center" Margin="15,0,0,0" TextWrapping="Wrap" />
+                </Border>
+                <Border Grid.Row="14" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Flutningskostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="15" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Tryggingar" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="16" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Sölukostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="17" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Stjórnunarkostnaður" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="18" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Önnur rekstrargjöld" VerticalAlignment="Center" Margin="15,0,0,0" />
+                </Border>
+                <Border Grid.Row="19" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Samtals annar kostnaður" FontWeight="Bold" VerticalAlignment="Center" />
+                </Border>
+                <Border Grid.Row="20" Grid.Column="0" BorderThickness="1" Background="#C0D8CB">
+                    <TextBlock Text="Gjöld samtals" FontWeight="Bold" VerticalAlignment="Center"  />
+                </Border>
+
+                <DataGrid Grid.Row="7" Grid.Column="1" Grid.RowSpan="13" />
+
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="0.72*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Background="#EAF0ED">
+                    <TextBlock Text="Mismunur (tekjur – gjöld)" FontWeight="Bold" VerticalAlignment="Center" />
+                </Border>
+
+                <DataGrid Grid.Row="0" Grid.Column="1" />
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock FontSize="14"
+                       FontWeight="Bold"
+                       FontFamily="Arial" 
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Bottom" 
+                       Padding="0,0,0,8">
+                RSK 4.01 <Run FontSize="14" FontWeight="Normal" Text="    4-1-2022"/>
+            </TextBlock>
+            <TextBlock Grid.Column="1" 
+                       FontWeight="Bold" 
+                       FontSize="14" 
+                       TextAlignment="Right" 
+                       Text="Sjá skýringar á bakhlið &gt;" />
+        </Grid>
+    </Grid>
+</Page>

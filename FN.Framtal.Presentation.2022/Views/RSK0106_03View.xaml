@@ -1,0 +1,821 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0106_03View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="794"
+    Height="1576"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="19" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="19" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="260" />
+            <RowDefinition Height="260" />
+            <RowDefinition Height="300" />
+            <RowDefinition Height="260" />
+            <RowDefinition Height="140" />
+            <RowDefinition Height="220" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+
+        <Rectangle
+            Grid.Row="0"
+            Grid.RowSpan="30"
+            Grid.Column="0"
+            Margin="0,0,0,-62"
+            Fill="{StaticResource DarkBrush}" />
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="5"
+            VerticalAlignment="Center"
+            FontSize="16px"
+            FontWeight="Bold">
+            Greinargerð um fjármagnstekjur ársins 2021
+        </TextBlock>
+
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="290" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="146" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="DemiBold"
+                Text="1 Vaxtatekjur af verðbréfum og kröfum. Innlendar innstæður."
+                TextWrapping="Wrap" />
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Background="Transparent"
+                BorderThickness="0" />
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                Background="Transparent"
+                BorderThickness="0" />
+            <Border
+                Grid.Row="1"
+                Grid.Column="5"
+                Background="Transparent"
+                BorderThickness="0" />
+
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="7"
+                Background="Transparent"
+                BorderThickness="1,1,1,1">
+                <TextBlock Padding="5,5,0,5" FontSize="10px">
+                    Vaxtatekjur og staðgreiðsla skv. RSK 3.15
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Background="Transparent"
+                BorderThickness="1,1,1,1"
+                DataContext="{Binding RSK106_VEXTIR_INNLENDIR}">
+                <DataGrid
+                    Grid.Row="1"
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T106_VI_SKYRING}"
+                            Header="Skýring" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_VI_R89_STADGREIDSLA}"
+                            Header="Staðgreiðsla af vaxtatekjum" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_VI_R30_VEXTIR}"
+                            Header="Vaxtatekjur" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_VI_EIGN}"
+                            Header="Eign í árslok" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+            <Border
+                Grid.Row="5"
+                Grid.Column="0"
+                Background="{StaticResource LightBrush}"
+                BorderThickness="1,1,1,1">
+                <TextBlock
+                    Padding="5,10,10,5"
+                    FontSize="13px"
+                    FontWeight="DemiBold"
+                    TextAlignment="Right">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="89"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T89}" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="30"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="4"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T30}" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="5"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding TB_04}" />
+            </Border>
+        </Grid>
+
+        <!--  Begin: 2 Gengishagnaður og aðrar vaxtatekjur af kröfum og inneignum í erlendri mynt  -->
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="290" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="146" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="DemiBold"
+                Text="2 Gengishagnaður og aðrar vaxtatekjur af kröfum og inneignum í erlendri mynt"
+                TextWrapping="Wrap" />
+
+
+
+            <Border
+                Grid.Row="2"
+                Grid.RowSpan="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Background="Transparent"
+                BorderThickness="1,1,1,1">
+                <Border
+                    Grid.Row="3"
+                    Grid.RowSpan="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="6"
+                    Background="Transparent"
+                    BorderThickness="1,1,1,1"
+                    DataContext="{Binding RSK106_VEXTIR_ERLENDIR}">
+                    <DataGrid
+                        Grid.Row="1"
+                        AutoGenerateColumns="False"
+                        BorderBrush="Black"
+                        BorderThickness="1,0"
+                        ItemsSource="{Binding}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=KENNITALA}"
+                                Header="Kennitala framteljanda/maka" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=TEKJUAR}"
+                                Header="Tekjuár" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=NR_FRAMTAL}"
+                                Header="Númer framtals" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=LINUNR}"
+                                Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=T106_VE_SKYRING}"
+                                Header="Skýring" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=N106_VE_R91_STADGREIDSLA}"
+                                Header="Staðgreiðsla af vaxtatekjum" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=N106_VE_R31_VEXTIR}"
+                                Header="Vaxtatekjur" />
+                            <DataGridTextColumn
+                                Width="*"
+                                Binding="{Binding Path=N106_VE_EIGN}"
+                                Header="Eign í árslok" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+            </Border>
+
+            <Border
+                Grid.Row="5"
+                Grid.Column="0"
+                Background="{StaticResource LightBrush}"
+                BorderThickness="1,1,1,1">
+                <TextBlock
+                    Padding="5,10,10,5"
+                    FontSize="13px"
+                    FontWeight="DemiBold"
+                    TextAlignment="Right">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="91"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T91}" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="31"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="4"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T31}" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="5"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding TB_05}" />
+            </Border>
+        </Grid>
+        <!--  End : 2 Gengishagnaður og aðrar vaxtatekjur af kröfum og inneignum í erlendri mynt  -->
+
+        <!--  Begin: 3 Hlutabréf og stofnfjárbréf sparisjóða  -->
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="146" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="DemiBold"
+                Text="3 Hlutabréf og stofnfjárbréf sparisjóða"
+                TextWrapping="Wrap" />
+
+
+
+            <Border
+                Grid.Row="2"
+                Grid.RowSpan="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="7"
+                Background="Transparent"
+                BorderThickness="1,1,1,1"
+                DataContext="{Binding RSK106_HLUTABREF_INNLEND}">
+                <DataGrid
+                    Grid.Row="1"
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K106_HI_KENNITALA_FELAGS}"
+                            Header="Kennitala félags" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T106_HI_NAFN_FELAGS}"
+                            Header="Nafn félags" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_HI_R92_STADGREIDSLA}"
+                            Header="Staðgreiðsla af arði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_HI_R32_ARDUR}"
+                            Header="Arður" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_HI_EIGN}"
+                            Header="Eign í árslok" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+
+            <Border
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Background="{StaticResource LightBrush}"
+                BorderThickness="1,1,1,1">
+                <TextBlock
+                    Padding="5,10,10,5"
+                    FontSize="13px"
+                    FontWeight="DemiBold"
+                    TextAlignment="Right">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="92"
+                    TextAlignment="Center" />
+
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T92}" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="4"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="32"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="5"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T32}" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="6"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding TB_06}" />
+            </Border>
+        </Grid>
+        <!--  End : 3 Hlutabréf og stofnfjárbréf sparisjóða  -->
+
+        <!--  Begin: 4 Hlutafé í erlendum hlutafélögum  -->
+        <Grid Grid.Row="5" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="290" />
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="146" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="DemiBold"
+                Text="4 Hlutafé í erlendum hlutafélögum"
+                TextWrapping="Wrap" />
+
+
+            <Border
+                Grid.Row="2"
+                Grid.RowSpan="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                Background="Transparent"
+                BorderThickness="1,1,1,1"
+                DataContext="{Binding RSK106_HLUTABREF_ERLEND}">
+                <DataGrid
+                    Grid.Row="1"
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T106_HU_NAFN_FELAGS}"
+                            Header="Nafn félags" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=R106_HU_LAND}"
+                            Header="Land" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_HU_R36_ARDUR}"
+                            Header="Arður" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N106_HU_EIGN}"
+                            Header="Eign í árslok" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+            <Border
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Background="{StaticResource LightBrush}"
+                BorderThickness="1,1,1,1">
+                <TextBlock
+                    Padding="5,10,10,5"
+                    FontSize="13px"
+                    FontWeight="DemiBold"
+                    TextAlignment="Right">
+                    Samtals
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="36"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T36}" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="4"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding TB_07}" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="5"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding TB_08}" />
+            </Border>
+        </Grid>
+        <!--  End : 4 Hlutafé í erlendum hlutafélögum  -->
+
+        <!--  Begin: 5 Söluhagnaður af hlutabréfum  -->
+        <Grid Grid.Row="6" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500*" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="174" />
+                <ColumnDefinition Width="70" />
+
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="DemiBold"
+                Text="5 Söluhagnaður af hlutabréfum"
+                TextWrapping="Wrap" />
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0">
+                <TextBlock
+                    Padding="5,15,0,5"
+                    FontSize="13px"
+                    TextAlignment="Center">
+                    Söluhagnaður
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                Background="Transparent"
+                BorderThickness="1,1,1,1">
+                <TextBlock Padding="5,10,0,5" FontSize="14px">
+                    Hagnaður af sölu hlutabréfa
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="33"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T33}" />
+            </Border>
+        </Grid>
+        <!--  End : 5 Söluhagnaður af hlutabréfum  -->
+
+        <!--  Begin: 6 Frádráttur  -->
+        <Grid Grid.Row="7" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500*" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="154" />
+                <ColumnDefinition Width="70" />
+
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="DemiBold"
+                Text="6 Frádráttur"
+                TextWrapping="Wrap" />
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Background="Transparent"
+                BorderThickness="0">
+                <TextBlock
+                    Padding="5,15,0,5"
+                    FontSize="13px"
+                    TextAlignment="Center">
+                    Frádráttur
+                </TextBlock>
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                Background="Transparent"
+                BorderThickness="1,1,1,1">
+                <TextBlock Padding="5,10,0,5" FontSize="12px">
+                    Mótreikningur vegna tapaðra fjármagnstekna skv. skýringum í athugasemdakafla
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="34"
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding T34}" />
+            </Border>
+
+            <Border
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Background="{StaticResource LightBrush}"
+                BorderThickness="1,1,1,1">
+                <TextBlock Padding="5,10,0,5" FontSize="13px">
+                    <Run FontWeight="Bold">Fjármagnstekjur samtals</Run>
+                    - færist í reit 0955 á forsíðu</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,0,1">
+                <TextBlock
+                    Padding="0,10,0,5"
+                    FontSize="13px"
+                    Text="="
+                    TextAlignment="Center" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="3"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <controls:NumericTextBox BorderThickness="0" Text="{Binding TB_09}" />
+            </Border>
+        </Grid>
+        <!--  End : 6 Frádráttur  -->
+
+    </Grid>
+</Page>

@@ -1,0 +1,303 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0305_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="1600" 
+      d:DesignWidth="800"
+    Title="RSK0305_01View">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="15"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="700"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="38"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="260"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+                FontWeight="ExtraBlack"
+                FontSize="24"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left">UMSÓKN UM<LineBreak/><Run FontSize="36"> LÆKKUN</Run>
+            </TextBlock>
+
+            <Ellipse Grid.Column="1" 
+                     Width="45" 
+                     Height="45" 
+                     Fill="LightGray"
+                     Stroke="Black"
+                     StrokeThickness="2"
+                     Margin="0,28,0,0"
+                     >
+            </Ellipse>
+            <Label Grid.Column="1"
+                   FontSize="36"
+                   FontWeight="ExtraBlack"
+                   FontFamily="Arial Black"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin="0,28,0,2"
+                   >A</Label>
+            <TextBlock
+                Grid.Column="3"
+                FontSize="12"
+                FontWeight="Black"
+                >
+                Vegna veikinda, mannsláts, framfærslu<LineBreak/>
+                vandamanna, eignatjóns og tapa á<LineBreak />
+                útistandandi kröfum sbr. 65. gr. laga<LineBreak/>
+                nr. 90/2003.
+            </TextBlock>
+
+            <StackPanel Grid.Column="3"
+                        Orientation="Horizontal">
+
+
+            </StackPanel>
+            <TextBlock
+                Grid.Column="3"
+                FontSize="12"
+                FontWeight="Black"
+                VerticalAlignment="Bottom"
+                ><Run Text="Fylgiskjal með skattframtali árið 2005"/></TextBlock>
+
+
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    Text="Nafn umsækjanda"/>
+
+
+            </Border>
+            <TextBox Grid.Row="0" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_01}" />
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    Text="Heimili"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_02}" />
+            <Border Grid.Row="0" Grid.Column="1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    Text="Kennitala"/>
+            </Border>
+
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_03}"/>
+            <Border Grid.Row="1" Grid.Column="1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    Text="Sveitarfélag"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_04}"/>
+        </Grid>
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="20,0,0,0"
+            >
+            Merkið x í viðeigandi reit <CheckBox IsChecked="{Binding CB_01}" /> eftir því hver er ástæða umsóknar og gefið í <Bold>greinargerð á baksíðu </Bold> eyðublaðsins þær upp-<LineBreak/>lýsingar sem beðið er um í hverju tilviki svo og aðrar þær upplýsingar sem þykja skipta máli. Nauðsynlegt er að umbeðin <LineBreak/>
+            gögn fylgi umsókninni.
+        </TextBlock>
+        <Grid Grid.Row="6"
+               Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="98"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0"
+               Grid.Column="1"
+               Content="Umsókn um lækkun á tekjuskattsstofni:"
+               FontSize="15"
+               FontWeight="Bold"
+               />
+            <CheckBox Name="C305_TEKJUSK_MANNSLAT" Grid.Row="1"
+                       Grid.Column="1"
+                      Margin="0,10,0,0"
+                      IsChecked="{Binding C305_TEKJUSK_MANNSLAT}">
+                <TextBlock 
+                       
+                >
+               <Bold>1. Vegna mannsláts.</Bold><LineBreak/><LineBreak/>
+                a) Nafn og kennitala hins látna og andlátsdagur.<LineBreak/>
+                b) Áætlaðar tekjur, bætur og styrkir umsækjanda á yfirstandandi ári.
+
+                </TextBlock>
+            </CheckBox>
+            <CheckBox Name="C305_TEKJUSK_VEIKINDA" Grid.Row="2"
+                       Grid.Column="1"
+                      IsChecked="{Binding C305_TEKJUSK_VEIKINDA}"
+                      >
+                <TextBlock 
+                       
+                >
+                <Bold>2. Vegna veikinda, slysa eða ellihrörleika.</Bold><LineBreak/><LineBreak/>
+                a) Útgjöld umfram venjulegan kostnað og í hverju fólgin.<LineBreak/>
+                b) Málsatvik varðandi veikindi eða slys og hve lengi má ætla að afleiðingar þeirra vari.<LineBreak/>
+                c) Áætlaðar tekjur, bætur og styrkir umsækjanda á yfirstandandi ári.<LineBreak/>
+                d) Læknisvottorð fylgi.
+
+
+                </TextBlock>
+            </CheckBox>
+            <CheckBox Name="C305_BARNS" Grid.Row="3"
+                       Grid.Column="1"
+                      IsChecked="{Binding C305_BARNS}"
+                      >
+                <TextBlock        
+                >
+               <Bold>3. Vegna barns sem haldið er langvinnum sjúkdómi, er fatlað eða vangefið og er á framfæri umsækjanda.</Bold><LineBreak/><LineBreak/>
+a) Nafn barns, kennitala og dvalarstaður.<LineBreak/>
+b) Útgjöld umfram venjulegan framfærslukostnað og í hverju fólgin.<LineBreak/>
+c) Bætur og styrkir vegna barnsins á yfirstandandi ári.<LineBreak/>
+d) Læknisvottorð fylgi eða staðfesting stofnunar þar sem barnið dvelur.
+
+                </TextBlock>
+
+            </CheckBox>
+            <CheckBox Name="C305_FORELDRA" Grid.Row="4"
+                       Grid.Column="1"
+                      IsChecked="{Binding C305_FORELDRA}"
+                      >
+                <TextBlock        
+                >
+               <Bold> 4. Vegna foreldra eða annarra vandamanna á framfæri umsækjanda.</Bold><LineBreak/><LineBreak/>
+                a) Nafn, kennitala og lögheimili vandamanns.<LineBreak/>
+                b) Útgjöld af þessum ástæðum og í hverju þau eru fólgin.<LineBreak/>
+                c) Tekjur, bætur og styrkir vandamanns á síðasta ári.<LineBreak/>
+                d) Greiðslur sem umsækjandi fær til framfærslu vandamanns.
+
+
+                </TextBlock>
+            </CheckBox>
+
+
+            <CheckBox Name="C305_EIGNATJONS" Grid.Row="5"
+                       Grid.Column="1"
+                      IsChecked="{Binding C305_EIGNATJONS}"
+                      >
+                <TextBlock        
+                >
+             <Bold>5.Vegna eignatjóns sem umsækjandi hefur orðið fyrir.</Bold><LineBreak/><LineBreak/>
+                a) Tegund eignar og eignartími<LineBreak/>
+                b) Hvaða tjón varð á eigninni og hvenær það varð<LineBreak/>
+                c) Heildarskaði af völdum tjónsins og fjárhæð tjónabóta<LineBreak/>
+
+
+
+                </TextBlock>
+
+
+
+            </CheckBox>
+
+            <CheckBox Name="C305_TAPA_UTIST_KRAFNA" Grid.Row="6"
+                       Grid.Column="1"
+                      IsChecked="{Binding C305_TAPA_UTIST_KRAFNA}"
+                      >
+                <TextBlock        
+                >
+                6.<Bold> Vegna tapa á útistandandi kröfum sem ekki stafa af atvinnurekstri.</Bold><LineBreak/><LineBreak/>
+                    a) Hvenær lánið var veitt eða í ábyrgð gengið og af hvaða ástæðum.<LineBreak/>
+                    b) Nafn lántakanda kennitala og lögheimili.<LineBreak/>
+                    c) Leggja þarf fram vottorð og gögn sem staðfesta að útlán sé tapað eða ábyrgð fallin án möguleika til endurkröfu.<LineBreak/>
+
+
+
+
+                </TextBlock>
+            </CheckBox>
+            <TextBlock Grid.Row="7"
+                       Grid.Column="2"
+                       Margin="15,0,0,0">
+                   <Bold> Umsókn um lækkun á eignarskattsstofni</Bold>
+            </TextBlock>
+            <CheckBox Name="C305_EIGNSK_MANNSLAT" Grid.Row="8"
+                      Grid.Column="2"
+                      IsChecked="{Binding C305_EIGNSK_MANNSLAT}"
+                      >
+                <TextBlock><Bold>7. Vegna mannsláts, sbr. 1. tl. að ofan.</Bold></TextBlock>
+            </CheckBox>
+
+            <CheckBox Name="C305_EIGNSK_VEIKINDA" Grid.Row="9"
+                      Grid.Column="2"
+                      IsChecked="{Binding C305_EIGNSK_VEIKINDA}">
+                <TextBlock><Bold>8. Vegna veikinda, slysa eða ellihrörleika sbr. 2. tl. að ofan.</Bold></TextBlock>
+            </CheckBox>
+
+        </Grid>
+
+        <TextBlock
+            Grid.Row="8"
+               Grid.Column="1"
+               Grid.ColumnSpan="2">
+            Greinargerð fyrir umsókn um lækkun á tekjuskattsstofni og/eða eignarskattsstofni skv. tölulið(um)<controls:IntegerControl Name="T305_TOLULIDIR" Width="40" VerticalAlignment="Bottom" /> hér að framan
+        </TextBlock>
+        <controls:TextBoxWithDescription Name="M305_GREINARGERD" Grid.Row="9"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+                                         Text="{Binding M305_GREINARGERD}"></controls:TextBoxWithDescription>
+        <TextBlock
+            Grid.Row="10"
+               Grid.Column="1"
+               Grid.ColumnSpan="2" Margin="0,9,0,0">
+            Meðfylgjandi eru eftirtalin vottorð og gögn
+        </TextBlock>
+        <controls:TextBoxWithDescription Grid.Row="11"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+                                         Text="{Binding TB_05}"></controls:TextBoxWithDescription>
+    </Grid>
+</Page>

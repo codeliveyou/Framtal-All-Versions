@@ -1,0 +1,1154 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0408_04View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="RSK0408_04View"
+    d:DesignHeight="1320"
+    d:DesignWidth="910"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="210" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="210" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="300" />
+            <RowDefinition Height="60" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Rectangle Grid.RowSpan="13" Grid.Column="0" />
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                FontFamily="Arial"
+                FontSize="18"
+                FontWeight="UltraBold">
+                Efnahagsreikningur 31. desember 2004
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="320" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="EIGNIR" />
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="1"
+                Background="{DynamicResource MediumBrush}">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    Staðgreiðsla af<LineBreak />
+                    fjármagnstekjum</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="2"
+                Background="{DynamicResource MediumBrush}">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    Vextir og<LineBreak />
+                    verðbætur</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="3"
+                Background="{DynamicResource MediumBrush}">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    31.12.2004
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.Column="4"
+                Background="{DynamicResource MediumBrush}">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    31.12.2003
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    1 Sjóður, bankainnstæður og annað reiðufé
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    2 Birgðir skv. birgðatöflu
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    3 Viðskiptakröfur
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    4 Verðbréf og aðrar peningalegar eignir
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    5 Eignahlutir í félögum
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    6 Bústofn skv. bls. 6
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="7" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    7 Eignir skv. eignaskrá RSK 4.01
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="8" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    8 Aðrar eignir, tilgreina
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="9" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    9
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="9"
+                Margin="215,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Eignir samtals
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_SJODIR_FE_STADGREIDSLA"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_SJODIR_FE_STADGREIDSLA}" />
+            <controls:IntegerControl
+                Name="N408_SJODIR_FE_VEXTIR"
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_SJODIR_FE_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_SJODIR_FE_EIGNIR"
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_SJODIR_FE_EIGNIR}" />
+            <controls:IntegerControl
+                Grid.Row="1"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_01}" />
+
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="1"
+                Value="{Binding NTB_02}" />
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="2"
+                Value="{Binding NTB_03}" />
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Name="N408_BIRGDIR_SKV_BIRGDATOFLU"
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BIRGDIR_SKV_BIRGDATOFLU}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_04}" />
+
+            <Border Grid.Row="3" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_VIDSKIPTAK_STADGREIDSLA"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_VIDSKIPTAK_STADGREIDSLA}" />
+            <controls:IntegerControl
+                Name="N408_VIDSKIPTAK_VEXTIR"
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_VIDSKIPTAK_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_VIDSKIPTAK_EIGNIR"
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_VIDSKIPTAK_EIGNIR}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_05}" />
+
+            <Border Grid.Row="4" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_PENINGAL_STADG"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_PENINGAL_STADG}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_PENINGAL_VEXTIR"
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_PENINGAL_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_PENINGAL_EIGNIR"
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_PENINGAL_EIGNIR}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_06}" />
+
+            <Border Grid.Row="5" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_EIGNARHLUTIR_STADG"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_EIGNARHLUTIR_STADG}" />
+            <controls:IntegerControl
+                Name="N408_EIGNARHLUTIR_VEXTIR"
+                Grid.Row="5"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_EIGNARHLUTIR_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_EIGNARHLUTIR_EIGNIR"
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_EIGNARHLUTIR_EIGNIR}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_07}" />
+
+            <Border Grid.Row="6" Grid.Column="1" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="1"
+                Value="{Binding NTB_08}" />
+            <Border
+                Grid.Row="6"
+                Grid.Column="1"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="2"
+                Value="{Binding NTB_09}" />
+            <Border
+                Grid.Row="6"
+                Grid.Column="2"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Name="N408_BUSTOFN_SKV_BUSTOFNSS"
+                Grid.Row="6"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BUSTOFN_SKV_BUSTOFNSS}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_010}" />
+
+            <Border Grid.Row="7" Grid.Column="1" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="1"
+                Value="{Binding NTB_011}" />
+            <Border
+                Grid.Row="7"
+                Grid.Column="1"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="2"
+                Value="{Binding NTB_012}" />
+            <Border
+                Grid.Row="7"
+                Grid.Column="2"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Name="N408_EIGNIR_SKV_EIGNASKRA"
+                Grid.Row="7"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_EIGNIR_SKV_EIGNASKRA}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_013}" />
+
+            <Border
+                Grid.Row="8"
+                Grid.Column="1"
+                Background="{DynamicResource MediumBrush}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_EIGNIR_STADGREIDSLA"
+                Grid.Row="8"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_EIGNIR_STADGREIDSLA}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_EIGNIR_VEXTIR"
+                Grid.Row="8"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_EIGNIR_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_EIGNIR_EIGNIR"
+                Grid.Row="8"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_EIGNIR_EIGNIR}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_014}" />
+
+            <Border Grid.Row="9" Grid.Column="1" />
+            <Border Grid.Row="9" Grid.Column="2" />
+            <Border Grid.Row="9" Grid.Column="3" />
+            <Border Grid.Row="9" Grid.Column="4" />
+            <controls:IntegerControl
+                Name="N408_EIGNIR_SAMT_STADGREIDSLA"
+                Grid.Row="9"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_EIGNIR_SAMT_STADGREIDSLA}" />
+            <controls:IntegerControl
+                Name="N408_EIGNIR_SAMT_VEXTIR"
+                Grid.Row="9"
+                Grid.Column="2"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_EIGNIR_SAMT_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_EIGNIR_SAMT_SAMTALS"
+                Grid.Row="9"
+                Grid.Column="3"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_EIGNIR_SAMT_SAMTALS}" />
+            <controls:IntegerControl
+                Grid.Row="9"
+                Grid.Column="4"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding NTB_015}" />
+
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="440" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="SKULDIR" />
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    10 Lánasjóður landbúnaðarins
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    11 Skuldir við aðrar lánastofnanir
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    12 Viðskiptaskuldir
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    13 Ógreiddur virðisaukaskattur
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    14 Aðrar skuldir, tilgreina
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="18" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    15
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="18"
+                Margin="210,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Skuldir samtals
+                </TextBlock>
+            </Border>
+
+            <controls:IntegerControl
+                Name="N408_LANASJODUR_LANDB_VEXTIR"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_LANASJODUR_LANDB_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_LANASJODUR_LANDB_SKULDIR"
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_LANASJODUR_LANDB_SKULDIR}" />
+            <controls:IntegerControl
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_016}" />
+
+            <controls:IntegerControl
+                Name="N408_SKULDIR_LANAS_VEXTIR"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_SKULDIR_LANAS_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_SKULDIR_LANAS_SKULDIR"
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_SKULDIR_LANAS_SKULDIR}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_017}" />
+
+            <controls:IntegerControl
+                Name="N408_VIDSKIPTASKULDIR_VEXTIR"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_VIDSKIPTASKULDIR_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_VIDSKIPTASKULDIR_SKULDIR"
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_VIDSKIPTASKULDIR_SKULDIR}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_018}" />
+
+            <controls:IntegerControl
+                Name="N408_OGREIDDUR_VSK_VEXTIR"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_OGREIDDUR_VSK_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_OGREIDDUR_VSK_SKULDIR"
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_OGREIDDUR_VSK_SKULDIR}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_019}" />
+
+            <controls:IntegerControl
+                Name="N408_ADRAR_SKULDIR_VEXTIR"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_SKULDIR_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_ADRAR_SKULDIR_SKULDIR"
+                Grid.Row="5"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_SKULDIR_SKULDIR}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_020}" />
+
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="1"
+                Value="{Binding NTB_021}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="2"
+                Value="{Binding NTB_022}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="3"
+                Value="{Binding NTB_023}" />
+
+            <Border Grid.Row="7" Grid.Column="1" />
+            <Border Grid.Row="7" Grid.Column="2" />
+            <Border Grid.Row="7" Grid.Column="3" />
+            <controls:IntegerControl
+                Name="N408_SKULDIR_SAMTALS_VEXTIR"
+                Grid.Row="7"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_SKULDIR_SAMTALS_VEXTIR}" />
+            <controls:IntegerControl
+                Name="N408_SKULDIR_SAMTALS_SKULDIR"
+                Grid.Row="7"
+                Grid.Column="2"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_SKULDIR_SAMTALS_SKULDIR}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="3"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding NTB_024}" />
+
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="560" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="EIGIÐ FÉ" />
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    16 Eigið fé í ársbyrjun (mismunur eigna og skulda frá fyrra ári)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    17 Hagnaður (+)/tap af rekstri (-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    18 Reiknað endurgjald (+)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    19 Úttekt (-) / framlag (+) eiganda
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    20 Aðrar breytingar á eigin fé (+/-)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="18" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    21
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="18"
+                Margin="115,0,0,0"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Eigið fé í árslok (mismunur eigna og skulda +/-)
+                </TextBlock>
+            </Border>
+
+            <controls:IntegerControl
+                Name="N408_EIGID_FE_ARSBYRJUN"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_EIGID_FE_ARSBYRJUN}" />
+            <controls:IntegerControl
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_025}" />
+
+            <controls:IntegerControl
+                Name="N408_HAGNADUR_TAP"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_HAGNADUR_TAP}" />
+            <controls:IntegerControl
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_026}" />
+
+            <controls:IntegerControl
+                Name="N408_REIKNAD_ENDURGJALD_2"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_REIKNAD_ENDURGJALD_2}" />
+            <controls:IntegerControl
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_027}" />
+
+            <controls:IntegerControl
+                Name="N408_UTTEKT_FRAMLAG"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_UTTEKT_FRAMLAG}" />
+            <controls:IntegerControl
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_028}" />
+
+            <controls:IntegerControl
+                Name="N408_ADRAR_BREYTINGAR_EIGID_FE"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_ADRAR_BREYTINGAR_EIGID_FE}" />
+            <controls:IntegerControl
+                Grid.Row="5"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_029}" />
+
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_030}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="2"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_031}" />
+
+            <Border Grid.Row="7" Grid.Column="1" />
+            <Border Grid.Row="7" Grid.Column="2" />
+            <controls:IntegerControl
+                Name="N408_EIGID_FE_SAMTALS"
+                Grid.Row="7"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_EIGID_FE_SAMTALS}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="2"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding NTB_032}" />
+
+        </Grid>
+        <Grid Grid.Row="8" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="560" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                BorderThickness="0,0,0,0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Text="SKATTALEGAR FÆRSLUR / LEIÐRÉTTINGAR Á EIGN" />
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    22 Niðurfærsla viðskiptakrafna
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    23 Niðurfærsla birgða
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    24 Bókfært verð fasteigna (húsa, lands og ræktunar) skv. eignaskrá RSK 4.01
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    25 Ómetnar framkvæmdir skv. eignaskrá RSK 4.01
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    26 Fasteignamat húsa, lands, hlunninda og ræktunar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    27 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="7" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    28 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="8" Grid.Column="0">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    29 Aðrar leiðréttingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="9"
+                Grid.Column="0"
+                Background="{DynamicResource MediumBrush}">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold">
+                    30
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="9"
+                Margin="285,0,0,0"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Padding="3,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Hrein eign / skuldir umfram eignir (+/-)
+                </TextBlock>
+            </Border>
+
+            <controls:IntegerControl
+                Name="N408_NIDURFAERSLA_VIDSKIPTAK"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_NIDURFAERSLA_VIDSKIPTAK}" />
+            <controls:IntegerControl
+                Name="N408_NIDURFAERSLA_BIRGDA"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_NIDURFAERSLA_BIRGDA}" />
+            <controls:IntegerControl
+                Name="N408_BOKFAERTVERD_FASTEIGNA"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_BOKFAERTVERD_FASTEIGNA}" />
+            <controls:IntegerControl
+                Name="N408_OMETNAR_FRAMKVAEMDIR"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_OMETNAR_FRAMKVAEMDIR}" />
+            <controls:IntegerControl
+                Name="N408_FASTEIGNIR_FASTEIGNAMAT"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding N408_FASTEIGNIR_FASTEIGNAMAT}" />
+            <controls:IntegerControl
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_033}" />
+            <controls:IntegerControl
+                Grid.Row="7"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_034}" />
+            <controls:IntegerControl
+                Grid.Row="8"
+                Grid.Column="1"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Value="{Binding NTB_035}" />
+            <Border Grid.Row="9" Grid.Column="1" />
+            <controls:IntegerControl
+                Name="N408_HREIN_EIGN_SKULD_UMFR_EIG"
+                Grid.Row="9"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Center"
+                Content="="
+                FontWeight="Black"
+                Value="{Binding N408_HREIN_EIGN_SKULD_UMFR_EIG}" />
+
+        </Grid>
+        <Grid Grid.Row="10" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Column="0"
+                Padding="0,0,0,8"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontFamily="Arial"
+                FontSize="14"
+                FontWeight="Normal">
+                Bls. 4
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Page>

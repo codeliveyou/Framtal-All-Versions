@@ -1,0 +1,996 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2004.Views.RSK0112_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+         Width="794"
+        Height="1126"
+        mc:Ignorable="d"
+      d:DesignHeight="1126" d:DesignWidth="794"
+      Title="RSK0112_01View">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="140"/>
+
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="300" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="250" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0" Grid.RowSpan="18" Fill="{StaticResource DarkBrush}"/>
+
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                FontSize="12" FontWeight="DemiBold"
+                >Framteljandi
+            </TextBlock>
+            <StackPanel Grid.Column="2" VerticalAlignment="Bottom">
+                <TextBlock FontSize="10" Margin="0,0,0,5"
+                    >setjið X í viðeigandi reit
+                </TextBlock>
+                <CheckBox FontSize="8.5" Margin="0,0,0,0"
+                    >Sérskýrsla eins eiganda
+                </CheckBox>
+            </StackPanel>
+            <CheckBox FontSize="8" Grid.Column="4" VerticalAlignment="Bottom" >
+                Sameiginleg skýrsla margra eigenda
+            </CheckBox>
+            <TextBlock
+                Grid.Column="5"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                FontSize="32"
+                FontWeight="ExtraBold"
+                TextAlignment="Right"
+                >
+                Húsbyggingarskýrsla
+
+                <LineBreak />
+                <Run FontSize="15" FontWeight="Bold" >Fylgiskjal með skattframtali 2005</Run>
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Column="2" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400" />
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="0">
+                <TextBlock
+                    Padding="3 0 0 0"
+                    Text="Nafn" />
+            </Border>
+
+            <Border
+                Grid.Column="0"
+                Grid.Row="1">
+                <TextBlock
+                    Padding="3 0 0 0"
+                    Text="Heimili" />
+            </Border>
+
+            <Border
+                Grid.Column="2"
+                Grid.Row="0"
+                >
+                <Border 
+                Background="{DynamicResource LightBrush}"
+                Margin="10,20,0,5"
+                Grid.Column="2"
+                Grid.Row="0" >
+
+                    <StackPanel Orientation="Horizontal" >
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+                        <controls:WhiteContentWithDescription Margin="2,8,0,8" Width="20"/>
+
+                    </StackPanel>
+                </Border>
+            </Border>
+            <TextBlock 
+                Grid.Column="2"
+                Grid.Row="0"
+                Margin="10,0,0,0">
+                    Kennitala
+            </TextBlock>
+            <Border 
+                Grid.Column="1"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                
+                >
+
+                <TextBlock
+                    Padding="3 0 0 0"
+                    Text="Sveitarfélag" >
+
+                </TextBlock>
+            </Border>
+        </Grid>
+        <TextBlock 
+            Grid.Column="2" 
+            Grid.Row="4"
+            FontSize="12" 
+            FontWeight="DemiBold">
+            Upplýsingar um fasteign
+        </TextBlock>
+        <Grid Grid.Column="2" Grid.Row="5">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="290"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border >
+                <TextBlock
+                    Padding="3 0 0 0">
+                    Staðsetning eignar
+
+                </TextBlock>
+            </Border>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Border>
+                    <TextBlock
+                    Padding="3 0 0 0">
+                    Bygging hófst<LineBreak/>
+                    eða hvenær keypt
+
+                    </TextBlock>
+                </Border>
+
+                <Border Grid.Column="1">
+                    <TextBlock
+                    Padding="3 0 0 0">
+                    Byggingu lauk
+
+                    </TextBlock>
+                </Border>
+
+                <Border Grid.Column="2">
+                    <TextBlock
+                    Padding="3 0 0 0"
+                        >
+                    Húsnæði tekið <LineBreak/>
+                    í notkun
+                    </TextBlock>
+                </Border>
+
+            </Grid>
+
+            <Border Grid.Column="1">
+                <TextBlock
+                    Padding="3 0 0 0">
+                    Byggingarstig í árslok (sjá skýringar)
+
+                </TextBlock>
+            </Border>
+
+            <Grid Grid.Column="1" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border>
+                    <Label FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >%</Label>
+                </Border>
+                <Border Grid.Column="1">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="20" Margin="5,0,0,0" >
+                        <Run>m</Run>
+                        <Run Typography.Variants="Superscript">2</Run>
+                    </TextBlock>
+
+                </Border>
+                <Border Grid.Column="2">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="20" Margin="5,0,0,0" >
+                        <Run>m</Run>
+                        <Run Typography.Variants="Superscript">3</Run>
+                    </TextBlock>
+
+                </Border>
+            </Grid>
+            <Border Grid.Column="3" >
+                <TextBlock
+                    Padding="3 0 0 0">
+                    Tegund byggingar
+
+                </TextBlock>
+            </Border>
+            <StackPanel Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Bottom">
+                <CheckBox Margin="5,0,0,0">Fjölbýlishús</CheckBox>
+                <CheckBox Margin="15,0,0,0">Raðhús</CheckBox>
+            </StackPanel>
+            <Border Grid.Column="3" Grid.Row="1"  BorderThickness="1,0,1,1">
+                <TextBlock Padding="3 0 0 0" VerticalAlignment="Bottom" Margin="5,0,0,0" >
+                    Annað
+                </TextBlock>
+            </Border>
+            <StackPanel Grid.Column="3" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,10,0,0">
+                <CheckBox Margin="5,0,0,0">Einbýlishús</CheckBox>
+                <CheckBox Margin="15,0,0,0">Atvinnuhúsnæði
+
+                </CheckBox>
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Column="2" Grid.RowSpan="1" Grid.Row="7">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                >Sundurliðun kostnaðar arsins
+            </TextBlock>
+            <TextBlock Grid.Column="3"
+                >Sundurliðun heildarkostnaðar
+            </TextBlock>
+
+
+        </Grid>
+        <Grid Grid.Column="2"  Grid.Row="8">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="350"/>
+
+
+            </Grid.ColumnDefinitions>
+
+            <Border></Border>
+            <Grid Grid.Column="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="18"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="3" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >Krónur
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="1"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           FontWeight="DemiBold"
+                           Margin="10,0,0,0"
+                           >A  Samkvaemt sendum launamiðum
+                </TextBlock>
+
+
+
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="2"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="18,0,0,0"            
+                           >Trésmíði . . . . . . . . . . . . . . . . . . . . . . . .
+                </TextBlock>
+
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="3"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="18,0,0,0"            
+                           >Múrverk . . . . . . . . . . . . . . . . . . . . . . . .
+                </TextBlock>
+
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="4"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="18,0,0,0"            
+                           >Pípulagnir . . . . . . . . . . . . . . . . . . . . . .
+                </TextBlock>
+
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="5"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="18,0,0,0"            
+                           >Raflagnir . . . . . . . . . . . . . . . . . . . . . . .
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="6"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="18,0,0,0"            
+                           >Málun . . . . . . . . . . . . . . . . . . . . . . . . . .
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="7"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8" 
+                           Margin="18,0,0,0"            
+                           >Teikningar . . . . . . . . . . . . . . . . . . . . . .
+                </TextBlock>
+                <TextBlock Grid.Row="8"
+                           Grid.Column="0"                          
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0" >
+                   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+                <TextBlock Grid.Row="9"
+                           Grid.Column="0"
+                           VerticalAlignment="Bottom"
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0">
+                    
+                    B Keypt byggingarefni <Run FontWeight="Normal" Text=". . . . . . . . . . ."></Run>
+                </TextBlock>
+                <TextBlock Grid.Row="10"
+                           Grid.Column="0"
+                           FontSize="6"
+                           Margin="16,0,10,0" >(Tegund efnis sundurliðist á bakhlið)
+                </TextBlock>
+                <TextBlock Grid.Row="11"
+                           Grid.Column="0"
+                           VerticalAlignment="Bottom"
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0">
+                    
+                    C Annar byggingarkostnaður
+                </TextBlock>
+                <TextBlock Grid.Row="12"
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0">
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+                <TextBlock Grid.Row="13"
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0">
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+                <TextBlock Grid.Row="14"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           VerticalAlignment="Bottom"
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0">
+                    
+                    D Aukavinna við eigin íbúð  <Run FontWeight="Normal" FontSize="6">(Sjá skýringar á bakhlið)</Run>
+                </TextBlock>
+                <TextBlock Grid.Row="15"
+                           Grid.Column="0"
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0">
+                    _ _ _ _ _ _ _ _ _ _ klst @_ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+                <TextBlock Grid.Row="16"
+                           Grid.Column="0"
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0">
+                    _ _ _ _ _ _ _ _ _ _ klst @_ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+                <TextBlock Grid.Row="17"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           VerticalAlignment="Bottom"
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0">
+                    
+                    E Önnur eigin vinna og gjafavinna
+                </TextBlock>
+                <TextBlock Grid.Row="18"
+                           Grid.Column="0"
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0">
+                    _ _ _ _ _ _ _ _ _ _ klst @_ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+                <TextBlock Grid.Row="19"
+                           Grid.Column="0"
+                           VerticalAlignment="Top" 
+                           FontSize="8" 
+                           Margin="10,0,0,0">
+                    _ _ _ _ _ _ _ _ _ _ klst @_ _ _ _ _ _ _ _ _ _ _ _ _
+                </TextBlock>
+
+
+
+
+                <TextBlock Grid.Row="2" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="3" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="4" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="5" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="5" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="6" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="7" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="8" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="9" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="11" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="12" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="13" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="15" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="16" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="18" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="19" 
+                           Grid.Column="4"
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+
+                <TextBlock Grid.Row="20"
+                           Grid.ColumnSpan="4"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"
+                           FontSize="10"
+                           FontWeight="Black">
+                    Samtals
+                </TextBlock>
+
+            </Grid>
+            <Border Grid.Column="2"></Border>
+            <Grid Grid.Column="2" Grid.Row="8" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="3" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           >Krónur
+                </TextBlock>
+
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="1"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >F  Kaupverð húsnæðis i smiðum,<LineBreak/> keypt á arinu <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="2"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >G  Hlutdeild i sameiginlegum <LineBreak/> byggingarkostnaði <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="3"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="7"
+                           Margin="10,0,0,0"
+                           >(Fært af sameiginlegri húsbyggingarskýrslu)
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="4"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >H  Serkostnaður eiganda, p.e. liðir <LineBreak/> A til E samtals <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="5"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >I  Endurgreiðsla VSK <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="6"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >J  Kostnaður alls á árinu <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="7"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >K  Heildarkostður frá fyrra ári <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="8"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           FontWeight="Bold"
+                           Margin="10,0,0,0"
+                           >L  Söluhagnaður <Run FontWeight="Normal">. . . . . . . . . . . . </Run>
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="9"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="7"
+                           Margin="10,0,0,0"
+                           >(Sjá skýringar á bakhlið)
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="10"                           
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           FontWeight="DemiBold"
+                           Margin="10,0,0,0"
+                           >Stofnkostnaður  samtals
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="11"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           Margin="10,0,0,0"
+                           >Á framtal í tölulið 4.1 færist:
+
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="12"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           Margin="10,0,0,0"
+                           >A) Fasteignamat húss og lóðar<LineBreak />31.12. 2004<Run >. . . . . . . . . . . . . . . . . </Run>
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="13"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           Margin="10,0,0,0"
+                           >b) Ómetinn byggingarkostnaður
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="14"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top" 
+                           FontSize="7"
+                           Margin="10,0,0,0"
+                           > (Sjá skýringar á bakhlið)<Run >    . . . . . . . . . . . . .</Run>
+                </TextBlock>
+                <TextBlock Grid.Column="0" 
+                           Grid.Row="15"                           
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Bottom" 
+                           FontSize="8"
+                           Margin="10,0,0,0"
+                           >Samtals í tölulið 4.1 <Run >    . . . . . . . . . . . . .</Run>
+                </TextBlock>
+                <TextBlock Grid.Row="1" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >+<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="2" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >+<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="4" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >+<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="5" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >÷<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="6" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >=<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="7" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >+<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="8" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >÷<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="10" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           
+                           >=<LineBreak/><Run>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</Run>
+
+                </TextBlock>
+                <TextBlock Grid.Row="12" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="14" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+                <TextBlock Grid.Row="15" 
+                           Grid.Column="2"
+                           VerticalAlignment="Bottom" 
+                           FontSize="7"
+                           >_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                </TextBlock>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Column="2" Grid.Row="9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Padding="3,0,0,0"
+                VerticalAlignment="Bottom"
+                FontWeight="Black">
+                Skipting kostnaðar ársins á eigendur ef skýrsla er sameiginleg
+            </TextBlock>
+            <Border Grid.Column="1" Background="LightGray" Margin="40,5,5,10">
+                <TextBlock FontSize="8"
+                    >Hver eigandi færir í G-lið húsbyggingarskýrslu hlutdeild sína skv. þessum dálki
+                </TextBlock>
+            </Border>
+            <Polygon Points="20,5 0,5, 10,15" 
+                     Grid.Column="1"
+                     Stroke="Black" 
+                     Fill="Black" Margin="260,15,0,0" />
+
+        </Grid>
+        <Grid Grid.Row="10" Grid.Column="2" >
+            <DataGrid IsReadOnly="true" 
+                      CanUserAddRows="True" 
+                      CanUserDeleteRows="True"
+                      AutoGenerateColumns="False"
+                      RowHeaderWidth="50">
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="Nafn" Width="220"/>
+                    <DataGridTextColumn Header="Kennitala" Width="140"/>
+                    <DataGridTextColumn Header="Eignarhlutfall" Width="90"/>
+                    <DataGridTextColumn Header="Hlutdeild hvers eiganda
+í byggingarkostnaði">
+
+                    </DataGridTextColumn>
+
+                    <DataGridTextColumn/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="11"
+            Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="360"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="1">
+                <TextBlock
+                    FontSize="7.5"
+            VerticalAlignment="Bottom"
+            FontWeight="DemiBold"
+              >
+            Samtals, sbr. liði A-E að ofan
+
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="3"/>
+
+        </Grid>
+
+        <Grid Grid.Row="12" Grid.Column="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock VerticalAlignment="Bottom"> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</TextBlock>
+            <TextBlock  Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="8" >Dagsetning</TextBlock>
+
+            <TextBlock Grid.Column="2" VerticalAlignment="Bottom"> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</TextBlock>
+            <TextBlock Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="8" Width="100" >Undirskrift</TextBlock>
+
+            <Border Grid.Column="3" 
+                    BorderThickness="0" 
+                    Background="LightGray" 
+                    Margin="10">
+                <TextBlock Text="Kynnið ykkur vandlega skýringar á bakhlið" FontSize="8" FontWeight="Black"/>
+            </Border>
+        </Grid>
+        <Label
+            Content="RSK 3.03"
+            Grid.Column="1" 
+            Grid.Row="13"
+            FontWeight="Black" Grid.ColumnSpan="2" Height="35"
+            >
+            <Label.RenderTransform>
+                <RotateTransform Angle="270"/>
+            </Label.RenderTransform>
+        </Label>
+        <Label
+            Content="0502 * 28.000 ISAFOLDPRENTSMIDJA EHF"
+            Grid.Column="1" 
+            Grid.Row="11"
+             Grid.ColumnSpan="2" Height="35"
+            VerticalAlignment="Bottom"
+            FontSize="8"
+            >
+            <Label.RenderTransform>
+                <RotateTransform Angle="270"/>
+            </Label.RenderTransform>
+        </Label>
+
+
+
+
+    </Grid>
+</Page>

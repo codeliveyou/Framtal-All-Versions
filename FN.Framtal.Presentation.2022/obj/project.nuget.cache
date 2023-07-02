@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xibQFhFTYdjDMnk4B/lkRKZ9A7PPzvCO2O+b/dhWqkpiss8v2GRmbIaJOAzFwBKG+qR8YOhAQ8ey5ickTwxOEA==",
+  "success": true,
+  "projectFilePath": "E:\\Firmanet\\FN.Framtal\\FN.Framtal.Presentation.2022\\FN.Framtal.Presentation.2022.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

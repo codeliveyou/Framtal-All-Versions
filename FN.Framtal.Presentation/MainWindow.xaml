@@ -1,0 +1,48 @@
+﻿<Window
+    x:Class="FN.Framtal.Presentation.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    Title="MainWindow"
+    Width="525"
+    Height="350"
+    Icon="App.ico">
+    <Grid>
+        <syncfusion:DockingManager x:Name="DockingManager1">
+
+            <syncfusion:DockingManager.AwlButtonTemplate>
+
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+
+                    <Border x:Name="Border1">
+
+                        <TextBlock
+                            x:Name="Text1"
+                            Foreground="White"
+                            Text="PinButton" />
+
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsMouseOver" Value="True">
+
+                            <Setter TargetName="Border1" Property="Background" Value="Black" />
+
+                            <Setter TargetName="Text1" Property="Foreground" Value="Red" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </syncfusion:DockingManager.AwlButtonTemplate>
+
+            <ContentControl syncfusion:DockingManager.Header="Child1" />
+
+            <ContentControl syncfusion:DockingManager.Header="Child2" />
+
+        </syncfusion:DockingManager>
+    </Grid>
+</Window>

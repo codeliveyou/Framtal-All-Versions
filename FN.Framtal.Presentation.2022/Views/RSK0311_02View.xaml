@@ -1,0 +1,44 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK03110_02View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      Width="794"
+      Height="1126"
+      mc:Ignorable="d"
+      d:DesignHeight="1126"
+      d:DesignWidth="794"
+    >
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="700" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle
+            Grid.RowSpan="16"
+            Grid.Column="0"
+            Fill="{StaticResource DarkBrush}" />
+
+        <TextBlock
+                Grid.Row="0"
+                Grid.Column="2"
+                FontSize="15"
+                FontWeight="DemiBold"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                TextAlignment="Left"
+                >
+                Upplýsingar um dagpeninga erlendis
+        </TextBlock>
+
+    </Grid>
+</Page>

@@ -1,0 +1,1059 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0315_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="794"
+    Height="1526"
+    MaxWidth="794"
+    MaxHeight="1526"
+    d:DesignHeight="1526"
+    d:DesignWidth="794"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid Background="{StaticResource DefaultBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="480" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="320" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="120" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="19" />
+                <ColumnDefinition Width="26" />
+                <ColumnDefinition Width="700" />
+                <ColumnDefinition Width="19" />
+            </Grid.ColumnDefinitions>
+            <Grid
+                Grid.Row="0"
+                Grid.Column="3"
+                HorizontalAlignment="Left">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12">
+                    Rikisskattstjori
+                </TextBlock>
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    FontWeight="Bold">
+                    Framteljandi
+                </TextBlock>
+            </Grid>
+
+            <Grid Grid.Row="0" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    FontWeight="Bold">
+                    Sala/innlausn verðbréfa
+                </TextBlock>
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="DemiBold">
+                    Fylgiskjal með skattframtali árið 2022
+                </TextBlock>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <controls:TextBoxWithDescription
+                    Title="Nafn"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Name1}" />
+                <controls:TextBoxWithDescription
+                    Title="Kennitala"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Tb_SpouseSSN1}" />
+                <controls:TextBoxWithDescription
+                    Title="Nafn"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Name2}" />
+                <controls:TextBoxWithDescription
+                    Title="Kennitala"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Tb_SpouseSSN2}" />
+
+            </Grid>
+
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="3"
+                VerticalAlignment="Bottom"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Innlend og erlend verðbréf og kröfur / Hlutdeildarskírteini" />
+
+            <Grid Grid.Row="3" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.75*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType1}" />
+                <controls:TextBoxWithDescription
+                    Title="1 Áður fengnir vextir á árinu"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding PreviousInterestEarned1}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold1}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who1}" />
+                <controls:TextBoxWithDescription
+                    Title="2 Söluverð að frádreginni söluþóknun"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice1}" />
+                <controls:TextBoxWithDescription
+                    Title="4 Staðgreiðsla af vaxtatekjum ársins"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WithHolding1}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased1}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom1}" />
+                <controls:TextBoxWithDescription
+                    Title="3 Stofnverð"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice1}" />
+                <controls:TextBoxWithDescription
+                    Title="5 Vaxtatekjur færast á framtal"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncomeTransferred1}" />
+
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType2}" />
+                <controls:TextBoxWithDescription
+                    Title="1 Áður fengnir vextir á árinu"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding PreviousInterestEarned2}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold2}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who2}" />
+                <controls:TextBoxWithDescription
+                    Title="2 Söluverð að frádreginni söluþóknun"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice2}" />
+                <controls:TextBoxWithDescription
+                    Title="4 Staðgreiðsla af vaxtatekjum ársins"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WithHolding2}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased2}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom2}" />
+                <controls:TextBoxWithDescription
+                    Title="3 Stofnverð"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice2}" />
+                <controls:TextBoxWithDescription
+                    Title="5 Vaxtatekjur færast á framtal"
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncomeTransferred2}" />
+
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType3}" />
+                <controls:TextBoxWithDescription
+                    Title="1 Áður fengnir vextir á árinu"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding PreviousInterestEarned3}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold3}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who3}" />
+                <controls:TextBoxWithDescription
+                    Title="2 Söluverð að frádreginni söluþóknun"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice3}" />
+                <controls:TextBoxWithDescription
+                    Title="4 Staðgreiðsla af vaxtatekjum ársins"
+                    Grid.Row="7"
+                    Grid.Column="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WithHolding3}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="8"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased3}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom3}" />
+                <controls:TextBoxWithDescription
+                    Title="3 Stofnverð"
+                    Grid.Row="8"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice3}" />
+                <controls:TextBoxWithDescription
+                    Title="5 Vaxtatekjur færast á framtal"
+                    Grid.Row="8"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncomeTransferred3}" />
+
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType4}" />
+                <controls:TextBoxWithDescription
+                    Title="1 Áður fengnir vextir á árinu"
+                    Grid.Row="9"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding PreviousInterestEarned4}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold4}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="10"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who4}" />
+                <controls:TextBoxWithDescription
+                    Title="2 Söluverð að frádreginni söluþóknun"
+                    Grid.Row="10"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice4}" />
+                <controls:TextBoxWithDescription
+                    Title="4 Staðgreiðsla af vaxtatekjum ársins"
+                    Grid.Row="10"
+                    Grid.Column="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WithHolding4}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="11"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased4}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="11"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom4}" />
+                <controls:TextBoxWithDescription
+                    Title="3 Stofnverð"
+                    Grid.Row="11"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice4}" />
+                <controls:TextBoxWithDescription
+                    Title="5 Vaxtatekjur færast á framtal"
+                    Grid.Row="11"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncomeTransferred4}" />
+
+                <Grid Grid.Row="0" Grid.Column="4">
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="0,20,110,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala kaupanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala seljanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="4">
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="0,20,110,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala kaupanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala seljanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="4">
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="0,20,110,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala kaupanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="8" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala seljanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+
+                <Grid Grid.Row="9" Grid.Column="4">
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="0,20,110,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="10" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala kaupanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="11" Grid.Column="4">
+                    <TextBlock Margin="25,0,0,20" Text="Kennitala seljanda" />
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="25,20,0,0"
+                        VerticalContentAlignment="Center"
+                        Background="LightYellow"
+                        BorderBrush="Black"
+                        BorderThickness="2"
+                        TextAlignment="Center" />
+                </Grid>
+            </Grid>
+
+
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="3"
+                VerticalAlignment="Bottom"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Spariskírteini ríkissjóðs og önnur verðbréf með einum gjalddaga (kúlubréf)" />
+
+            <Grid Grid.Row="5" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.75*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType5}" />
+                <controls:TextBoxWithDescription
+                    Title="1 Áður fengnir vextir á árinu"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding PreviousInterestEarned5}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold5}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who5}" />
+                <controls:TextBoxWithDescription
+                    Title="2 Söluverð að frádreginni söluþóknun"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice5}" />
+                <controls:TextBoxWithDescription
+                    Title="4 Staðgreiðsla af vaxtatekjum ársins"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WithHolding5}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased5}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom5}" />
+                <controls:TextBoxWithDescription
+                    Title="3 Stofnverð"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice5}" />
+                <controls:TextBoxWithDescription
+                    Title="5 Vaxtatekjur færast á framtal"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncomeTransferred5}" />
+
+                <controls:TextBoxWithDescription
+                    Title="6 Þar af vaxtatekjur í 10% þrepi"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome10Perc1}" />
+                <controls:TextBoxWithDescription
+                    Title="7 Þar af vaxtatekjur í 15% þrepi"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome15Perc1}" />
+                <controls:TextBoxWithDescription
+                    Title="8 Þar af vaxtatekjur í 18% þrepi"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome185Perc1}" />
+                <controls:TextBoxWithDescription
+                    Title="9 Þar af vaxtatekjur í 20% þrepi"
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome20Perc1}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType6}" />
+                <controls:TextBoxWithDescription
+                    Title="1 Áður fengnir vextir á árinu"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding PreviousInterestEarned6}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold6}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who6}" />
+                <controls:TextBoxWithDescription
+                    Title="2 Söluverð að frádreginni söluþóknun"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice6}" />
+                <controls:TextBoxWithDescription
+                    Title="4 Staðgreiðsla af vaxtatekjum ársins"
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WithHolding6}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased6}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom6}" />
+                <controls:TextBoxWithDescription
+                    Title="3 Stofnverð"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice6}" />
+                <controls:TextBoxWithDescription
+                    Title="5 Vaxtatekjur færast á framtal"
+                    Grid.Row="6"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncomeTransferred6}" />
+
+                <controls:TextBoxWithDescription
+                    Title="6 Þar af vaxtatekjur í 10% þrepi"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome10Perc2}" />
+                <controls:TextBoxWithDescription
+                    Title="7 Þar af vaxtatekjur í 15% þrepi"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome10Perc2}" />
+                <controls:TextBoxWithDescription
+                    Title="8 Þar af vaxtatekjur í 18% þrepi"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome10Perc2}" />
+                <controls:TextBoxWithDescription
+                    Title="9 Þar af vaxtatekjur í 20% þrepi"
+                    Grid.Row="7"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding IntIncome10Perc2}" />
+
+            </Grid>
+
+            <TextBlock
+                Grid.Row="6"
+                Grid.Column="3"
+                VerticalAlignment="Center"
+                FontSize="14"
+                FontWeight="Bold"
+                Text="Vaxtatekjur samkvæmt reitum nr. 5 og staðgreiðsla í reitum nr. 4 færast á skattframtal í lið 3.3." />
+            <TextBlock
+                Grid.Row="7"
+                Grid.Column="3"
+                VerticalAlignment="Bottom"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Uppgjör afleiðusamninga" />
+
+            <Grid Grid.Row="8" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.75*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <controls:TextBoxWithDescription
+                    Title="Hvaða bréf var selt? Tegund bréfs eða nafn sjóðs"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding LetterType7}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær selt?"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenSold7}" />
+                <controls:TextBoxWithDescription
+                    Title="Hverjum"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding Who7}" />
+                <controls:TextBoxWithDescription
+                    Title="Söluverð að frádreginni söluþóknun"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding SellingPrice7}" />
+
+                <controls:TextBoxWithDescription
+                    Title="Hvenær keypt?"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding WhenPurchased7}" />
+                <controls:TextBoxWithDescription
+                    Title="Af hverjum"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding ByWhom7}" />
+                <controls:TextBoxWithDescription
+                    Title="Stofnverð"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    Text="{Binding InitialPrice7}" />
+                <controls:TextBoxWithDescription
+                    Title="Hagnaður/tap af uppgjöri"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                    FontWeight="Bold"
+                    Text="{Binding ProfitnLoss}" />
+            </Grid>
+
+            <TextBlock
+                Grid.Row="9"
+                Grid.Column="3"
+                VerticalAlignment="Center"
+                FontSize="12"
+                FontWeight="Bold"
+                Text="Nettóhagnaður af afleiðusamningum færist í reit 522 í lið 3.9 á skattframtali, en tap færist ekki á framtalið." />
+            <StackPanel
+                Grid.Row="10"
+                Grid.Column="3"
+                Margin="0,20,0,0">
+                <Grid Background="{StaticResource MediumBrush}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontWeight="Bold" Text="Staðgreiðsla af vaxtatekjum," />
+                            <TextBlock Text="sem færist i lið 3.3 a framtali" />
+                        </StackPanel>
+                    </Border>
+                    <Border
+                        Grid.Column="1"
+                        Background="Transparent"
+                        BorderThickness="0,1,1,1">
+                        <TextBox Grid.Column="1" Margin="3" />
+                    </Border>
+                </Grid>
+                <Grid Background="{StaticResource MediumBrush}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent" BorderThickness="1,0,1,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontWeight="Bold" Text="Vaxtatekjur samtals," />
+                            <TextBlock Text="sem færist i lið 3.3 a framtali " />
+                        </StackPanel>
+                    </Border>
+                    <Border
+                        Grid.Column="1"
+                        Background="Transparent"
+                        BorderThickness="0,0,1,0">
+                        <TextBox Grid.Column="1" Margin="3" />
+                    </Border>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <controls:TextBoxWithDescription
+                        Title="Samtals vaxtatekjur i 10% þrepi"
+                        BorderThickness="1,1,0,1"
+                        FontSize="{DynamicResource Chapter2SmallTextFontSize}" />
+                    <controls:TextBoxWithDescription
+                        Title="Samtals vaxtatekjur i 15% þrepi"
+                        Grid.Column="1"
+                        BorderThickness="1,1,0,1"
+                        FontSize="{DynamicResource Chapter2SmallTextFontSize}" />
+                    <controls:TextBoxWithDescription
+                        Title="Samtals vaxtatekjur i 18% þrepi"
+                        Grid.Column="2"
+                        BorderThickness="1,1,0,1"
+                        FontSize="{DynamicResource Chapter2SmallTextFontSize}" />
+                    <controls:TextBoxWithDescription
+                        Title="Samtals vaxtatekjur i 20% þrepi"
+                        Grid.Column="3"
+                        FontSize="{DynamicResource Chapter2SmallTextFontSize}" />
+                </Grid>
+                <Grid Background="{StaticResource MediumBrush}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent" BorderThickness="1,0,1,1">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock
+                                Margin="5,0"
+                                FontWeight="Bold"
+                                Text="Samtals hagnaður / tap af uppgjori afleiðusamninga." />
+                            <TextBlock Margin="5,0" Text="Nettohagnaður færist i lið 3.9 a framtali en tap færist ekki a framtalið." />
+                        </StackPanel>
+                    </Border>
+                    <Border
+                        Grid.Column="1"
+                        Background="Transparent"
+                        BorderThickness="0,0,1,1">
+                        <TextBox Grid.Column="1" Margin="3" />
+                    </Border>
+                </Grid>
+            </StackPanel>
+            <Grid Grid.Row="11" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Text="RSK 3.15" />
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
+                    FontSize="10"
+                    Text="27-1-2020" />
+
+                <TextBlock
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    Text=".............................................................................................................................................." />
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="10"
+                    Text="Dagsetning og undirskrift" />
+            </Grid>
+
+        </Grid>
+
+        <Rectangle
+            Width="30"
+            HorizontalAlignment="Left"
+            Fill="{StaticResource DarkBrush}" />
+    </Grid>
+
+</Page>
+

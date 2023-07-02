@@ -1,0 +1,685 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0319_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="794"
+    Height="1126"
+    d:DesignHeight="794"
+    d:DesignWidth="1123"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <!--  Row#0  -->
+            <RowDefinition Height="100" />
+            <!--  Row#1  -->
+            <RowDefinition Height="auto" />
+            <!--  Row#2  -->
+            <RowDefinition Height="auto" />
+            <!--  - Row#3  -->
+            <RowDefinition Height="auto" />
+            <!--  - Row#4  -->
+            <RowDefinition Height="*" />
+            <!--  - Row#5  -->
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle
+            Grid.RowSpan="16"
+            Grid.Column="0"
+            Fill="{StaticResource DarkBrush}" />
+
+        <!--  begin Row#1  -->
+        <!--#region-->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="350" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="24"
+                FontWeight="Bold"
+                TextAlignment="Right">
+                Hlutabréfaeign - kaup og sala<LineBreak />
+                <Run FontSize="12" FontWeight="Normal">Yfirlit yfir hlutabréf. Kaup og sala á árinu 2022</Run>
+            </TextBlock>
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="0"
+                Background="Transparent"
+                BorderThickness="1">
+                <DockPanel Background="Transparent">
+                    <TextBlock
+                        Height="15"
+                        Padding="5,0,0,0"
+                        DockPanel.Dock="Top"
+                        FontSize="10px">
+                        Nafn
+                    </TextBlock>
+                    <Border
+                        Padding="5,0,0,5"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        DockPanel.Dock="Bottom">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <DockPanel Background="Transparent">
+                    <TextBlock
+                        Height="15"
+                        Padding="5,0,0,0"
+                        DockPanel.Dock="Top"
+                        FontSize="10px">
+                        Heimili
+                    </TextBlock>
+                    <Border
+                        Padding="5,0,0,5"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        DockPanel.Dock="Bottom">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="0,1,1,1">
+                <DockPanel Background="Transparent">
+                    <TextBlock
+                        Height="15"
+                        Padding="5,0,0,0"
+                        DockPanel.Dock="Top"
+                        FontSize="10px">
+                        Kennitala
+                    </TextBlock>
+                    <Border
+                        Padding="5,0,0,5"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        DockPanel.Dock="Bottom">
+                        <TextBox BorderThickness="0" />
+                    </Border>
+                </DockPanel>
+            </Border>
+
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="4"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="12">
+                Fylgiskjal með skattframtali 2023
+            </TextBlock>
+        </Grid>
+        <!--#endregion-->
+        <!--  end Row#1  -->
+
+        <!--  begin Row#2 (A)  -->
+        <!--#region-->
+        <Grid
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="12px"
+                FontWeight="Bold"
+                Text="A"
+                TextAlignment="Center" />
+
+            <Border
+                Grid.Column="1"
+                VerticalAlignment="Stretch"
+                Background="{StaticResource DarkBrush}"
+                BorderThickness="0">
+                <Viewbox
+                    RenderTransformOrigin="0.5,0.5"
+                    Stretch="UniformToFill"
+                    StretchDirection="DownOnly">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="10"
+                        Foreground="White"
+                        RenderTransformOrigin="0.5,0.5"
+                        Text="Almenn hlutabréf"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="-90" />
+                                <TranslateTransform X="-34" Y="0" />
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="1">
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderThickness="0"
+                    ItemsSource="{Binding RSK0319_ALMMEN}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_A}"
+                            Header="Kennitala hlutafe" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_B}"
+                            Header="Nafn hlutafelags" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_C}"
+                            Header="Nafnverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_D}"
+                            Header="Stofnverð(kaupverð)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_E}"
+                            Header="Nafnverð keyptra hlutabréfa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_F}"
+                            Header="Kaupverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_G}"
+                            Header="Breyting a nafnverði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_H}"
+                            Header="Breyting a kaupverði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_I}"
+                            Header="Soluverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_J}"
+                            Header="Nafnverð seldra hlutabrefa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_K}"
+                            Header="Stofnverð seldra hlutabrefa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_L}"
+                            Header="Söluhagnaður/solutap" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_M}"
+                            Header="Arður" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_N}"
+                            Header="Dagsetn arðgr." />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_O}"
+                            Header="Staðgreiðsla af arði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_P}"
+                            Header="Nafnverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_Q}"
+                            Header="kaupverð" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+
+        </Grid>
+        <!--#endregion-->
+        <!--  end Row#2  -->
+
+        <!--  begin Row#3 (B)  -->
+        <!--#region-->
+        <Grid
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="12px"
+                FontWeight="Bold"
+                Text="B"
+                TextAlignment="Center" />
+
+            <Border
+                Grid.Column="1"
+                VerticalAlignment="Stretch"
+                Background="{StaticResource DarkBrush}"
+                BorderThickness="0">
+                <Viewbox
+                    RenderTransformOrigin="0.5,0.5"
+                    Stretch="UniformToFill"
+                    StretchDirection="DownOnly">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="10"
+                        Foreground="White"
+                        RenderTransformOrigin="0.5,0.5"
+                        Text="Almenn hlutabréf"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="-90" />
+                                <TranslateTransform X="-34" Y="0" />
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="1">
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderThickness="0"
+                    ItemsSource="{Binding RSK0319_ALMMEN}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_A}"
+                            Header="Kennitala hlutafe" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_B}"
+                            Header="Nafn hlutafelags" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_C}"
+                            Header="Nafnverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_D}"
+                            Header="Stofnverð(kaupverð)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_E}"
+                            Header="Nafnverð keyptra hlutabréfa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_F}"
+                            Header="Kaupverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_G}"
+                            Header="Breyting a nafnverði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_H}"
+                            Header="Breyting a kaupverði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_I}"
+                            Header="Soluverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_J}"
+                            Header="Nafnverð seldra hlutabrefa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_K}"
+                            Header="Stofnverð seldra hlutabrefa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_L}"
+                            Header="Söluhagnaður/solutap" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_M}"
+                            Header="Arður" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_N}"
+                            Header="Dagsetn arðgr." />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_O}"
+                            Header="Staðgreiðsla af arði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_P}"
+                            Header="Nafnverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_Q}"
+                            Header="kaupverð" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+
+        </Grid>
+        <!--#endregion-->
+        <!--  end Row#3  -->
+
+        <!--  begin Row#4 (C)  -->
+        <!--#region-->
+        <Grid
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="12px"
+                FontWeight="Bold"
+                Text="C"
+                TextAlignment="Center" />
+
+            <Border
+                Grid.Column="1"
+                VerticalAlignment="Stretch"
+                Background="{StaticResource DarkBrush}"
+                BorderThickness="0">
+                <Viewbox
+                    RenderTransformOrigin="0.5,0.5"
+                    Stretch="UniformToFill"
+                    StretchDirection="DownOnly">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="10"
+                        Foreground="White"
+                        RenderTransformOrigin="0.5,0.5"
+                        Text="Almenn hlutabréf"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="-90" />
+                                <TranslateTransform X="-34" Y="0" />
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </Viewbox>
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="Transparent"
+                BorderThickness="1">
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderThickness="0"
+                    ItemsSource="{Binding RSK0319_ALMMEN}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_A}"
+                            Header="Kennitala hlutafe" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_B}"
+                            Header="Nafn hlutafelags" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_C}"
+                            Header="Nafnverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_D}"
+                            Header="Stofnverð(kaupverð)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_E}"
+                            Header="Nafnverð keyptra hlutabréfa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_F}"
+                            Header="Kaupverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_G}"
+                            Header="Breyting a nafnverði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_H}"
+                            Header="Breyting a kaupverði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_I}"
+                            Header="Soluverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_J}"
+                            Header="Nafnverð seldra hlutabrefa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_K}"
+                            Header="Stofnverð seldra hlutabrefa" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_L}"
+                            Header="Söluhagnaður/solutap" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_M}"
+                            Header="Arður" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_N}"
+                            Header="Dagsetn arðgr." />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_O}"
+                            Header="Staðgreiðsla af arði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_P}"
+                            Header="Nafnverð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK0319_ALMMEN_Q}"
+                            Header="kaupverð" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+
+        </Grid>
+        <!--#endregion-->
+        <!--  end Row#4  -->
+
+        <!--  begin Row#5  -->
+        <!--#region-->
+        <Grid Grid.Row="5" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="14px"
+                FontWeight="Bold"
+                Text="Leiðbeiningar um útfyllingu"
+                TextAlignment="Left" />
+
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                Padding="0,0,10,5"
+                FontSize="8px"
+                TextAlignment="Justify"
+                TextWrapping="Wrap">
+                Eyðublaðið er þrískipt. Í kafla A skal færa öll hlutabréf í innlendum félögum sem ekki
+                sæta sérstakri skattlagningu. Í kafla B skal færa hlutabréf sem keypt voru á árunum
+                1990 til 1996 í félögum sem uppfylltu tiltekin skilyrði og ríkisskattstjóri hafði staðfest.
+                Fjárfesting í þessum hlutabréfum gat komið til lækkunar á tekjuskattsstofni. Söluhagnaður
+                þessara bréfa, allt að 367.625 kr. hjá einstaklingi og 735.250 kr. hjá hjónum
+                er skattfrjáls. Í kafla C skal færa erlend hlutabréf.<LineBreak /> <LineBreak />
+                Hlutabréfaeign í upphafi árs: Í dálkum 3 og 4 skal tilgreina nafnverð og kaupverð/
+                stofnverð
+                bréfa sem framteljandi átti í félaginu
+                í byrjun árs. Sjá töflu á bakhlið
+                fyrir útreikning á kaupverði. Ef upplýsingar um kaupverð hlutabréfa finnast ekki
+                er dálkur 4 hafður auður og ekki þarf að fylla út töflu á bakhlið. Vakin er athygli á
+                því að þegar að sölu hlutabréfa
+                kemur mun kaupverðið koma til frádráttar söluverði við
+                útreikning söluhagnaðar.<LineBreak />
+                <LineBreak />
+                Ef framteljandi fyllti út eyðublaðið RSK 3.19 í fyrra, þá færist nafnverð og kaupverð
+                úr dálkum 15 og 16 í fyrra í dálka 3 og 4 í ár. Þá þarf ekki að fylla út töflu á bakhlið.<LineBreak /><LineBreak />
+                Kaup: Hér skal færa inn nafnverð og kaupverð hlutabréfa sem keypt voru á árinu 2022.
+                Gera skal nánari grein fyrir kaupunum á bakhlið eyðublaðsins, en þar skal gera grein fyrir
+                kennitölu
+                seljanda og kaupdegi. Innborgun hlutafjár við hlutafjáraukningu
+                jafngildir kaupum
+                á hlutabréfum og skal því færa innborgunina í þennan kafla. Innborgun hlutafjár við stofnun
+                hlutafélags færist ekki í kaflann „Kaup“, heldur skal færa slíka innborgun í kaflann „Breyting“.</TextBlock>
+
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="0,0,10,5"
+                FontSize="8px"
+                TextAlignment="Justify"
+                TextWrapping="Wrap">
+                Breyting: Hér skal gera grein fyrir öllum hækkunum og lækkunum sem urðu á nafnverði
+                og kaupverði hlutabréfa á árinu af öðrum ástæðum en kaupum og sölu. Í dálk 7
+                skal færa hækkun eða lækkun á nafnverði og í dálk 8 skal færa hækkun eða lækkun á
+                kaupverði. Nánari grein skal gera fyrir þessu í töflu á bakhlið.<LineBreak /><LineBreak />
+                Sala: Hér skal færa inn söluverð og nafnverð hlutabréfa sem seld voru á árinu 2022.
+                Gera skal nánari grein fyrir sölunni á bakhlið eyðublaðsins, en þar skal gera grein fyrir
+                kennitölu kaupanda og söludegi. Í dálk 11 skal færa kaupverð seldra hlutabréfa. Ef ekki
+                er seld öll hlutabréfaeign í félagi skal færa í dálkinn sama hlutfall af heildarkaupverði
+                hlutabréfa í félaginu og nafnverð hinna seldu hlutabréfa er af heildarnafnverði
+                hlutabréfa
+                í félaginu fyrir sölu. Í dálk 12 skal færa söluhagnað eða sölutap, sem er mismunur á söluverði
+                í dálk 9 og kaupverði seldra hlutabréfa í dálki 11. Tap af sölu hlutabréfa er heimilt að
+                draga frá hagnaði af sölu annarra hlutabréfa á sama ári.<LineBreak /><LineBreak />
+                Arður og staðgreiðsla: Arður sem fenginn var á árinu og staðgreiðslu sem haldið var
+                eftir af honum fara í dálka 13 og 14. Arð og afdregna staðgreiðslu skal eftir atvikum færa
+                í kafla 3.5 og 3.6 á framtali. Dagsetningu þegar arður var greiddur skal færa í dálk 13a.<LineBreak /><LineBreak />
+                Hlutabréfaeign í lok árs: Nafnverð bréfa í eigu framteljanda í árslok er fært í
+                dálk 15 og á það að stemma við fjárhæðir í dálkum 3, 5, 7 og 10, þ.e. nafnverð bréfa í
+                ársbyrjun (3), plús nafnverð keyptra bréfa (5), hækkun/lækkun vegna annarra breytinga
+                (7) mínus nafnverð bréfa sem seld voru á árinu (10). Sama gildir um kaupverð/stofnverð
+                sem fært er í dálk 16, það á að stemma við upplýsingar í dálkum 4, 6, 8 og 11.</TextBlock>
+
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="2"
+                Padding="0,0,10,5"
+                FontSize="8px"
+                TextAlignment="Justify"
+                TextWrapping="Wrap">
+                Nafnverð íslenskra hlutabréfa skv. dálki 15 skal færa í lið 3.5 á framtali, sem
+                eign í árslok. Ef nafnverð erlendra hlutabréfa er þekkt skal færa það í lið 3.6 á
+                framtali, en færa skal kaupverð í lið 3.6 ef nafnverð er ekki þekkt.<LineBreak /><LineBreak />
+                Erlend hlutabréf: Ef nafnverð erlendra hlutabréfa er þekkt skal færa það í dálka
+                fyrir nafnverð/fjölda hluta, annars skal færa fjölda hluta. Ef notað er nafnverð er það
+                fært í dálk 15 og ekkert í dálk 14. Ef nafnverð er ekki þekkt skal færa fjölda hluta í dálk
+                14 og ekkert í dálk 15. Aldrei skal því færa bæði í dálka 14 og 15 hjá erlendu félagi.<LineBreak /><LineBreak />
+                Útreikningur á söluhagnaði<LineBreak />
+                Reitur 17 - Í þennan reit skal færa söluhagnað/sölutap samtals úr kaflanum
+                fyrir sérstök hlutabréf.<LineBreak />
+                Reitur 18 - Í þennan reit skal færa frítekjumark þessara bréfa sem er 367.625 kr.
+                hjá einstaklingi og 735.250 kr. hjá hjónum. Þó aldrei hærri fjárhæð en
+                hagnaður í reit 17.<LineBreak />
+                Reitur 19 - Í þennan reit skal færa fjárhæð í reit 17 að frádreginni fjárhæð í reit 18.<LineBreak />
+                Reitur 20 - Í þennan reit skal færa söluhagnað/sölutap samtals úr kaflanum
+                fyrir almenn hlutabréf.<LineBreak />
+                Reitur 21 - Í þennan reit skal færa söluhagnað/sölutap samtals úr kaflanum
+                fyrir erlend hlutabréf.<LineBreak />
+                Reitur 22 - Í þennan reit skal færa samtölu söluhagnaðar/sölutaps
+                úr reitum 19, 20 og 21.</TextBlock>
+
+            <Rectangle
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="4"
+                Fill="{StaticResource DarkBrush}" />
+        </Grid>
+        <!--#endregion-->
+        <!--  end Row#5  -->
+    </Grid>
+</Page>

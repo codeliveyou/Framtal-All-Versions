@@ -1,0 +1,1004 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0311_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      Width="794"
+      Height="1126"
+      mc:Ignorable="d"
+      d:DesignHeight="1126"
+      d:DesignWidth="794">
+    
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle
+            Grid.RowSpan="16"
+            Grid.Column="0"
+            Fill="{StaticResource DarkBrush}" />
+
+
+        <!--#region Row 0 -->
+        <Grid Grid.Row="0" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="24"
+                FontWeight="Bold"
+                TextAlignment="Right"
+                >
+                Dagpeningar
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="2"
+                FontSize="15"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                TextAlignment="Right"
+                >
+                Fylgiskjal með skattframtali 2005
+            </TextBlock>
+
+
+        </Grid>
+
+        <!--#endregion-->
+
+        <!--#region Row 2 -->
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3.3*" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                TextAlignment="Left"
+                >
+                Framteljandi
+            </TextBlock>
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="0"
+                BorderThickness="1,1,0,1"
+                >
+                <TextBlock Padding="3 0 0 0" FontSize="10" Text="Nafn" />
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_01}" />
+
+            <Border Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Margin="0,15,0,0" Background="{StaticResource LightBrush}" BorderThickness="0,1,0,0" VerticalAlignment="Bottom">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Background="{StaticResource LightBrush}" BorderThickness="1,0,1,0" >
+                        <TextBlock Padding="3 0 0 0" Text="Kennitala" Margin="0,0,0,3" />
+                    </Border>
+                    <Border Grid.Row="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1">
+                        <controls:NumericTextBox  BorderThickness="0" Text="{Binding NTB_01}" />
+                    </Border>
+                </Grid>
+            </Border>
+
+
+            <Grid Grid.Row="2" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Border
+                Grid.Column="0"
+                BorderThickness="1,1,0,1"
+                >
+                    <TextBlock Padding="3 0 0 0" FontSize="10" Text="Heimili" />
+                </Border>
+                <TextBox Grid.Row="0" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_02}" />
+
+                <Border Grid.Column="1" BorderThickness="0,1,1,1">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Row="0" Grid.Column="0" BorderThickness="1,0,0,0" >
+                            <TextBlock Padding="3 0 0 0" FontSize="10" Text="Sveitarfelag" />
+                        </Border>
+                        <TextBox Grid.Row="0" Grid.Column="0" Margin="5,20,5,5" Grid.ColumnSpan="2" BorderThickness="0" Text="{Binding TB_03}" />
+
+                    </Grid>
+                </Border>
+
+            </Grid>
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--#region Row 4 -->
+
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="{StaticResource LightBrush}">
+                <TextBlock VerticalAlignment="Center" Margin="3" FontWeight="DemiBold">Heildarfjarhæð dagpeninga 2004, sem færa skal i lið 2.2 á skattframtali</TextBlock>
+            </Border>
+            <Border Grid.Column="1" BorderThickness="0,1,0,1">
+                <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+            </Border>
+
+            <Border Grid.Column="2" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1">
+                <controls:NumericTextBox  BorderThickness="0" Text="{Binding NTB_02}" />
+            </Border>
+
+        </Grid>
+        
+        <!--#endregion-->
+
+        <!--#region Row 6 -->
+
+        <TextBlock
+                Grid.Row="6"
+            Grid.Column="2"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                TextAlignment="Left"
+                >
+                Frádráttur vegna dagpeninga innanlands
+        </TextBlock>
+
+
+        <!--#endregion-->
+
+
+        <!--#region Row 8 -->
+
+        <Grid Grid.Row="8" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0">
+                <TextBlock VerticalAlignment="Center" Margin="3" FontWeight="DemiBold">Fengnir dagpeningar vegna ferða innanlands</TextBlock>
+            </Border>
+            <Border Grid.Column="1" BorderThickness="0,1,0,1">
+                <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+            </Border>
+
+            <Border Grid.Column="2" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1">
+                <controls:NumericTextBox Name="N311_DAGP_INNANLANDS"  BorderThickness="0" Text="{Binding N311_DAGP_INNANLANDS}" />
+            </Border>
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--#region Row 10 -->
+
+        <Grid Grid.Row="10" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.7*"></ColumnDefinition>
+                <ColumnDefinition Width="1.15*"></ColumnDefinition>
+                <ColumnDefinition Width="0.7*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Border  Grid.Row="0" Grid.Column="0" >
+            <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" FontWeight="DemiBold">Janúar - apríl</TextBlock>
+            </Border>
+            <Border  Grid.Row="0" Grid.Column="1" BorderThickness="0,1,0,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" FontWeight="DemiBold">Fyrir hvað er greitt/fjöldi daga</TextBlock>
+            </Border>
+            <Border  Grid.Row="0" Grid.Column="2" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" FontWeight="DemiBold">Leyfilegur frádráttur</TextBlock>
+            </Border>
+            <Border  Grid.Row="0" Grid.Column="3" BorderThickness="0,1,0,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="5,3,3,0" FontWeight="DemiBold">Fjárhæð frádráttar</TextBlock>
+            </Border>
+
+
+            <Border  Grid.Row="5" Grid.Column="0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" FontWeight="DemiBold">Maí - september</TextBlock>
+            </Border>
+            <Border  Grid.Row="5" Grid.Column="1" BorderThickness="0,1,0,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" FontWeight="DemiBold">Fyrir hvað er greitt/fjöldi daga</TextBlock>
+            </Border>
+            <Border  Grid.Row="5" Grid.Column="2" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" FontWeight="DemiBold">Leyfilegur frádráttur</TextBlock>
+            </Border>
+            <Border  Grid.Row="5" Grid.Column="3" BorderThickness="0,1,0,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="5,3,3,0" FontWeight="DemiBold">Fjárhæð frádráttar</TextBlock>
+            </Border>
+
+
+            <Border  Grid.Row="10" Grid.Column="0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" FontWeight="DemiBold">Október - desember</TextBlock>
+            </Border>
+            <Border  Grid.Row="10" Grid.Column="1" BorderThickness="0,1,0,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" FontWeight="DemiBold">Fyrir hvað er greitt/fjöldi daga</TextBlock>
+            </Border>
+            <Border  Grid.Row="10" Grid.Column="2" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" FontWeight="DemiBold">Leyfilegur frádráttur</TextBlock>
+            </Border>
+            <Border  Grid.Row="10" Grid.Column="3" BorderThickness="0,1,0,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="5,3,3,0" FontWeight="DemiBold">Fjárhæð frádráttar</TextBlock>
+            </Border>
+
+
+            <Border Grid.Row="1" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Gisting og fæði</TextBlock>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi sólarhringa</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_SOLARH_FJO_1"  BorderThickness="0" Text="{Binding N311_SOLARH_FJO_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            
+            <Border  Grid.Row="1" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center" >25.700</TextBlock>
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Gisting</TextBlock>
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi gistinátta</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_GISTING_FJO_1"  BorderThickness="0" Text="{Binding N311_GISTING_FJO_1}"/>
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border  Grid.Row="2" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">13.100</TextBlock>
+            </Border>
+
+
+
+            <Border Grid.Row="3" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Heilsdagsfæði</TextBlock>
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Dagafjöldi</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_DAGA_FJO_1"  BorderThickness="0" Text="{Binding N311_DAGA_FJO_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border  Grid.Row="3" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">12.600</TextBlock>
+            </Border>
+
+
+
+            <Border Grid.Row="4" Grid.Column="0" BorderThickness="1,0,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Hálfsdagsfæði</TextBlock>
+            </Border>
+
+            <Border Grid.Row="4" Grid.Column="1" BorderThickness="0,0,1,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi hálfra daga</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_HALFDAGA_FJO_1"  BorderThickness="0" Text="{Binding N311_HALFDAGA_FJO_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border  Grid.Row="4" Grid.Column="2" BorderThickness="0,0,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">6.300</TextBlock>
+            </Border>
+
+
+
+            <Border Grid.Row="6" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Gisting og fæði</TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi sólarhringa</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_SOLARH_FJO_2"  BorderThickness="0" Text="{Binding N311_SOLARH_FJO_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="6" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">35.000</TextBlock>
+            </Border>
+
+
+
+
+            <Border Grid.Row="7" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Gisting</TextBlock>
+            </Border>
+            <Border Grid.Row="7" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi gistinátta</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_GISTING_FJO_2"  BorderThickness="0" Text="{Binding N311_GISTING_FJO_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="7" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">22.100</TextBlock>
+            </Border>
+
+
+
+
+            <Border Grid.Row="8" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Heilsdagsfæði</TextBlock>
+            </Border>
+            <Border Grid.Row="8" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Dagafjöldi</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_DAGA_FJO_2"  BorderThickness="0" Text="{Binding N311_DAGA_FJO_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="8" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">12.900</TextBlock>
+            </Border>
+
+
+
+            <Border Grid.Row="9" Grid.Column="0" BorderThickness="1,0,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Hálfsdagsfæði</TextBlock>
+            </Border>
+            <Border Grid.Row="9" Grid.Column="1" BorderThickness="0,0,1,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi hálfra daga</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_HALFDAGA_FJO_2"  BorderThickness="0" Text="{Binding N311_HALFDAGA_FJO_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="9" Grid.Column="2" BorderThickness="0,0,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">6.450</TextBlock>
+            </Border>
+
+
+            <Border Grid.Row="11" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Gisting og fæði</TextBlock>
+            </Border>
+            <Border Grid.Row="11" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi sólarhringa</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_SOLARH_FJO_3"  BorderThickness="0" Text="{Binding N311_SOLARH_FJO_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="11" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">30.700</TextBlock>
+            </Border>
+
+
+            <Border Grid.Row="12" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Gisting</TextBlock>
+            </Border>
+            <Border Grid.Row="12" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi gistinátta</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_GISTING_FJO_3"  BorderThickness="0" Text="{Binding N311_GISTING_FJO_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="12" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">17.700</TextBlock>
+            </Border>
+
+
+            <Border Grid.Row="13" Grid.Column="0" BorderThickness="1,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Heilsdagsfæði</TextBlock>
+            </Border>
+            <Border Grid.Row="13" Grid.Column="1" BorderThickness="0,0,1,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Dagafjöldi</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_DAGA_FJO_3"  BorderThickness="0" Text="{Binding N311_DAGA_FJO_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="13" Grid.Column="2" BorderThickness="0,0,1,1" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">13.000</TextBlock>
+            </Border>
+
+
+            <Border Grid.Row="14" Grid.Column="0" BorderThickness="1,0,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Hálfsdagsfæði</TextBlock>
+            </Border>
+            <Border Grid.Row="14" Grid.Column="1" BorderThickness="0,0,1,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border  Grid.Column="0" BorderThickness="0,0,1,0" >
+                        <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Fjöldi hálfra daga</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Padding="3" Margin="3" Background="{StaticResource DarkBrush}" BorderThickness="1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_HALFDAGA_FJO_3"  BorderThickness="0" Text="{Binding N311_HALFDAGA_FJO_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border  Grid.Row="14" Grid.Column="2" BorderThickness="0,0,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="3,3,3,0" VerticalAlignment="Center">6.500</TextBlock>
+            </Border>
+
+
+
+            <Border Grid.Row="1" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid Margin="0 0 10 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_GIST_FAED_1"  BorderThickness="0" Text="{Binding N311_FJA_GIST_FAED_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+
+            <Border Grid.Row="2" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border  Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_GISTING_1"  BorderThickness="0" Text="{Binding N311_FJA_GISTING_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border  Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_HEILSD_1" BorderThickness="0" Text="{Binding N311_FJA_HEILSD_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="4" Grid.Column="3" BorderThickness="0,0,0,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_HALFD_1"  BorderThickness="0" Text="{Binding N311_FJA_HALFD_1}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="6" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_GIST_FAED_2"  BorderThickness="0" Text="{Binding N311_FJA_GIST_FAED_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="7" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_GISTING_2" BorderThickness="0" Text="{Binding N311_FJA_GISTING_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+
+            <Border Grid.Row="8" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_HEILSD_2"  BorderThickness="0" Text="{Binding N311_FJA_HEILSD_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="9" Grid.Column="3" BorderThickness="0,0,0,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_HALFD_2"  BorderThickness="0" Text="{Binding N311_FJA_HALFD_2}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+
+            <Border Grid.Row="11" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_GIST_FAED_3"  BorderThickness="0" Text="{Binding N311_FJA_GIST_FAED_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="12" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_GISTING_3"  BorderThickness="0" Text="{Binding N311_FJA_GISTING_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="13" Grid.Column="3" BorderThickness="0,0,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_HEILSD_3"  BorderThickness="0" Text="{Binding N311_FJA_HEILSD_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="14" Grid.Column="3" BorderThickness="0,0,0,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox Name="N311_FJA_HALFD_3"  BorderThickness="0" Text="{Binding N311_FJA_HALFD_3}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="15" Grid.Column="3" BorderThickness="0,1,0,0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5" FontWeight="Bold">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox  BorderThickness="0" Text="{Binding NTB_03}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="16" Grid.Column="3" BorderThickness="0,1,0,1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" BorderThickness="0">
+                        <TextBlock VerticalAlignment="Center" Margin="5" FontWeight="Bold">kr.</TextBlock>
+                    </Border>
+
+                    <Border Margin="0 0 10 0" Grid.Column="1" Padding="3" Background="{StaticResource DarkBrush}" BorderThickness="1,1,0,1" VerticalAlignment="Center">
+                        <controls:NumericTextBox  BorderThickness="0" Text="{Binding NTB_04}" />
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="4" BorderThickness="1">
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center">Dagar umfram 30 daga samfellt</TextBlock>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="3" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="4" Grid.Column="4" 
+                     BorderThickness="1 0 1 0"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+
+
+            <Border Grid.Row="5" Grid.Column="4" BorderThickness="1">
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center"/>
+            </Border>
+            <TextBox Grid.Row="6" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="7" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="8" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="9" Grid.Column="4" 
+                     BorderThickness="1 0 1 0"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            
+            <Border Grid.Row="10" Grid.Column="4" BorderThickness="1">
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center"/>
+            </Border>
+            <TextBox Grid.Row="11" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="12" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="13" Grid.Column="4" 
+                     BorderThickness="1 0 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="14" Grid.Column="4" 
+                     BorderThickness="1 0 1 0"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="15" Grid.Column="4" 
+                     BorderThickness="1 1 1 0"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBox Grid.Row="16" Grid.Column="4" 
+                     BorderThickness="1 1 1 1"
+                     BorderBrush="Black"
+                     Background="LightYellow"
+                     TextAlignment="Center"
+                     VerticalContentAlignment="Center">
+            </TextBox>
+            
+            
+            
+            
+            <Border  Grid.Row="15" Grid.ColumnSpan="3"  BorderThickness="1,1,1,0" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center" FontWeight="Bold">Lækkun vegna samfelldrar dvalar umfram 30 daga</TextBlock>
+            </Border>
+            
+            <Border  Grid.Row="16" Grid.ColumnSpan="3"  BorderThickness="1" Background="{StaticResource LightBrush}" >
+                <TextBlock FontSize="10" HorizontalAlignment="Left" Margin="3,3,3,0" VerticalAlignment="Center" FontWeight="Bold">Frádráttur vegna dagpeninga innanlands sem færa skal í lið 2.6 á framtali</TextBlock>
+            </Border>
+
+
+
+
+        </Grid>        
+        
+        <!--#endregion-->
+
+
+    </Grid>
+</Page>

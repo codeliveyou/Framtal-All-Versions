@@ -1,0 +1,1632 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0101_02View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:control="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:customControl="clr-namespace:FN.Framtal.UserControls.Control;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:usercontrols="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    Title="RSK0101_02View"
+    d:DesignHeight="5000"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Margin="0,0,50,0" Orientation="Vertical">
+            <usercontrols:Chapter1
+                Margin="0,5"
+                ChapterNumber="2"
+                ChapterText="Tekjur ársins 2021" />
+            <Grid DataContext="{Binding RSK101_2_LAUNATEKJUR_OG_STARFSTENGDAR_GREIÐSLUR}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.1"
+                    ItemsSource="{Binding}"
+                    TitleContent="Launatekjur og starfstengdar greiðslur">
+                    <customControl:HeaderedDataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_LT_KT_GREIDANDI}"
+                            Header="Kennitala launagreiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_LT_GREIDANDI}"
+                            Header="Launatekjur o.fl. - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_LT_GREIDSLA}"
+                            Header="Launatekjur o.fl. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_LT_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=R101_LT_LAUNUPPRUNI}"
+                            Header="Uppruni áritaðra launa (launamiði / verktakamiði)" />
+                    </customControl:HeaderedDataGrid.Columns>
+                </customControl:HeaderedDataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.2"
+                    ItemsSource="{Binding}"
+                    TitleContent="Ökutækjastyrkur. Dagpeningar. Hlunnindi" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Ökutækjastyrkur" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Dagpeningar" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Border
+                Margin="40,0,150,0"
+                BorderBrush="Black"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Margin="9,5,0,5"
+                    FontSize="12"
+                    Text="Bifreiðahlunnindi" />
+            </Border>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_BIFREIDAHLUNNINDI}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_BH_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_BH_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_BH_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_BH_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="134" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Husnæðishlunnindi" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_HUSNAEDISHLUNNINDI}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_HH_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_HH_GREIDANDI}"
+                            Header="Húsnæðishlunnindi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_HH_GREIDSLA}"
+                            Header="Húsnæðishlunnindi - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_HH_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Onnur hlunnindi, hvaða?" />
+                </Border>
+            </Grid>
+
+
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_ONNUR_HLUNNINDI}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_HL_GREIDANDI}"
+                            Header="Hlunnindi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_HL_GREIDSLA}"
+                            Header="Hlunnindi - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_HL_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_HL_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_HL_TEGUND_HLUNNINDA}"
+                            Header="Tegund hlunninda" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.3"
+                    ItemsSource="{Binding}"
+                    TitleContent="Lífeyrisgreiðslur. Greiðslur frá Tryggingastofnun. Aðrar bótagreiðslur, styrkir o.fl." />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Greiðslur frá Tryggingastofnun ríkisins" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Greiðslur frá almennum lífeyrissjóðum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_GREIDSL_UR_LIFEYRISS}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_GL_KT_GREIDANDI}"
+                            Header="Kennitala lífeyrissjóðs" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_GL_GREIDANDI}"
+                            Header="Lífeyrissjóður - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_GL_GREIDSLA}"
+                            Header="Lífeyrissjóður - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_GL_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="43" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Lífeyrisgreiðslur úr séreignarsjóðum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_GREIDSL_UR_SEREIGNSJ}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_GS_KT_GREIDANDI}"
+                            Header="Kennitala lífeyrissjóðs" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_GS_GREIDANDI}"
+                            Header="Lífeyrissjóður - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_GS_GREIDSLA}"
+                            Header="Lífeyrissjóður - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_GS_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="140" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Sérstök útgreiðsla séreignarsparnaðar" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_SER_GR_UR_SEREIGNSJ}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_US_KT_GREIDANDI}"
+                            Header="Kennitala lífeyrissjóðs" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_US_GREIDANDI}"
+                            Header="Lífeyrissjóður - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_US_GREIDSLA}"
+                            Header="Lífeyrissjóður - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_US_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="163" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Atvinnuleysisbætur" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_ATVINNULEYSISBAETUR}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_AB_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_AB_GREIDANDI}"
+                            Header="Atvinnuleysisbætur - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_AB_GREIDSLA}"
+                            Header="Atvinnuleysisbætur - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_AB_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="143" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Félagsleg aðstoð og aðrir styrkir og bætur frá sveitarfélögum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_FELAGSLEG_ADSTOD}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_FS_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_FS_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_FS_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_FS_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="197" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Styrkir til náms, rannsóknar- og vísindastarfa (heildarfjárhæð)" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_STYRKIR_TIL_NAMS}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_SN_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_SN_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_SN_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_SN_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="131" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Ráðstöfun/útborgun úr séreignarsjóði vegna íbúðarkaupa, umfram það sem skattfrjálst er, sbr. kafla 2.9" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    Height="50"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Header="" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Annað, hvað?" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_ANNAD_HVAD}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_AH_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_AH_GREIDANDI}"
+                            Header="Annað, hvað - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_AH_RSK_KODI}"
+                            Header="Annað, hvað - Kóði" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_AH_GREIDSLA}"
+                            Header="Annað, hvað - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_AH_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_AH_TEGUND_TEKNA}"
+                            Header="Tegund tekna" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Iðgjald, i lifeyrissjoð a arinu - að hamarki 4% af launum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_LIFEYRISIDGJALD_SAM}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_LA_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_LA_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_LA_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_LA_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="162" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Iðgjald, greitt a arinu vegna viðbotarlifeyrissparnaðar - að hamarki 4% af launum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_LIFEYRISIDGJALD_SER}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_LE_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_LE_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_LE_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_LE_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="160" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Fradrattur a a moti nams-, rannsoknar- og visindastyrkjum skv. meðfylgjandi greinargerð" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_FRADR_NAMSSTYRKIR}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_FN_SKYRING}"
+                            Header="Skýring" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_FN_GREIDSLA}"
+                            Header="Fjárhæð" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="149" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Fradrattur fra oðrum styrkjum og starfstengdum greiðslum skv. meðfylgjandi greinargerð" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_FRADR_ANNAR}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_FA_SKYRING}"
+                            Header="Skýring" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_FA_GREIDSLA}"
+                            Header="Fjárhæð" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="157" />
+            </Grid>
+
+
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Laun frá alþjóðastofnunum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    Height="50"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Header="" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.4"
+                    ItemsSource="{Binding}"
+                    TitleContent="Reiknað endurgjald við eigin atvinnurekstur" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.5"
+                    ItemsSource="{Binding}"
+                    TitleContent="Hreinar tekjur af eigin atvinnurekstri skv. samræmingarblaði RSK 4.05" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Hreinar tekjur af eigin atvinnurekstri." />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.6"
+                    ItemsSource="{Binding}"
+                    TitleContent="Frádráttur" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Frádráttur á móti ökutækjastyrk skv. RSK 3.04" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Frádráttur á móti dagpeningum skv. RSK 3.11" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="25% frádráttur frá tekjum erlendra sérfræðinga (6. tl. A-liðar 30. gr.)" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Frádráttarbærar gjafir/framlög til almannaheillafélaga" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    Height="50"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Header="" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="Leyfilegur frádráttur er að lágmarki 10.000 kr. en að hámarki 350.000 kr." />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <control:TitleBoxWithPrefix Prefix="2.7" Text="Stofn til útreiknings tekjuskatts og útsvars.    Samtala 2.1, 2.2, 2.3, 2.4, 2.5-2.6" />
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+            <Grid Margin="0,20,0,0" DataContext="{Binding RSK101_2_TEKJUR_ERLENDIS}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.8"
+                    ItemsSource="{Binding}"
+                    TitleContent="Tekjur Erlendis – sem aflað var á meðan þú hafðir heimilisfesti á Íslandi">
+                    <customControl:HeaderedDataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu    Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_TE_RSK_R525}"
+                            Header="Reitur 525 - Sérmerking skattstjóra" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_TE_ERLEND_MYNT}"
+                            Header="Heildartekjur í erlendri mynt" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_TE_ISL_KR}"
+                            Header="Heildartekjur í íslenskum krónum" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_TE_GJALDMIDILL}"
+                            Header="Gjaldmiðill" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=R101_TE_LAND}"
+                            Header="Í hvaða landi?" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_GREIDDIR_SKATTAR_ERLENDIS}"
+                            Header="Greiddir skattar erlendis" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=R101_TE_TEGUND_TEKNA}"
+                            Header="Tegund tekna" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_TE_GENGI}"
+                            Header="Gengi" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_TE_TIMABIL}"
+                            Header="Tímabil" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_TE_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_TE_GREIDANDI}"
+                            Header="Tekjur erlendis - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_TE_SERST_TEGUND_TEKNA}"
+                            Header="Tegund tekna sem send er að utan" />
+                    </customControl:HeaderedDataGrid.Columns>
+                </customControl:HeaderedDataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="319" />
+            </Grid>
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.9"
+                    ItemsSource="{Binding}"
+                    TitleContent="Skattfrjálsar tekjur" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="A. Skattfrjálsar greiðslur frá Tryggingastofnun ríkisins" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="B. Skattfrjálsir vinningar í happdrættum, getraunum og talnaleikjum" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_SKATTFR_VINNINGAR}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_SV_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_SV_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_SV_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_SV_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="597" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="C. Aðrar skattfrjálsar tekjur" />
+                </Border>
+            </Grid>
+            <Grid Margin="40,0,0,0" DataContext="{Binding RSK101_2_ADRAR_SKATTFR_TEKJUR}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    AutoGenerateColumns="False"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1"
+                    ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=KENNITALA}"
+                            Header="Kennitala framteljanda/maka" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=TEKJUAR}"
+                            Header="Tekjuár" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=NR_FRAMTAL}"
+                            Header="Númer framtals" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=LINUNR}"
+                            Header="Teljari fyrir fjölda færslna pr.kennitölu Reiknað" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=K101_AT_KT_GREIDANDI}"
+                            Header="Kennitala greiðanda" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_AT_GREIDANDI}"
+                            Header="Greiðandi - Texti" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=T101_AT_TEGUND_TEKNA}"
+                            Header="Tegund tekna" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=N101_AT_GREIDSLA}"
+                            Header="Greiðsla. - Fjárhæð" />
+                        <DataGridTextColumn
+                            Width="*"
+                            Binding="{Binding Path=RSK_AT_UPPRUNI}"
+                            Header="Uppruni gagna (forskráð eða ekki)" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="73" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="D. Skattfrjáls ráðstöfun úr séreignarsjóði vegna íbúðarkaupa til eigin nota" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="E. Skattfrjáls uppsöfnuð úttekt úr séreignarsjóði vegna íbúðarkaupa til eigin nota" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="F. Skattfrjáls ráðstöfun úr séreignarsjóði vegna fyrstu íbúðar" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="9,5,0,5"
+                        FontSize="12"
+                        Text="G. Skattfrjáls uppsöfnuð úttekt úr séreignarsjóði vegna fyrstu íbúðar" />
+                </Border>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="1"
+                    Height="22"
+                    VerticalAlignment="Bottom"
+                    PrefixText="21" />
+            </Grid>
+
+
+            <Grid Height="34" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <customControl:HeaderedDataGrid
+                    AutoGenerateColumns="False"
+                    Background="{DynamicResource MediumBrush}"
+                    ChapterNumber="2.10"
+                    ItemsSource="{Binding}"
+                    TitleContent="Staðgreiðsla af tekjum (öðrum en fjármagnstekjum)" />
+            </Grid>
+            <Grid Margin="40,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="162*" />
+                    <ColumnDefinition Width="431*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <DataGrid
+                    Grid.ColumnSpan="2"
+                    Height="50"
+                    BorderBrush="Black"
+                    BorderThickness="1,0,1,1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Header="" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <usercontrols:NumericTextBoxWithPrefix
+                    Grid.Column="2"
+                    Height="22"
+                    Margin="0,28,0,0"
+                    VerticalAlignment="Top"
+                    PrefixText="21" />
+            </Grid>
+        </StackPanel>
+        <Rectangle
+            Width="30"
+            HorizontalAlignment="Right"
+            Fill="#39835d"
+            Stroke="#39835d" />
+    </Grid>
+</Page>

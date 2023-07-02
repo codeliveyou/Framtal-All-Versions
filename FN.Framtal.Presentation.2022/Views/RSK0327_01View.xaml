@@ -1,0 +1,497 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0327_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="RSK0327_01View"
+    d:DesignHeight="2450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <Grid Background="{DynamicResource MediumBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <TextBox
+                Grid.Row="0"
+                Margin="10,10,50,10"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0"
+                FontSize="27"
+                FontWeight="Bold"
+                Text="3.27 Ny sambuð"
+                TextAlignment="Right" />
+            <TextBox
+                Grid.Row="1"
+                Margin="10,10,50,10"
+                Background="{DynamicResource MediumBrush}"
+                BorderThickness="0"
+                FontSize="14"
+                FontWeight="Bold"
+                Text="Fylgiskjal með skattframtali 2022"
+                TextAlignment="Right" />
+        </Grid>
+
+        <Grid Margin="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBox
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Background="{DynamicResource MediumBrush}"
+                BorderBrush="{DynamicResource MediumBrush}"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Personuupplysingar" />
+            <Border
+                Grid.Row="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,0,0">
+                <TextBox
+                    Margin="0,5,0,0"
+                    BorderBrush="{DynamicResource MediumBrush}"
+                    FontSize="14"
+                    Text="Nafn framt." />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,0">
+                <TextBox
+                    Margin="0,5,20,0"
+                    BorderBrush="{DynamicResource MediumBrush}"
+                    BorderThickness="0,1,1,1"
+                    FontSize="14"
+                    Text="Kennitala framt." />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,0,1">
+                <TextBox
+                    Margin="0,0,0,5"
+                    BorderBrush="{DynamicResource MediumBrush}"
+                    BorderThickness="1,0,1,1"
+                    FontSize="14"
+                    Text="Nafn maka" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <TextBox
+                    Margin="0,0,20,5"
+                    BorderBrush="{DynamicResource MediumBrush}"
+                    BorderThickness="0,0,1,1"
+                    FontSize="14"
+                    Text="Kennitala maka" />
+            </Border>
+
+        </Grid>
+
+        <Grid Margin="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBox
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Background="{DynamicResource MediumBrush}"
+                BorderBrush="{DynamicResource MediumBrush}"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Sambuð samkvæmt þjoðskra" />
+            <Border
+                Grid.Row="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,0,0">
+                <TextBox
+                    Margin="5"
+                    BorderThickness="0"
+                    FontSize="14"
+                    Text="Samkvæmt skraningu i þjoðskra hofst sambuð ykkar" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,0">
+                <ComboBox Margin="0,5,100,10" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,0,0">
+                <TextBox
+                    Margin="5"
+                    BorderThickness="0"
+                    FontSize="14"
+                    Text="Seu þær upplysingar rangar, þa skraið retta dagsetningu her:" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="0,0,1,0">
+                <ComboBox Margin="0,5,100,10" />
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,1">
+                <TextBox
+                    Margin="5"
+                    BorderThickness="0"
+                    FontSize="14"
+                    TextWrapping="Wrap">
+                    Ef leiðretta þarf dagsetningu fyrir upphaf sambuðar þarf að lata gogn þvi till staðfestingar fylgja framtalinu.Sja kaflann Vottorð og viðbotargogn (sem opnast ef við a). Slik gogn geta t.d. verið staðfesting fra leigusala eða uppaskrift fra ættingjum eða oðrum þeim sem vottað geta um sambuð framteljenda.
+                </TextBox>
+            </Border>
+
+        </Grid>
+
+        <Grid Margin="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <TextBox
+                Grid.Row="0"
+                Background="{DynamicResource MediumBrush}"
+                BorderBrush="{DynamicResource MediumBrush}"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Born framteljenda" />
+            <Border
+                Grid.Row="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <TextBox
+                    Margin="5"
+                    BorderThickness="0"
+                    FontSize="14"
+                    TextWrapping="Wrap">
+                    Eigi sambuðarfolk saman barn eða von a barni saman, veitir það rett til samskottunar. Hver var fjolskyldustaða ykkar i lok ars 2021, hvað born varðar?
+                </TextBox>
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <Border Margin="30,10" BorderBrush="Gray">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton
+                            VerticalAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Content="Attum barn saman"
+                            FontSize="14" />
+                        <RadioButton
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Content="Attum von a barni saman"
+                            FontSize="14" />
+                        <RadioButton
+                            Grid.Column="2"
+                            VerticalAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Content="A ekki við"
+                            FontSize="14" />
+                    </Grid>
+
+                </Border>
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Margin="5"
+                    FontSize="14"
+                    TextWrapping="Wrap">
+                    Ef par sem hof sambuða a arinu 2021 hefur barn/born a framfæri sinu, sem þau eiga þo ekki saman, verða þau skattlogð sem einhleypingur/einstætt foreldri, eftir atvikum, i alagningu 2022.<LineBreak />
+                    Ef merkt er við ''Attum von a barni saman'' þarf að lata staðfestingu um þungun fylgja framtali ef samskottunar er oskað. Sja kaflann Vottorð og viðbotargogn (sem opnast ef við a).</TextBlock>
+            </Border>
+
+        </Grid>
+
+        <Grid Margin="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <TextBox
+                Grid.Row="0"
+                Background="{DynamicResource MediumBrush}"
+                BorderBrush="{DynamicResource MediumBrush}"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Rettur til samskottunar" />
+            <Border
+                Grid.Row="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <TextBox
+                    Margin="5"
+                    BorderThickness="0"
+                    FontSize="14"
+                    Text="Skilyrði fyrir samskottun eru að sambuð hafi varað i a.m.k. heilt ar i arslok 2021 eða að sambuðarfolk eigi saman barn eða eigi von a barni saman."
+                    TextWrapping="Wrap" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <Border Margin="30,10" BorderBrush="Gray">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton
+                            VerticalAlignment="Center"
+                            Content="Ja, við oskum samskottunar"
+                            FontSize="14" />
+                        <RadioButton
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            Content="Nei, við viljum vera skattlögð hvort i sinu lagi"
+                            FontSize="14" />
+                    </Grid>
+
+                </Border>
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    Margin="5"
+                    FontSize="14"
+                    TextWrapping="Wrap">
+                    Ef valið er JA verðið þið skattlogð sem hjon, þa að vi tilskyldu að þið oskið þess bæði. Þa þarf einnig að skila viðeigandi gognum, sbr. kaflann Vottorð og viðbotargogn.<LineBreak />
+                    Ef valið er NEI verðið þið skattlogð hvort i sinu lagi. Athugið að samkvæmt skattalogum eru barnabætur og vaxtabætur sambuðarfolks, sem uppfyllir skilyrðin fyrir samskottun, akvarðaðar eins og hja hjonum þott samskottunar se ekki oskað.</TextBlock>
+            </Border>
+        </Grid>
+
+
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <TextBox
+                Grid.Row="0"
+                Background="{DynamicResource MediumBrush}"
+                BorderBrush="{DynamicResource MediumBrush}"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="Vottorð og viðbotargogn" />
+            <Border
+                Grid.Row="1"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <Border Margin="0,10,30,5" BorderBrush="{DynamicResource MediumBrush}">
+                    <TextBox
+                        Margin="5"
+                        BorderThickness="0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Vottorð og viðbotargogn"
+                        TextWrapping="Wrap" />
+                </Border>
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <Border
+                    Margin="0,0,30,0"
+                    BorderBrush="{DynamicResource MediumBrush}"
+                    BorderThickness="0,1,1,1">
+                    <Grid Margin="1,5,5,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2.5*" />
+                            <ColumnDefinition Width="2.5*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border BorderBrush="{DynamicResource MediumBrush}" BorderThickness="0,1,1,1">
+                            <TextBlock VerticalAlignment="Top" Text="Tegund skjals" />
+                        </Border>
+                        <Border
+                            Grid.Column="1"
+                            BorderBrush="{DynamicResource MediumBrush}"
+                            BorderThickness="0,1,1,1">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="30" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock VerticalAlignment="Top" Text="Nafn skjals" />
+                                <Button
+                                    Grid.Column="1"
+                                    Content="..."
+                                    FontFamily="Arial Black" />
+                            </Grid>
+                        </Border>
+                        <Border
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            BorderBrush="{DynamicResource MediumBrush}"
+                            BorderThickness="0,0,1,1" />
+                        <Border
+                            Grid.Row="2"
+                            Grid.ColumnSpan="2"
+                            BorderBrush="{DynamicResource MediumBrush}"
+                            BorderThickness="0,0,1,1" />
+                        <Button
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Width="20"
+                            Height="15"
+                            Margin="-10,0,10,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            BorderThickness="0" />
+                        <Button
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            Width="40"
+                            Height="25"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Content="Plus" />
+                    </Grid>
+
+                </Border>
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <Border
+                    Margin="0,20,30,0"
+                    BorderBrush="{DynamicResource MediumBrush}"
+                    BorderThickness="0,1,1,1">
+                    <TextBox
+                        Margin="5"
+                        BorderThickness="0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Viðbotargognum skilað siðar (rafrænt eða a pappir)"
+                        TextWrapping="Wrap" />
+                </Border>
+            </Border>
+
+            <Border
+                Grid.Row="4"
+                BorderBrush="{DynamicResource MediumBrush}"
+                BorderThickness="1,0,1,0">
+                <StackPanel>
+                    <Border
+                        Margin="0,0,30,0"
+                        BorderBrush="{DynamicResource MediumBrush}"
+                        BorderThickness="0,0,1,0">
+                        <TextBox
+                            Margin="5"
+                            BorderThickness="0"
+                            FontSize="14"
+                            Text="Ef viðbotargognum er ekki skilað með framtali er hægt að skila þeim siðar, annað hvort rafrænt a skattur. is eða a pappir. Merkið við, til staðfestingar, hvaða gognum verður skilað til rikisskattstjora siðar."
+                            TextWrapping="Wrap" />
+                    </Border>
+                    <Border
+                        Margin="0,0,30,0"
+                        BorderBrush="{DynamicResource MediumBrush}"
+                        BorderThickness="0,0,1,0">
+                        <CheckBox Margin="10,5,0,5" VerticalContentAlignment="Center">
+                            <TextBlock Text="Gogn til staðfestingar a að sambuð hafi hafist fyrr en skrað er i þjoðskra" />
+                        </CheckBox>
+                    </Border>
+                    <Border
+                        Margin="0,0,30,0"
+                        BorderBrush="{DynamicResource MediumBrush}"
+                        BorderThickness="0,0,1,0">
+                        <CheckBox Margin="10,5,0,5" VerticalContentAlignment="Center">
+                            <TextBlock Text="Staðfesting vegna þungunar" />
+                        </CheckBox>
+                    </Border>
+                    <Border
+                        Margin="0,0,30,0"
+                        BorderBrush="{DynamicResource MediumBrush}"
+                        BorderThickness="0,0,1,1">
+                        <TextBox
+                            Margin="5"
+                            BorderThickness="0"
+                            FontSize="14"
+                            Text="Berist tilskilin gogn ekki verður umsokninni synjað sem ofullnægjandi."
+                            TextWrapping="Wrap" />
+                    </Border>
+                    <Border
+                        Height="10"
+                        BorderBrush="{DynamicResource MediumBrush}"
+                        BorderThickness="0,0,0,1" />
+                </StackPanel>
+            </Border>
+
+
+        </Grid>
+
+
+
+    </StackPanel>
+</Page>

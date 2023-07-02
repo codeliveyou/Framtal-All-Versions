@@ -1,0 +1,1106 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0405_01View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="2300" d:DesignWidth="910"
+      Title="RSK0405_01View">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="600"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="380"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.RowSpan="8" Fill="{StaticResource DarkBrush}"/>
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="330"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Column="2"
+                FontSize="24"
+                FontWeight="ExtraBold"
+                FontFamily="Agency"
+                >
+                Samræmingarblað <Run FontSize="12" FontWeight="Normal">meр framtali manns </Run><LineBreak/><Run FontSize="12" FontWeight="Normal">
+sem stundar atvinnurekstur eрa sjбlfstжрa starfsemi</Run><LineBreak/><Run FontSize="14" FontWeight="DemiBold">Fylgiskjal með skattframtali 2005</Run>
+
+            </TextBlock>
+        </Grid>
+        <Border Grid.Row="2" Grid.Column="2" BorderThickness="2,0,0,2">
+            <TextBlock
+                Padding="3,0,0,0"
+                FontSize="16"
+                FontWeight="DemiBold"
+                VerticalAlignment="Center"
+                >
+                Framteljandi
+            </TextBlock>
+        </Border>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.ColumnSpan="2">
+                <TextBlock Padding="3,0,0,0"
+                           Text="Nafn"/>
+            </Border>
+            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_01}" />
+            <Border Grid.Row="1" >
+                <TextBlock Padding="3,0,0,0"
+                           Text="Heimili"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_02}" />
+            <Border Grid.Row="1" Grid.Column="1">
+                <TextBlock Padding="3,0,0,0"
+                           Text="Póstnr. og póststöð"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_03}" />
+            <Border Grid.Row="0" Grid.Column="2">
+                <TextBlock Padding="3,0,0,0"
+                           Text="Kennitala"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="2" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_04}" />
+            <TextBox Grid.Row="0" Grid.Column="2" Margin="5,20,5,5" BorderThickness="0" Text="{Binding TB_05}" />
+            <Border Grid.Row="1" Grid.Column="2">
+                <TextBlock Padding="3,0,0,0"
+                           Text="Sveitarfélag"/>
+            </Border>
+        </Grid>
+        <Border Grid.Row="4" Grid.Column="2"/>
+        <Grid Grid.Row="4" Grid.Column="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="95"/>
+                <ColumnDefinition Width="135"/>
+                <ColumnDefinition Width="135"/>
+                <ColumnDefinition Width="140"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0"
+                    Grid.Column="0">
+                <TextBlock 
+                       Padding="3,0,0,0"
+                       FontWeight="DemiBold"
+                       FontSize="11"
+                       
+                >
+                Þegar um er að ræða einþætta starfsemi eða marg-<LineBreak/>þætta
+                starfsemi með einu sameiginlegu uppgjöri<LineBreak/>
+                útfyllist fremsti dálkur eingöngu. Ef hins vegar er um<LineBreak/>
+                að ræða margþætta starfsemi með sjálfstæðu<LineBreak/>
+                rekstrarlegu uppgjöri eða hlutdeild í samrekstri sem<LineBreak/>
+                eigi myndar sjálfstæðan skattaðila útfyllast hliðar-<LineBreak/>dálkar
+                og færist samtala í fremsta dálk.<LineBreak/>
+
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0"
+                    Grid.Column="1">
+                <TextBlock Padding="3,0,0,0"
+                       >Tegund starfsemi
+                </TextBlock>
+            </Border >
+            <Border Grid.Row="0"
+                    Grid.Column="2">
+                <TextBlock Padding="3,0,0,0"
+                       >Tegund starfsemi,<LineBreak/>
+nafn samrekstraraðila 1)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0"
+                    Grid.Column="3">
+                <TextBlock Padding="3,0,0,0"
+                       >Tegund starfsemi,<LineBreak/>nafn samrekstraraðila 2)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="0"
+                    Grid.Column="4">
+                <TextBlock Grid.Column="4"
+                       Padding="3,0,0,0" 
+                       >Tegund starfsemi,<LineBreak/>nafn samrekstraraðila 1)
+                </TextBlock>
+            </Border>
+
+
+            <Border Grid.Row="1"
+                    Grid.Column="0">
+                <TextBlock
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                >
+                Hrein eign eða skuldir umfram eignir skv. meðfylgjandi<LineBreak/>
+                efnahagsreikningi
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="2"
+                    Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                VerticalAlignment="Center"
+                >
+                + Fasteignamat húsa og lóða÷
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="3"
+                    Grid.Column="0">
+                <TextBlock
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                VerticalAlignment="Center"
+                >
+                ÷ Bókfært verð húsa og lóða
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="4"
+                    Grid.Column="0">
+                <TextBlock
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+              
+                >
+                Aðrar breytingar, hverjar
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="5"
+                    Grid.Column="0"></Border>
+
+            <Border Grid.Row="6"
+                    Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11">
+                Jákvæð fjárhæð færist sem eign á skattframtal en<LineBreak/>
+                neikvæð fjárhæð færist með skuldum á framtal
+                </TextBlock>
+
+            </Border>
+            <Border Grid.Row="7"
+                    Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11">
+              Rekstrarhagnaður eða rekstrartap skv. meðfylgjandi<LineBreak/>
+              rekstrarreikningi að teknu tilliti til reiknaðs endurgjalds 2)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="8"
+                Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                VerticalAlignment="Center"
+                >+ Gjaldfærð ófrádráttarbær gjöld í rekstrareikningi
+
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="9"
+                Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                VerticalAlignment="Center"
+                >÷ Tekjur í rekstrarreikningi sem undanþegnar eru<LineBreak/>
+skattskyldu skv. lögum.
+
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="10"
+                Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                >Aðrar breytingar, hverjar
+
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="11"
+                Grid.Column="0"/>
+            <Border Grid.Row="12"
+                Grid.Column="0">
+
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                VerticalAlignment="Center"
+                >Hagnaður eða tap ársins
+
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="13"
+                Grid.Column="0">
+                <TextBlock 
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11">
+             Ónotuð rekstrartöp frá fyrri árum til frádráttar:<LineBreak/>
+             Sbr. yfirlit, kafli D
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="14"
+                Grid.Column="0">
+                <TextBlock 
+                Grid.Row="14"
+                Grid.Column="0"
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11">
+             Jákvæð fjárhæð færist á skattframtal. Neikvæð<LineBreak/>
+             fjárhæð færist þar ekki
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="15"
+                Grid.Column="0"
+                BorderThickness="0,0,1,0"/>
+            <Border Grid.Row="16"
+                Grid.Column="0"
+                    BorderThickness="0,0,1,0">
+                <TextBlock
+                Padding="3,0,0,0"
+                FontWeight="DemiBold"
+                FontSize="11"
+                VerticalAlignment="Top">
+            Reiknað endurgjald 3)
+                </TextBlock>
+            </Border>
+            <Border Grid.Row="15"
+                    Margin="200,0,0,0"
+                    BorderThickness="0,0,0,1"
+                    >
+                <TextBlock Text="Eigið" 
+                           FontSize="11"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Bottom"/>
+            </Border>
+
+            <Border Grid.Row="16"
+                    Margin="200,0,0,0"
+                    BorderThickness="0,0,0,1"
+                    >
+                <TextBlock Text="Maka" 
+                           FontSize="11"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Bottom"/>
+
+            </Border>
+
+            <Border Grid.Row="17"
+                    Margin="200,0,0,0"
+                    BorderThickness="0,0,1,1"
+                    >
+                <TextBlock Text="Barna" 
+                           FontSize="11"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Bottom"/>
+
+            </Border>
+            <Border Grid.Column="1" Grid.Row="1"/>
+            <controls:IntegerControl Name="N405_SAMTALA_HREIN_EIGN_SKULD" Grid.Column="1" Grid.Row="1" Padding="3,0,0,0" FontWeight="Black" Content="1" Value="{Binding N405_SAMTALA_HREIN_EIGN_SKULD}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="1" Value="{Binding NTB_01}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="1" Value="{Binding NTB_02}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="1" Value="{Binding NTB_03}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="1" Value="{Binding NTB_04}" />
+
+            <Border Grid.Column="1" Grid.Row="2"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="2" Padding="3,0,0,0" FontWeight="Black" Content="2" Value="{Binding NTB_05}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="2" Value="{Binding NTB_06}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="2" Value="{Binding NTB_07}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="2" Value="{Binding NTB_08}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="2" Value="{Binding NTB_09}" />
+
+            <Border Grid.Column="1" Grid.Row="3"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="3" Padding="3,0,0,0" FontWeight="Black" Content="3" Value="{Binding NTB_010}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="3" Value="{Binding NTB_011}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="3" Value="{Binding NTB_012}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="3" Value="{Binding NTB_013}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="3" Value="{Binding NTB_014}" />
+
+            <Border Grid.Column="1" Grid.Row="4"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="4" Padding="3,0,0,0" FontWeight="Black" Content="4" Value="{Binding NTB_015}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="4" Value="{Binding NTB_016}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="4" Value="{Binding NTB_017}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="4" Value="{Binding NTB_018}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="4" Value="{Binding NTB_019}" />
+
+            <Border Grid.Column="1" Grid.Row="5"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="5"  Padding="3,0,0,0" FontWeight="Black" Content="5" Value="{Binding NTB_020}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="5" Value="{Binding NTB_021}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="5" Value="{Binding NTB_022}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="5" Value="{Binding NTB_023}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="5" Value="{Binding NTB_024}" />
+
+            <Border Grid.Column="1" Grid.Row="6"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="6" Padding="3,0,0,0" FontWeight="Black" Content="6" Value="{Binding NTB_025}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="6" Value="{Binding NTB_026}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="6" Value="{Binding NTB_027}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="6" Value="{Binding NTB_028}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="6" Value="{Binding NTB_029}" />
+
+            <Border Grid.Column="1" Grid.Row="7"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="7"  Padding="3,0,0,0" FontWeight="Black" Content="7" Value="{Binding NTB_030}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="7" Value="{Binding NTB_031}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="7" Value="{Binding NTB_032}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="7" Value="{Binding NTB_033}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="7" Value="{Binding NTB_034}" />
+
+            <Border Grid.Column="1" Grid.Row="8"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="8" Padding="3,0,0,0" FontWeight="Black" Content="8" Value="{Binding NTB_035}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="8" Value="{Binding NTB_036}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="8" Value="{Binding NTB_037}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="8" Value="{Binding NTB_038}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="8" Value="{Binding NTB_039}" />
+
+            <Border Grid.Column="1" Grid.Row="9"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="9" Padding="3,0,0,0" FontWeight="Black" Content="9" Value="{Binding NTB_040}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="9" Value="{Binding NTB_041}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="9" Value="{Binding NTB_042}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="9" Value="{Binding NTB_043}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="9" Value="{Binding NTB_044}" />
+
+            <Border Grid.Column="1" Grid.Row="10"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="10" Padding="3,0,0,0" FontWeight="Black" Content="10" Value="{Binding NTB_045}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="10" Value="{Binding NTB_046}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="10" Value="{Binding NTB_047}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="10" Value="{Binding NTB_048}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="10" Value="{Binding NTB_049}" />
+
+            <Border Grid.Column="1" Grid.Row="11"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="11" Padding="3,0,0,0" FontWeight="Black" Content="11" Value="{Binding NTB_050}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="11" Value="{Binding NTB_051}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="11" Value="{Binding NTB_052}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="11" Value="{Binding NTB_053}" />
+
+            <Border Grid.Column="1" Grid.Row="12"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="12" Padding="3,0,0,0" FontWeight="Black" Content="12" Value="{Binding NTB_054}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="12" Value="{Binding NTB_055}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="12" Value="{Binding NTB_056}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="12" Value="{Binding NTB_057}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="12" Value="{Binding NTB_058}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="12" Value="{Binding NTB_059}" />
+
+            <Border Grid.Column="1" Grid.Row="13"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="13"  Padding="3,0,0,0" FontWeight="Black" Content="13" Value="{Binding NTB_060}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="13" Value="{Binding NTB_061}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="13" Value="{Binding NTB_062}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="13" Value="{Binding NTB_063}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="13" Value="{Binding NTB_064}" />
+
+            <Border Grid.Column="1" Grid.Row="14"/>
+            <controls:IntegerControl Grid.Column="1" Grid.Row="14" Padding="3,0,0,0" FontWeight="Black" Content="14" Value="{Binding NTB_065}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="14" Value="{Binding NTB_066}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="14" Value="{Binding NTB_067}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="14" Value="{Binding NTB_068}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="14" Value="{Binding NTB_069}" />
+
+            <controls:IntegerControl Grid.Column="1" Grid.Row="15" Value="{Binding NTB_070}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="15" Value="{Binding NTB_071}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="15" Value="{Binding NTB_072}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="15" Value="{Binding NTB_073}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="15" Value="{Binding NTB_074}" />
+
+
+            <controls:IntegerControl Grid.Column="1" Grid.Row="16" Value="{Binding NTB_075}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="16" Value="{Binding NTB_076}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="16" Value="{Binding NTB_077}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="16" Value="{Binding NTB_078}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="16" Value="{Binding NTB_079}" />
+
+            <controls:IntegerControl Grid.Column="1" Grid.Row="17" Value="{Binding NTB_080}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="17" Value="{Binding NTB_081}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="17" Value="{Binding NTB_082}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="17" Value="{Binding NTB_083}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="17" Value="{Binding NTB_084}" />
+
+            <controls:IntegerControl Grid.Column="1" Grid.Row="18" Value="{Binding NTB_085}" />
+            <controls:IntegerControl Grid.Column="2" Grid.Row="18" Value="{Binding NTB_086}" />
+            <controls:IntegerControl Grid.Column="3" Grid.Row="18" Value="{Binding NTB_087}" />
+            <controls:IntegerControl Grid.Column="4" Grid.Row="18" Value="{Binding NTB_088}" />
+            <controls:IntegerControl Grid.Column="5" Grid.Row="18" Value="{Binding NTB_089}" />
+
+        </Grid>
+        <TextBlock
+            Grid.Row="6"
+            Grid.Column="2"
+            Padding="3,0,0,0"
+            FontSize="14"
+            FontWeight="DemiBold"
+            VerticalAlignment="Bottom">
+                Yfirlit yfir ónotað tap 4)
+
+        </TextBlock>
+        <Border  Grid.Row="7"
+                 Grid.Column="2"/>
+        <Grid  Grid.Row="7"
+                 Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Column="0" Grid.RowSpan="2"/>
+            <Border Grid.Column="1" Grid.RowSpan="2"/>
+            <Border Grid.Column="2" Grid.RowSpan="2"/>
+            <Border Grid.Column="3" Grid.RowSpan="2"/>
+
+            <TextBlock 
+                Grid.Row="0"
+                Grid.Column="0"
+                Padding="3,0,0,0"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                >1</TextBlock>
+            <TextBlock 
+                Grid.Row="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                FontSize="10"
+                FontWeight="DemiBold"
+                >Rekstrarár</TextBlock>
+
+
+            <TextBlock 
+                Grid.Row="0"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                 FontSize="10"
+                FontWeight="DemiBold"
+                >2</TextBlock>
+            <TextBlock 
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="3,0,0,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                 FontSize="10"
+                FontWeight="DemiBold"
+                >Ónotað tap frá fyrra ári</TextBlock>
+
+            <TextBlock 
+                Grid.Row="0"
+                Grid.Column="2"
+                Padding="3,0,0,0"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                 FontSize="10"
+                FontWeight="DemiBold"
+                >3</TextBlock>
+            <TextBlock 
+                Grid.Row="1"
+                Grid.Column="2"
+                Padding="3,0,0,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                 FontSize="10"
+                FontWeight="DemiBold"
+                >Notað á móti hagnaði ársins <LineBreak/>
+                (elsta tap notast alltaf fyrst)</TextBlock>
+
+            <TextBlock 
+                Grid.Row="0"
+                Grid.Column="3"
+                Padding="3,0,0,0"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                 FontSize="10"
+                FontWeight="DemiBold"
+                >4</TextBlock>
+            <TextBlock 
+                Grid.Row="1"
+                Grid.Column="3"
+                Padding="3,0,0,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                 FontSize="10"
+                FontWeight="DemiBold"
+                >Ónotað yfirfæranlegt tap<LineBreak/>
+                 Dálkur 2 - Dálkur 3</TextBlock>
+
+            <Border 
+                Grid.Row="2"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    1994
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="3"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    1995
+
+                </TextBlock>
+
+            </Border>
+
+            <Border 
+                Grid.Row="4"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    1996
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="5"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    1997
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="6"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    1998
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="7"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    1999
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="8"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    2000
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="9"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    2001
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="10"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    2002
+
+                </TextBlock>
+
+            </Border>
+            <Border 
+                Grid.Row="11"
+                Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center"
+                    FontSize="10">
+                    2003
+
+                </TextBlock>
+
+            </Border>
+
+            <Border  Grid.Row="12" Grid.RowSpan="2"/>
+            <TextBlock
+            Grid.Row="13"
+            FontWeight="DemiBold"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            >Samtals<LineBreak/>
+flutt í línu 13:
+
+            </TextBlock>
+            <Border 
+                Grid.Row="12"
+                Grid.Column="2">
+                <TextBlock
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    FontSize="10"
+                    FontWeight="DemiBold"
+                    >Tap ársins 2004 - >
+
+
+                </TextBlock>
+
+            </Border>
+
+            <Border 
+                Grid.Row="13"
+                Grid.Column="2">
+                <TextBlock
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    FontSize="10"
+                    FontWeight="DemiBold"
+                    >Samtals ónotað tap sbr. línu 14:
+
+
+                </TextBlock>
+
+            </Border>
+
+
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_06}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="2" Text="{Binding TB_07}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="3" Text="{Binding TB_08}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="1" Text="{Binding TB_09}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="2" Text="{Binding TB_010}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="3" Text="{Binding TB_011}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="1" Text="{Binding TB_012}" />
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="2" Text="{Binding TB_013}" />
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="3" Text="{Binding TB_014}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="5" Grid.Column="1" Text="{Binding TB_015}" />
+            <controls:TextBoxWithBlackText Grid.Row="5" Grid.Column="2" Text="{Binding TB_016}" />
+            <controls:TextBoxWithBlackText Grid.Row="5" Grid.Column="3" Text="{Binding TB_017}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="6" Grid.Column="1" Text="{Binding TB_018}" />
+            <controls:TextBoxWithBlackText Grid.Row="6" Grid.Column="2" Text="{Binding TB_019}" />
+            <controls:TextBoxWithBlackText Grid.Row="6" Grid.Column="3" Text="{Binding TB_020}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="7" Grid.Column="1" Text="{Binding TB_021}" />
+            <controls:TextBoxWithBlackText Grid.Row="7" Grid.Column="2" Text="{Binding TB_022}" />
+            <controls:TextBoxWithBlackText Grid.Row="7" Grid.Column="3" Text="{Binding TB_023}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="8" Grid.Column="1" Text="{Binding TB_024}" />
+            <controls:TextBoxWithBlackText Grid.Row="8" Grid.Column="2" Text="{Binding TB_025}" />
+            <controls:TextBoxWithBlackText Grid.Row="8" Grid.Column="3" Text="{Binding TB_026}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="9" Grid.Column="1" Text="{Binding TB_027}" />
+            <controls:TextBoxWithBlackText Grid.Row="9" Grid.Column="2" Text="{Binding TB_028}" />
+            <controls:TextBoxWithBlackText Grid.Row="9" Grid.Column="3" Text="{Binding TB_029}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="10" Grid.Column="1" Text="{Binding TB_030}" />
+            <controls:TextBoxWithBlackText Grid.Row="10" Grid.Column="2" Text="{Binding TB_031}" />
+            <controls:TextBoxWithBlackText Grid.Row="10" Grid.Column="3" Text="{Binding TB_032}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="11" Grid.Column="1" Text="{Binding TB_033}" />
+            <controls:TextBoxWithBlackText Grid.Row="11" Grid.Column="2" Text="{Binding TB_034}" />
+            <controls:TextBoxWithBlackText Grid.Row="11" Grid.Column="3" Text="{Binding TB_035}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Content="=" VerticalAlignment="Bottom" Text="{Binding TB_036}" />
+            <controls:TextBoxWithBlackText Grid.Row="12" Grid.Column="3" Text="{Binding TB_037}" />
+            <controls:TextBoxWithBlackText Grid.Row="13" Grid.Column="3" VerticalAlignment="Bottom" Content="=" Text="{Binding TB_038}" />
+
+
+        </Grid>
+        <Border Grid.Row="9" 
+                Grid.Column="2"/>
+        <Grid Grid.Row="9" 
+                Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="0">
+                <TextBlock
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center"
+                    FontSize="10"
+                    FontWeight="DemiBold">
+                    Staðgreiðsla af fjármagnstekjum í rekstri
+
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="1">
+                <TextBlock Padding="3,0,0,0"
+                           FontSize="9"
+                           >Tegund starfsemi
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="2">
+                <TextBlock Padding="3,0,0,0"
+                           FontSize="9"
+                           >Tegund starfsemi,<LineBreak/>
+nafn samrekstraraðila
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="3">
+                <TextBlock Padding="3,0,0,0"
+                           FontSize="9"
+                           >Tegund starfsemi,<LineBreak/>
+nafn samrekstraraðila
+                </TextBlock>
+            </Border>
+            <Border Grid.Column="4">
+                <TextBlock Padding="3,0,0,0"
+                           FontSize="9"
+                           >Tegund starfsemi,<LineBreak/>
+nafn samrekstraraðila
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Column="0"
+                    Grid.Row="1"
+                    Grid.RowSpan="2"/>
+
+            <Border Grid.Column="0"
+                    Grid.Row="1"
+                    BorderThickness="0,1,1,1"
+                    Margin="120,0,0,0">
+                <TextBlock 
+                    FontWeight="DemiBold"
+                    VerticalAlignment="Bottom">
+                    Af arði
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Column="0"
+                    Grid.Row="2"
+                    BorderThickness="0,1,1,1"
+                    Margin="120,0,0,0">
+                <TextBlock 
+                    FontWeight="DemiBold"
+                    VerticalAlignment="Bottom">
+                    Af vöxtum
+                </TextBlock>
+            </Border>
+
+
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="1" Text="{Binding TB_039}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="2" Text="{Binding TB_040}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="3" Text="{Binding TB_041}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="4" Text="{Binding TB_042}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_043}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="2" Text="{Binding TB_044}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="3" Text="{Binding TB_045}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="4" Text="{Binding TB_046}" />
+        </Grid>
+        <Border Grid.Row="12"
+                Grid.Column="2"/>
+        <TextBlock Grid.Row="11"
+                Grid.Column="2"
+                   Text="Samrekstraraðilar, skipting tekna og eigna"
+                   VerticalAlignment="Bottom"
+                   FontWeight="Bold"
+                   />
+        <Grid Grid.Row="12"
+                Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Grid.Column="0">
+                <TextBlock Padding="3,0,0,0"
+                           Text="Nafn"/>
+
+            </Border>
+            <Border Grid.Column="1">
+                <TextBlock Padding="3,0,0,0"
+                           HorizontalAlignment="Center"
+                           Text="Kennitala"/>
+            </Border>
+            <Border Grid.Column="2">
+                <TextBlock Padding="3,0,0,0"
+                           HorizontalAlignment="Center"
+                           >Reiknað endurgjald þ.m.t.<LineBreak/>
+                            vegna maka og barna</TextBlock>
+            </Border>
+            <Border Grid.Column="3">
+                <TextBlock Padding="3,0,0,0"
+                           HorizontalAlignment="Center"
+                           Text="Hreinar tekjur/tap"/>
+            </Border>
+            <Border Grid.Column="4">
+                <TextBlock Padding="3,0,0,0"
+                           HorizontalAlignment="Center"
+                           Text="Hrein eign/skuld"/>
+            </Border>
+
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="0" Text="{Binding TB_047}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="1" Text="{Binding TB_048}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="2" Text="{Binding TB_049}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="3" Text="{Binding TB_050}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Grid.Column="4" Text="{Binding TB_051}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="0" Text="{Binding TB_052}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="1" Text="{Binding TB_053}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="2" Text="{Binding TB_054}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="3" Text="{Binding TB_055}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Grid.Column="4" Text="{Binding TB_056}" />
+
+
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="0" Text="{Binding TB_057}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="1" Text="{Binding TB_058}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="2" Text="{Binding TB_059}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="3" Text="{Binding TB_060}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Grid.Column="4" Text="{Binding TB_061}" />
+
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="0" Text="{Binding TB_062}" />
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="1" Text="{Binding TB_063}" />
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="2" Text="{Binding TB_064}" />
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="3" Text="{Binding TB_065}" />
+            <controls:TextBoxWithBlackText Grid.Row="4" Grid.Column="4" Text="{Binding TB_066}" />
+        </Grid>
+        <TextBlock Grid.Row="13"
+                Grid.Column="2"
+                   Text="Athugasemdir framteljanda"
+                   VerticalAlignment="Bottom"
+                   FontWeight="Bold"
+                   />
+        <Border Grid.Row="14"
+                Grid.Column="2"/>
+        <Grid  Grid.Row="14"
+                Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <controls:TextBoxWithBlackText Grid.Row="0" Text="{Binding TB_067}" />
+            <controls:TextBoxWithBlackText Grid.Row="1" Text="{Binding TB_068}" />
+            <controls:TextBoxWithBlackText Grid.Row="2" Text="{Binding TB_069}" />
+            <controls:TextBoxWithBlackText Grid.Row="3" Text="{Binding TB_070}" />
+        </Grid>
+
+        <TextBlock Grid.Row="16"
+                   Grid.Column="2">
+            1) Þegar um er að ræða hlutdeild í samrekstri sem eigi myndar sjálfstæðan skattaðila er nægilegt að færa niðurstöðutölur í<LineBreak/>
+samtölureit hliðardálks, ef á ársreikningnum sjálfum eða fylgiskjali með honum eru gerðar þær breytingar sem nauðsynlegar<LineBreak/>
+eru til samræmis við ákvæði skattalaga.
+        </TextBlock>
+        <TextBlock Grid.Row="18"
+                   Grid.Column="2">
+      2) Reiknað endurgjald, sbr. 2. mgr. 1. tl. A-liðs 7. gr. laga nr. 90/2003, telst rekstrarkostnaður skv. 1. tl. 31. gr. sömu laga og <LineBreak/>
+ber því að færa þá fjárhæð til gjalda í rekstrarreikningi og tilfæra þannig fengna niðurstöðu í staflið B.
+        </TextBlock>
+        <TextBlock Grid.Row="20"
+                   Grid.Column="2">
+      3) Sé eigi gerð sundurliðuð grein fyrir reiknuðu endurgjaldi á rekstrarreikningnum sjálfum skal í staflið C gera sundurliðaða<LineBreak/>
+grein fyrir fjárhæðum reiknaðs endurgjalds.
+        </TextBlock>
+
+        <TextBlock Grid.Row="22"
+                   Grid.Column="2"
+                   Text=" 4) Yfirlit yfir ónotað tap"
+                   FontWeight="Bold"/>
+        <TextBlock Grid.Row="24"
+                   Grid.Column="2">
+            <Bold>8. töluliður 31. gr. laga nr. 90/2003</Bold><LineBreak/>
+Eftirstöðvar rekstrartapa frá síðustu tíu árum á undan tekjuári, enda hafi fullnægjandi grein verið gerð fyrir rekstrartapinu og<LineBreak/>
+eftirstöðvum þess á því tekjuári þegar tapið myndaðist. Þó er ekki heimilt að nýta rekstrartap til frádráttar tekjum ef veruleg<LineBreak/>
+breyting hefur orðið á þeim rekstri eða starfsemi sem í hlut á, svo sem með breytingu á eignaraðild að lögaðila eða á tilgangi<LineBreak/>
+rekstrar, nema sýnt þyki að umræddar breytingar hafi verið gerðar í eðlilegum og venjulegum rekstrartilgangi.
+
+        </TextBlock>
+
+        <Label Grid.Column="1"
+               Grid.Row="4"
+               Content="A"
+               FontWeight="Bold"
+               FontSize="28" 
+               Margin="20,100,0,369" />
+
+        <Label Grid.Column="1"
+               Grid.Row="4"
+               Content="B"
+               FontWeight="Bold"
+               FontSize="28" 
+               Margin="20,260,0,0" />
+
+
+        <Label Grid.Column="1"
+               Grid.Row="4"
+               Content="C"
+               FontWeight="Bold"
+               FontSize="28" 
+               Margin="20,500,0,0" />
+
+        <Label Grid.Column="1"
+               Grid.Row="7"
+               Content="D"
+               FontWeight="Bold"
+               FontSize="28" 
+                Margin="20,0,0,0"
+                />
+
+        <Label Grid.Column="1"
+               Grid.Row="9"
+               Content="E"
+               FontWeight="Bold"
+               FontSize="28" 
+                Margin="20,0,0,0"
+                />
+
+        <Label Grid.Column="1"
+               Grid.Row="12"
+               Content="F"
+               FontWeight="Bold"
+               FontSize="28" 
+                Margin="20,0,0,0"
+                />
+
+        <Label Grid.Column="1"
+               Grid.Row="14"
+               Content="G"
+               FontWeight="Bold"
+               FontSize="28" 
+                Margin="20,0,0,0"
+                />
+    </Grid>
+</Page>

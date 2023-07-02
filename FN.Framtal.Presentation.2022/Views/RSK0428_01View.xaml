@@ -1,0 +1,561 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0428_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="794"
+    Height="826"
+    MaxWidth="794"
+    MaxHeight="826"
+    d:DesignHeight="826"
+    d:DesignWidth="794"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+        <Style x:Key="DataGridHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontWeight" Value="DemiBold" />
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+        </Style>
+        <Style x:Key="DataGridCellStyle" TargetType="DataGridCell">
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="FontWeight" Value="Normal" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="380" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="120" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="19" />
+            <ColumnDefinition Width="26" />
+            <ColumnDefinition Width="700" />
+            <ColumnDefinition Width="19" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle
+            Grid.RowSpan="14"
+            Grid.Column="0"
+            Fill="{StaticResource DarkBrush}" />
+
+        <Grid
+            Grid.Row="0"
+            Grid.Column="3"
+            HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Width="60"
+                Height="60"
+                Source="/Resources/Framtal_Logo.jpg" />
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="24"
+                FontWeight="Bold">
+                Skjölunarskyldir lögaðilar
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                FontSize="18"
+                FontWeight="Bold">
+                skv. 5. mgr. 57. gr. laga nr. 90/2003
+            </TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*" />
+                <ColumnDefinition Width="0.75*" />
+                <ColumnDefinition Width="1.25*" />
+            </Grid.ColumnDefinitions>
+
+            <controls:TextBoxWithDescription
+                Title="Nafn skjölunarskylds lögaðila"
+                Grid.Row="0"
+                Grid.Column="0"
+                FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                Text="{Binding Name1}" />
+            <controls:TextBoxWithDescription
+                Title="Kennitala"
+                Grid.Row="0"
+                Grid.Column="1"
+                FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                Text="{Binding Tb_SpouseSSN1}" />
+            <controls:TextBoxWithDescription
+                Title="Heimilisfang"
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                Text="{Binding Name2}" />
+            <controls:TextBoxWithDescription
+                Title="Sveitarfélag"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontSize="{DynamicResource Chapter2SmallTextFontSize}"
+                Text="{Binding Tb_SpouseSSN2}" />
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="14"
+                FontWeight="DemiBold"
+                Text="Fylgiskjal með skattframtali lögaðila 2022" />
+        </Grid>
+
+        <!--  main data grid  -->
+        <Grid
+            Grid.Row="2"
+            Grid.Column="3"
+            DataContext="{Binding RSK428_TENGDIR_LOGADILAR}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="145" />
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="85" />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="14"
+                FontWeight="Bold"
+                Text="Tengdir lögaðilar" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="14"
+                FontWeight="Bold"
+                Text="Tengsl" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="5"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="14"
+                FontWeight="Bold"
+                Text="Tegund og fjárhæð viðskipta" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="7"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="14"
+                FontWeight="Bold"
+                Text="Skjölun" />
+
+            <DataGrid
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Margin="0,0,10,0"
+                AutoGenerateColumns="False"
+                BorderBrush="Black"
+                ColumnHeaderHeight="120"
+                ItemsSource="{Binding}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Width="145"
+                        Binding="{Binding Path=T428_TL_NAFN}"
+                        Header="Nafn" />
+                    <DataGridTextColumn
+                        Width="110"
+                        Binding="{Binding Path=K428_TL_KENNITALA}"
+                        Header="Kennitala" />
+                    <DataGridTextColumn
+                        Width="90"
+                        Binding="{Binding Path=T428_TL_TIN_NUMER}"
+                        Header="TIN-auðkenni (ef erlendur aðili)" />
+                    <DataGridTextColumn
+                        Width="60"
+                        Binding="{Binding Path=R428_TL_LAND}"
+                        Header="Ríki" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <DataGrid
+                Grid.Row="1"
+                Grid.Column="4"
+                Margin="0,0,10,0"
+                AutoGenerateColumns="False"
+                BorderBrush="Black"
+                ColumnHeaderHeight="120"
+                ItemsSource="{Binding}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Width="70"
+                        Binding="{Binding Path=R428_TL_FORM_TENGSLA}"
+                        Header="Form tengsla (sjá bakhlið)" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <DataGrid
+                Grid.Row="1"
+                Grid.Column="5"
+                Grid.ColumnSpan="2"
+                Margin="0,0,10,0"
+                AutoGenerateColumns="False"
+                BorderBrush="Black"
+                ColumnHeaderHeight="120"
+                ItemsSource="{Binding}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Width="70"
+                        Binding="{Binding Path=R428_TL_TEGUND_VIDSKIPTA}"
+                        Header="Tegund viðskipta (Kóði)" />
+                    <DataGridTextColumn
+                        Width="85"
+                        Binding="{Binding Path=R428_TL_FJARHAED_VIDSKIPTA}"
+                        Header="Fjárhæð viðskipta (Nr. fjárhæðarbils)" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <DataGrid
+                Grid.Row="1"
+                Grid.Column="7"
+                Grid.ColumnSpan="2"
+                Margin="0,0,10,0"
+                AutoGenerateColumns="False"
+                BorderBrush="Black"
+                ColumnHeaderHeight="120"
+                ItemsSource="{Binding}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Width="70"
+                        Binding="{Binding Path=C428_TL_VIDSKIPTI_SKJOLUD}"
+                        Header="Viðskipti skjöluð (Já/Nei)" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+
+        <!--  //textbox grid  -->
+        <Grid Grid.Row="4" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.55*" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="0.65*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Grid.Row="0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    FontWeight="Bold">
+                    Athugasemdir
+                </TextBlock>
+                <TextBox
+                    Grid.Row="1"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    TextWrapping="WrapWithOverflow" />
+                <TextBlock
+                    Grid.Row="2"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="10"
+                    TextWrapping="Wrap">
+                    Hér með staðfestist að framangreindar upplýsingar eru unnar samkvæmt
+                    bestu vitund og í  samræmi við fyrirliggjandi gögn
+                </TextBlock>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.9*" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="1.1*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    Orientation="Vertical">
+                    <TextBlock FontSize="14" FontWeight="Bold">Tegund viðskipta</TextBlock>
+                    <TextBlock FontSize="12">Rekstur</TextBlock>
+                    <TextBlock Margin="0,10,0,0" FontSize="10">
+                        <TextBlock FontWeight="Bold">V</TextBlock>
+                        Vörusala
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">V</TextBlock>
+                        Vörusala
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">K</TextBlock>
+                        Vörukaup
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">S</TextBlock>
+                        Sala á þjónustu
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">M</TextBlock>
+                        Kaup á þjónustu
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">T</TextBlock>
+                        Vaxtatekjur af lánveitingum
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">G</TextBlock>
+                        Vaxtagjöld af lánveitingum
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">R</TextBlock>
+                        Þóknanir
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">I</TextBlock>
+                        Kostnaðarskipting/ -þáttaka<LineBreak />
+                        (Intra Group Services)</TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">H</TextBlock>
+                        Hagnaður/tap af sölu eigna
+                    </TextBlock>
+                </StackPanel>
+
+                <StackPanel
+                    Grid.Column="1"
+                    Margin="5,0,0,0"
+                    Orientation="Vertical">
+                    <TextBlock FontSize="14" FontWeight="Bold">Tegund viðskipta</TextBlock>
+                    <TextBlock FontSize="12">Efnahagur</TextBlock>
+                    <TextBlock Margin="0,10,0,0" FontSize="10">
+                        <TextBlock FontWeight="Bold">E</TextBlock>
+                        Sala á efnislegum eignum
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">P</TextBlock>
+                        Kaup á efnislegum eignum
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">O</TextBlock>
+                        Sala á óefnislegum eignum
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">B</TextBlock>
+                        Kaup á óefnislegum eignum
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">C</TextBlock>
+                        Sala á hlutabréfum og öðrum<LineBreak />
+                        fjármálagerningum</TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">D</TextBlock>
+                        Kaup á hlutabréfum og öðrum<LineBreak />
+                        fjármálagerningum</TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">L</TextBlock>
+                        Veitt lán, árslokastaða
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">F</TextBlock>
+                        Fengin lán, árslokastaða
+                    </TextBlock>
+
+                </StackPanel>
+
+                <StackPanel
+                    Grid.Column="2"
+                    Margin="5,0,0,0"
+                    Orientation="Vertical">
+                    <TextBlock FontSize="14" FontWeight="Bold">Fjárhæð viðskipta á ári</TextBlock>
+                    <TextBlock FontSize="12">Efnahagur</TextBlock>
+                    <TextBlock Margin="0,10,0,0" FontSize="10">
+                        <TextBlock FontWeight="Bold">1</TextBlock>
+                        Less than 10.000.000 kr
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">2</TextBlock>
+                        10.000.000 - 50.000.000 kr.
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">3</TextBlock>
+                        50.000.000 - 100.000.000 kr
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">4</TextBlock>
+                        100.000.000 - 250.000.000 kr.
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">5</TextBlock>
+                        250.000.000 - 500.000.000 kr.
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">6</TextBlock>
+                        500.000.000 - 1.000.000.000 kr.
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">7</TextBlock>
+                        1.000.000.000 - 2.500.000.000 kr
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">8</TextBlock>
+                        2.500.000.000 - 5.000.000.000 kr.
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">9</TextBlock>
+                        5.000.000.000-10.000.000.000 kr
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <TextBlock FontWeight="Bold">10</TextBlock>
+                        > 10.000.000.000 kr
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!--  Footer  -->
+        <Grid Grid.Row="5" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="14"
+                FontWeight="Bold">
+                RSK 4.28
+                <TextBlock FontSize="10" FontWeight="Normal">14-1-2022</TextBlock>
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="14"
+                FontWeight="Bold">
+                <StackPanel>
+                    <Line
+                        Height="1"
+                        Stroke="Black"
+                        StrokeThickness="1"
+                        X1="0"
+                        X2="150"
+                        Y1="0" />
+                    <TextBlock HorizontalAlignment="Center">
+                        Staður og dagsetning
+                    </TextBlock>
+                </StackPanel>
+
+            </TextBlock>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="14"
+                FontWeight="Bold">
+                <StackPanel>
+                    <Line
+                        Height="1"
+                        Stroke="Black"
+                        StrokeThickness="1"
+                        X1="0"
+                        X2="150"
+                        Y1="0" />
+                    <TextBlock HorizontalAlignment="Center">
+                        Undirskrift
+                    </TextBlock>
+                </StackPanel>
+            </TextBlock>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="14"
+                FontWeight="Bold">
+                Sjá leiðbeiningar á bakhlið ➔
+            </TextBlock>
+
+        </Grid>
+
+    </Grid>
+</Page>

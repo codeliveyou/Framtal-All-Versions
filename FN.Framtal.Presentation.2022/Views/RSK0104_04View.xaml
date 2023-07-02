@@ -1,0 +1,658 @@
+﻿<Page x:Class="FN.Framtal.Presentation._2022.Views.RSK0104_04View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="1057" Height="1057" MaxHeight="1057"
+      d:DesignWidth="794" Width="794" MaxWidth="794">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38"/>
+            <ColumnDefinition Width="172"/>
+            <ColumnDefinition Width="17"/>
+            <ColumnDefinition Width="166"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="17"/>
+            <ColumnDefinition Width="166"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="43"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+            <RowDefinition Height="31"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Column="8" Fill="{StaticResource DarkBrush}" Grid.Row="0" Grid.RowSpan="32" Margin="0,0,0,-26"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" Text="Rekstur frh." FontSize="16" FontWeight="Bold" VerticalAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Text="Gjöld - önnur sundurliðun gjalda" TextWrapping="Wrap" FontWeight="Bold"/>
+        <Border Grid.Column="3" Grid.Row="1" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Value="{Binding NTB_01}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="1" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">Flutt</TextBlock>
+
+
+        <Border Grid.Column="1" Grid.Row="2" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar leiðréttingar skv. framhaldsblaði *</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="3" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 1994</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="4" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 1995</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="5" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 1996</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="6" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 1997</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="7" BorderThickness="1 1 0 1">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 1998</TextBlock>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="2" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">+/-</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="3" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="4" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="5" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="6" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="7" BorderThickness="1 1 0 1">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+
+        <Border Grid.Column="3" Grid.Row="2" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4400" Value="{Binding T4400}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="2" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4400</TextBlock>
+        <Border Grid.Column="3" Grid.Row="3" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4520" Value="{Binding T4520}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="3" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4520</TextBlock>
+        <Border Grid.Column="3" Grid.Row="4" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4530" Value="{Binding T4530}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="4" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4530</TextBlock>
+        <Border Grid.Column="3" Grid.Row="5" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4540" Value="{Binding T4540}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="5" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4540</TextBlock>
+        <Border Grid.Column="3" Grid.Row="6" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4550" Value="{Binding T4550}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="6" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4550</TextBlock>
+        <Border Grid.Column="3" Grid.Row="7" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 1" Padding="3">
+            <controls:IntegerControl Name="_4560" Value="{Binding T4560}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="7" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4560</TextBlock>
+
+        <Border Grid.Column="4" Grid.Row="2" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 1999</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="3" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 2000</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="4" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 2001</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="5" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 2002</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="6" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ónotað tap 2003</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="7" BorderThickness="1 1 0 1">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8" FontWeight="Bold">Hreinar tekjur/yfirfæranlegt tap til <LineBreak></LineBreak>næsta árs. Samtala reita 3990 til 4610</TextBlock>
+        </Border>
+
+        <Border Grid.Column="5" Grid.Row="2" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="3" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="4" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="5" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="6" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="7" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">=</TextBlock>
+        </Border>
+
+        <Border Grid.Column="6" Grid.Row="2" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4570" Value="{Binding T4570}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="2" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4570</TextBlock>
+        <Border Grid.Column="6" Grid.Row="3" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4580" Value="{Binding T4580}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="3" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4580</TextBlock>
+        <Border Grid.Column="6" Grid.Row="4" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4590" Value="{Binding T4590}"/>
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="4" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4590</TextBlock>
+        <Border Grid.Column="6" Grid.Row="5" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4600" Value="{Binding T4600}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="5" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4600</TextBlock>
+        <Border Grid.Column="6" Grid.Row="6" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_4610" Value="{Binding T4610}"/>
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="6" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4610</TextBlock>
+        <Border Grid.Column="6" Grid.Row="7" Background="{StaticResource DarkBrush}" BorderThickness="1 1 1 1" Padding="3">
+            <controls:IntegerControl Name="_4990" Value="{Binding T4990}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="7" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">4990</TextBlock>
+        <TextBlock x:Name="textBlock1_Copy" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" VerticalAlignment="Center" Text="Efnahagur" TextWrapping="Wrap" FontWeight="Bold"/>
+
+        <Border Grid.Column="1" Grid.Row="9" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Óefnislegar eignir</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="10" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Fasteignir - Mannvirki, lóðir<LineBreak></LineBreak>og fasteignaréttindi</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="11" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrir varanlegir rekstrarfjármunir</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="12" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Eignarhlutir í innlendum félögum</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="13" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Eignarhlutir í erlendum félögum</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="14" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Hlutdeild í eigin fé ósjálfstæðra skattaðila *</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="15" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Kröfur á tengda aðila sem ekki <LineBreak></LineBreak>eru vaxtareiknaðar</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="16" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Kröfur á tengda aðila sem eru <LineBreak></LineBreak> vaxtareiknaðar</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="17" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar kröfur</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="18" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Hráefnisbirgðir</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="19" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Vörur og verk í vinnslu</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="20" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Birgðir fullunnina vara <LineBreak></LineBreak>(framleiðslufyrirtækja)</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="21" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Vörubirgðir (aðrar)</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="22" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Viðskiptakröfur</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="23" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar skammtímakröfur og <LineBreak></LineBreak>fyrirframgreiddur kostnaður</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="24" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Inneign virðisaukaskatts</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="25" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Verðbréf</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="26" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Handbært fé</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="27" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar eignir</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="28" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8" FontWeight="Bold">Eignir samtals<LineBreak></LineBreak>Samtala reita 5010 til 5170 *</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="29" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Hlutafé (stofnfé í sameignarfélögum)</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="30" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Lögbundinn varasjóður</TextBlock>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="31" BorderThickness="1 1 0 1">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8" FontWeight="Bold">Samtala eiginfjárliða í reitum<LineBreak></LineBreak>6010 og 6030</TextBlock>
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="9" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="10" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="11" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="12" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="13" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="14" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+/-</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="15" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="16" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="17" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="18" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="19" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="20" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="21" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="22" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="23" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="24" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="25" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="26" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="27" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="28" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="8">=</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="29" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="30" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="31" BorderThickness="1 1 0 1">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8" FontWeight="Bold">=</TextBlock>
+        </Border>
+
+        <Border Grid.Column="3" Grid.Row="9" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5010" Value="{Binding T5010}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="9" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5010</TextBlock>
+        <Border Grid.Column="3" Grid.Row="10" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5022" Value="{Binding T5022}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="10" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5022</TextBlock>
+        <Border Grid.Column="3" Grid.Row="11" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5027" Value="{Binding T5027}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="11" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5027</TextBlock>
+        <Border Grid.Column="3" Grid.Row="12" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5030" Value="{Binding T5030}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="12" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5030</TextBlock>
+        <Border Grid.Column="3" Grid.Row="13" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5040" Value="{Binding T5040}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="13" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5040</TextBlock>
+        <Border Grid.Column="3" Grid.Row="14" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5050" Value="{Binding T5050}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="14" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5050</TextBlock>
+        <Border Grid.Column="3" Grid.Row="15" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5060" Value="{Binding T5060}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="15" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5060</TextBlock>
+        <Border Grid.Column="3" Grid.Row="16" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5070" Value="{Binding T5070}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="16" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5070</TextBlock>
+        <Border Grid.Column="3" Grid.Row="17" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5080" Value="{Binding T5080}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="17" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5080</TextBlock>
+        <Border Grid.Column="3" Grid.Row="18" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5090" Value="{Binding T5090}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="18" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5090</TextBlock>
+        <Border Grid.Column="3" Grid.Row="19" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5100" Value="{Binding T5100}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="19" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5100</TextBlock>
+        <Border Grid.Column="3" Grid.Row="20" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5110" Value="{Binding T5110}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="20" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5110</TextBlock>
+        <Border Grid.Column="3" Grid.Row="21" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5120" Value="{Binding T5120}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="21" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5120</TextBlock>
+        <Border Grid.Column="3" Grid.Row="22" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5130" Value="{Binding T5130}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="22" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5130</TextBlock>
+        <Border Grid.Column="3" Grid.Row="23" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5140" Value="{Binding T5140}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="23" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5140</TextBlock>
+        <Border Grid.Column="3" Grid.Row="24" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5145" Value="{Binding T5145}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="24" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5145</TextBlock>
+        <Border Grid.Column="3" Grid.Row="25" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5150" Value="{Binding T5150}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="25" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5150</TextBlock>
+        <Border Grid.Column="3" Grid.Row="26" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5160" Value="{Binding T5160}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="26" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5160</TextBlock>
+        <Border Grid.Column="3" Grid.Row="27" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5170" Value="{Binding T5170}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="27" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5170</TextBlock>
+        <Border Grid.Column="3" Grid.Row="28" Background="{StaticResource DarkBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_5990" Value="{Binding T5990}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="28" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">5990</TextBlock>
+        <Border Grid.Column="3" Grid.Row="29" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6010" Value="{Binding T6010}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="29" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6010</TextBlock>
+        <Border Grid.Column="3" Grid.Row="30" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6030" Value="{Binding T6030}"/>
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="30" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6030</TextBlock>
+        <Border Grid.Column="3" Grid.Row="31" Background="{StaticResource DarkBrush}" BorderThickness="1 1 1 1" Padding="3">
+            <controls:IntegerControl Name="_6290" Value="{Binding T6290}" />
+        </Border>
+        <TextBlock Grid.Column="3" Grid.Row="31" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6290</TextBlock>
+
+        <Border Grid.Column="4" Grid.Row="9" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Annað eigið fé í upphafi reikningsárs</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="10" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Hagnaður/tap</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="11" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Reiknað endurgjald</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="12" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Úttekt úr rekstri</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="13" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Framlög til rekstrar</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="14" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Arður (úthlutaður)</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="15" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar breytingar á eigin fé *</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="16" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8" FontWeight="Bold">Annað eigið fé við lok reikningsárs<LineBreak></LineBreak>Samtala reita 6310 til 6410 *</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="17" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8" FontWeight="Bold">Eigið fé samtals <LineBreak></LineBreak>Samtala reita 6290 og 6590 *</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="18" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Eftirlaunaskuldbindingar</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="19" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Tekjuskattsskuldbinding *</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="20" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Erlendar langtímaskuldir</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="21" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Skuldir við tengda aðila sem ekki eru <LineBreak></LineBreak>vaxtareiknaðar</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="22" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Skuldir við tengda aðila sem eru <LineBreak></LineBreak>vaxtareiknaðar</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="23" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar langtímaskuldir</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="24" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Erlendar skammtímaskuldir</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="25" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Innborganir fyrir afhendingu<LineBreak></LineBreak>(24,5% skattþrep)</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="26" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Innborganir fyrir afhendingu<LineBreak></LineBreak>(14% skattþrep)</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="27" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Viðskiptaskuldir</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="28" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Næsta árs afborganir af langtímalánum</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="29" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Ógreiddur virðisaukaskattur</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="30" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8">Aðrar fyrirframinnheimtar tekjur</TextBlock>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="31" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" Margin="5 0 0 0" FontSize="8" HorizontalAlignment="Right">Flutt á bls. 5</TextBlock>
+        </Border>
+
+        <Border Grid.Column="5" Grid.Row="9" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+/-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="10" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+/-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="11" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="12" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="13" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="14" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="15" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+/-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="16" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">=</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="17" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">=</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="18" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="19" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+/-</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="20" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="21" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="22" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="23" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="24" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="25" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="26" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="27" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="28" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="29" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="30" BorderThickness="1 1 0 0">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">+</TextBlock>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="31" BorderThickness="1 1 0 1">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8">=</TextBlock>
+        </Border>
+
+        <Border Grid.Column="6" Grid.Row="9" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6310" Value="{Binding T6310}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="9" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6310</TextBlock>
+        <Border Grid.Column="6" Grid.Row="10" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6320" Value="{Binding T6320}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="10" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6320</TextBlock>
+        <Border Grid.Column="6" Grid.Row="11" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6330" Value="{Binding T6330}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="11" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6330</TextBlock>
+        <Border Grid.Column="6" Grid.Row="12" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6360" Value="{Binding T6360}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="12" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6360</TextBlock>
+        <Border Grid.Column="6" Grid.Row="13" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6380" Value="{Binding T6380}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="13" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6380</TextBlock>
+        <Border Grid.Column="6" Grid.Row="14" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6390" Value="{Binding T6390}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="14" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6390</TextBlock>
+        <Border Grid.Column="6" Grid.Row="15" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6410" Value="{Binding T6410}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="15" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6410</TextBlock>
+        <Border Grid.Column="6" Grid.Row="16" Background="{StaticResource DarkBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6590" Value="{Binding T6590}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="16" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6590</TextBlock>
+        <Border Grid.Column="6" Grid.Row="17" Background="{StaticResource DarkBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6690" Value="{Binding T6690}"/>
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="17" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6690</TextBlock>
+        <Border Grid.Column="6" Grid.Row="18" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6710" Value="{Binding T6710}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="18" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6710</TextBlock>
+        <Border Grid.Column="6" Grid.Row="19" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6720" Value="{Binding T6720}"/>
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="19" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6720</TextBlock>
+        <Border Grid.Column="6" Grid.Row="20" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6730" Value="{Binding T6730}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="20" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6730</TextBlock>
+        <Border Grid.Column="6" Grid.Row="21" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6740" Value="{Binding T6740}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="21" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6740</TextBlock>
+        <Border Grid.Column="6" Grid.Row="22" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6750" Value="{Binding T6750}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="22" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6750</TextBlock>
+        <Border Grid.Column="6" Grid.Row="23" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6760" Value="{Binding T6760}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="23" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6760</TextBlock>
+        <Border Grid.Column="6" Grid.Row="24" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6770" Value="{Binding T6770}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="24" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6770</TextBlock>
+        <Border Grid.Column="6" Grid.Row="25" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6780" Value="{Binding T6780}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="25" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6780</TextBlock>
+        <Border Grid.Column="6" Grid.Row="26" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6790" Value="{Binding T6790}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="26" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6790</TextBlock>
+        <Border Grid.Column="6" Grid.Row="27" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6800" Value="{Binding T6800}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="27" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6800</TextBlock>
+        <Border Grid.Column="6" Grid.Row="28" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6810" Value="{Binding T6810}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="28" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6810</TextBlock>
+        <Border Grid.Column="6" Grid.Row="29" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6825" Value="{Binding T6825}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="29" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6825</TextBlock>
+        <Border Grid.Column="6" Grid.Row="30" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <controls:IntegerControl Name="_6830" Value="{Binding T6830}" />
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="30" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4">6830</TextBlock>
+        <Border Grid.Column="6" Grid.Row="31" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 1" Padding="3">
+            <controls:IntegerControl Value="{Binding NTB_02}"/>
+        </Border>
+        <TextBlock Grid.Column="6" Grid.Row="31" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="0,-2,0,15" Padding="4 4"></TextBlock>
+    </Grid>
+</Page>

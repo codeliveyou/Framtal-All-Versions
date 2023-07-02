@@ -1,0 +1,2208 @@
+﻿<Page
+    x:Class="FN.Framtal.Presentation._2022.Views.RSK0425_01View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FN.Framtal.Presentation._2022.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="3350"
+    d:DesignWidth="794"
+    mc:Ignorable="d">
+
+
+    <StackPanel Background="{StaticResource MediumBrush}">
+        <Grid Margin="30,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3.2*" />
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <StackPanel>
+                    <TextBlock
+                        Margin="0"
+                        VerticalAlignment="Bottom"
+                        FontSize="40"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Text="RSK 4.25" />
+                    <Border BorderThickness="0,1,0,0" />
+                </StackPanel>
+            </Grid>
+            <TextBlock
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="35"
+                FontWeight="Bold">
+                Skyrsla eiganda i logaðila
+            </TextBlock>
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                FontSize="20"
+                FontWeight="Bold"
+                Text="a lagskattasvæði(CFC)" />
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Fylgiskjal með skattframtali 2023" />
+        </Grid>
+
+        <StackPanel Margin="30,10,20,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Border Background="{StaticResource MediumBrush}" BorderThickness="1,1,1,0">
+                    <TextBlock FontSize="15" Text="Nafn" />
+                </Border>
+                <Border
+                    Grid.Row="1"
+                    Background="{StaticResource MediumBrush}"
+                    BorderThickness="1,0,1,1">
+                    <TextBlock
+                        Margin="10,0,0,0"
+                        FontSize="18"
+                        Text="Þora Margret Karlsdottir" />
+                </Border>
+                <Border
+                    Grid.Column="1"
+                    Background="{StaticResource MediumBrush}"
+                    BorderThickness="0,1,1,0">
+                    <TextBlock FontSize="15" Text="Kennitala" />
+                </Border>
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Background="{StaticResource MediumBrush}"
+                    BorderThickness="0,0,1,1">
+                    <TextBlock
+                        Margin="10,0,0,0"
+                        FontSize="18"
+                        Text="181098-2529" />
+                </Border>
+            </Grid>
+        </StackPanel>
+        <Grid Margin="30,10,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.ColumnSpan="2" Background="{StaticResource MediumBrush}">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Heiti logaðila a lagskattasvæði" />
+                    <TextBox Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Land" />
+                    <ComboBox Height="18" Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Column="3"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Islensk kennitala" />
+                    <TextBox Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="1,0,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Atvinnugrein" />
+                    <TextBox Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Felagsform" />
+                    <TextBox Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Gjaldmiqill arsreiknings" />
+                    <ComboBox Height="18" Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Stofnar" />
+                    <TextBox Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="1,0,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Hvar eru bokhaldsgognin varðveitt?" />
+                    <TextBox Margin="1" />
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <StackPanel>
+                    <TextBlock Margin="0" Text="Er hægt að leggja fram bokhaldsgogn?" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton
+                            Height="18"
+                            HorizontalAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Content="Ja" />
+                        <RadioButton
+                            Grid.Column="1"
+                            Height="18"
+                            HorizontalAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Content="Nei" />
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <StackPanel Margin="30,10,20,0" Orientation="Horizontal">
+            <TextBlock
+                FontSize="20"
+                Foreground="Gray"
+                Text="1" />
+            <TextBlock
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Eignarhlutdeild." />
+        </StackPanel>
+
+        <TextBlock
+            Margin="35,0,20,0"
+            FontSize="15"
+            Text="Bein eignarhlutdeild islenskra eigenda" />
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="15" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4.5*" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.RowSpan="2" Background="{StaticResource MediumBrush}">
+                <TextBlock
+                    Margin="6"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Text="Nafn" />
+            </Border>
+            <Border
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="6"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Text="Kennitala" />
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,0">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Eign<LineBreak />
+                    i %</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    (401)
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Column="3"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,0">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Atkv.<LineBreak />
+                    i %</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    (402)
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Column="4"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Keypt<LineBreak />
+                    a arinu</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Ja" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Nei" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Column="5"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Selt<LineBreak />
+                    a arinu</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="5"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Ja" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Nei" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Column="6"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,0">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Greiddur arður i ISK
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="6"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    (401)
+                </TextBlock>
+            </Border>
+
+            <Border Grid.Row="2" BorderThickness="1,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="6"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="3" BorderThickness="1,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="6"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    Text="Beint eignarhald samtals (404/405) "
+                    TextAlignment="Right" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    Text="(406)"
+                    TextAlignment="Right" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="6"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+        <TextBlock
+            Margin="35,10,20,0"
+            FontSize="15"
+            Text="Obein eignarhlutdeild islenskra eigenda gegnum erlend felog" />
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="15" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4.5*" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.RowSpan="2" Background="{StaticResource MediumBrush}">
+                <TextBlock
+                    Margin="6"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Text="Nafn" />
+            </Border>
+            <Border
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="6"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Text="Kennitala" />
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,0">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Eign<LineBreak />
+                    i %</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    (407)
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Column="3"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,0">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Atkv.<LineBreak />
+                    i %</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    (408)
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Column="4"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Keypt<LineBreak />
+                    a arinu</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Ja" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Nei" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Column="5"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">
+                    Selt<LineBreak />
+                    a arinu</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="5"
+                Background="{StaticResource MediumBrush}"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Ja" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Nei" />
+                </Grid>
+            </Border>
+            <Border Grid.Row="2" BorderThickness="1,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border Grid.Row="3" BorderThickness="1,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <RadioButton
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    Text="Obiend eignarhald samtals (409/410) "
+                    TextAlignment="Right" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock HorizontalAlignment="Right" TextAlignment="Right" />
+            </Border>
+        </Grid>
+
+
+        <Grid Margin="30,10,20,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4.5*" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.ColumnSpan="2" BorderThickness="1,1,1,1">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    Text="Samtals eignarhluti i islenskri eigu (411/412) "
+                    TextAlignment="Right" />
+            </Border>
+            <Border Grid.Column="2" BorderThickness="0,1,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Column="3" BorderThickness="0,1,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+        <StackPanel Margin="30,10,20,0" Orientation="Horizontal">
+            <TextBlock
+                FontSize="20"
+                Foreground="Gray"
+                Text="2" />
+            <TextBlock
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Tekjur/gjold og hagnaður/tap." />
+        </StackPanel>
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.9*" />
+                <ColumnDefinition Width="1.1*" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width=".5*" />
+                <ColumnDefinition Width=".5*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock FontWeight="Bold" Text="Sundurliðun tekna" />
+            <TextBlock
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Right"
+                FontWeight="Bold"
+                Text="Miðgengi (meðaltal arsins) " />
+            <Border Grid.Column="3" BorderThickness="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                BorderThickness="1" />
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="I erlendri mynt" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="ISK" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock Text="Arður af hlutabrefum" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock Text="Hagnaður af solu hlutabrefa" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border Grid.Row="4" BorderThickness="1,0,0,1">
+                <TextBlock Text="Aðrar eignatekjur" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock Text="Sala voru og þjonustu" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border Grid.Row="6" BorderThickness="1,0,0,1">
+                <TextBlock Text="Aðrar rekstrartekjur" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    FontWeight="Bold"
+                    Text="Samtals" />
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="=" />
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.9*" />
+                <ColumnDefinition Width="1.1*" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width=".5*" />
+                <ColumnDefinition Width=".5*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock FontWeight="Bold" Text="Sundurliðun gjalda" />
+
+            <Border
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                BorderThickness="1" />
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="I erlendri mynt" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="ISK" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock Text="Tap af solu hlutabrefa" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock Text="Vaxtakostnaður" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border Grid.Row="4" BorderThickness="1,0,0,1">
+                <TextBlock Text="Annar fjarmagnskostnaður" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock Text="Almennur rekstrarkostnaður" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="5"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border Grid.Row="6" BorderThickness="1,0,0,1">
+                <TextBlock Text="Annar kostnaður" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="+" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="6"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    FontWeight="Bold"
+                    Text="Samtals" />
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="2"
+                Margin="0"
+                BorderThickness="0,0,1,1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="=" />
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="7"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width=".5*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock FontWeight="Bold" Text="Rekstrarhagnaður/tap samkvæmt" />
+            <Border Grid.Row="1" BorderThickness="1,1,1,1">
+                <TextBlock Text="Rekstrarhagnaður/tap i erlendri mynt, samkvæmt meðfylgjandi arsreikningi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderThickness="0,1,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" BorderThickness="1,0,1,1">
+                <TextBlock Text="Miðgengi (meðaltal arsins)" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="3" BorderThickness="1,0,1,1">
+                <TextBlock HorizontalAlignment="Right">
+                    <Bold>
+                        Samtals i ISK
+                    </Bold>
+                    (413)</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width=".5*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.ColumnSpan="2"
+                FontWeight="Bold"
+                Text="Skattskyldur hangnaður samkvæmt islenskum reglum" />
+            <Border
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                BorderThickness="1,1,0,1">
+                <TextBlock Text="Rekstrarhagnaður/tap i erlendri mynt, samkvæmt meðfylgjandi arsreikningi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock HorizontalAlignment="Right" Text="(414)" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,1,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border Grid.Row="2" BorderThickness="1,0,0,1">
+                <TextBlock Text="Skattaleg leiðretting, hvaða?" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border Grid.Row="3" BorderThickness="1,0,0,1">
+                <TextBlock Text="Skattaleg leiðretting, hvaða?" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="4"
+                Grid.ColumnSpan="3"
+                BorderThickness="1,0,1,1">
+                <TextBlock HorizontalAlignment="Right">
+                    <Bold>
+                        Samtals i ISK
+                    </Bold>
+                    (415)</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+
+        <StackPanel Margin="30,10,20,0" Orientation="Horizontal">
+            <TextBlock
+                FontSize="20"
+                Foreground="Gray"
+                Text="3" />
+            <TextBlock
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Skattar. Eigið fe." />
+        </StackPanel>
+
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.ColumnSpan="2"
+                FontWeight="Bold"
+                Text="Samanburður (skv.2.mgr.57.gr.a laga nr.90/2003)" />
+
+            <Border Grid.Row="1" BorderThickness="1">
+                <TextBlock HorizontalAlignment="Center" Text="Skattar" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderThickness="0,1,1,1">
+                <TextBlock HorizontalAlignment="Center" Text="I eriendri mynt" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock Margin="0" HorizontalAlignment="Right">
+                    Miðgengi<LineBreak />
+                    (meðaltal arsins)*</TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    Text="ISK" />
+            </Border>
+
+            <Border Grid.Row="2" BorderThickness="1,0,1,1">
+                <TextBlock FontWeight="Bold" Text="Tekjuskattur greiddur erlendis" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="3"
+                Grid.ColumnSpan="3"
+                BorderThickness="1,0,1,1">
+                <TextBlock FontWeight="Bold" Text="Reiknaður tekjuskattur samkvæmt islenskum reglum" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <TextBlock
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                Margin="0"
+                FontSize="10"
+                Text=" *Ef skatturinn er ogreiddur skal skra miðgeni i arslok" />
+        </Grid>
+
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.ColumnSpan="2"
+                FontWeight="Bold"
+                Text="Eigið fe til skiptingar a eigendur" />
+
+            <Border
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                BorderThickness="1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Text="Eigið fé alls samkvæmt ársreikningi" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderThickness="0,1,1,1">
+                <TextBlock HorizontalAlignment="Center" Text="I eriendri mynt" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock Margin="0" HorizontalAlignment="Center">
+                    Kanupgengi í árslok
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    Text="ISK (416)" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+
+        <Grid Margin="30,10,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Border
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                BorderThickness="1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Text="Markaðsvirði" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderThickness="0,1,1,1">
+                <TextBlock HorizontalAlignment="Center" Text="Fjöidi hluta" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderThickness="0,1,1,1">
+                <TextBlock Margin="0" HorizontalAlignment="Center">
+                    Nafnverð hlutafjár í erlendri mynt
+                </TextBlock>
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    Text="Skráð markaðsverö í erlendri mynt" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    Text="Kaupgengi í árslok" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="5"
+                BorderThickness="0,1,1,1">
+                <TextBlock
+                    Margin="0"
+                    HorizontalAlignment="Center"
+                    Text="ISK (417)" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="4"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="5"
+                BorderThickness="0,0,1,1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+
+        <StackPanel Margin="30,10,20,0" Orientation="Horizontal">
+            <TextBlock
+                FontSize="20"
+                Foreground="Gray"
+                Text="4" />
+            <TextBlock
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Hlutur eiganda (framteljanda) í tekjum og eignum" />
+        </StackPanel>
+
+        <Grid Margin="30,10,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" />
+            <Border Grid.Row="0" Grid.Column="1">
+                <TextBlock HorizontalAlignment="Center" Text="Fjöidi hluta" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2">
+                <TextBlock HorizontalAlignment="Center" Text="Nafnverð hlutafjár" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="3">
+                <TextBlock HorizontalAlignment="Center" Text="Kostnaðarverð" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="4">
+                <TextBlock HorizontalAlignment="Center" Text="Móttekinn arður í ISK" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="5">
+                <TextBlock HorizontalAlignment="Center" Text="Eignarhluti % (419/430)" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="6">
+                <TextBlock HorizontalAlignment="Center" Text="Atkvæðis-réttur %" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="7">
+                <TextBlock HorizontalAlignment="Center" Text="Kaupár" />
+            </Border>
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="0,5,0,0">
+                <TextBlock HorizontalAlignment="Center" Text="Bein eign/stjómun" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock HorizontalAlignment="Center" Text="Óbein eign/stjómað gegnum" />
+            </Border>
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="4"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="5"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="6"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border
+                Grid.Row="1"
+                Grid.Column="7"
+                Margin="0,5,0,0">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="4">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="5">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="6">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="7">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+        <TextBlock
+            Margin="30,10,0,0"
+            FontWeight="Bold"
+            Text="Arður og áður skattlagðar tekjur" />
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Text="Móttekinn arður á árinu 2022" />
+                    <TextBlock HorizontalAlignment="Right" Text="(418)" />
+
+                </Grid>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Text="Áður skattlagöar CFC tekjur" />
+                    <TextBlock HorizontalAlignment="Right" Text="(428)" />
+
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <TextBlock HorizontalAlignment="Right" Text="Jákvæður mismunur, færist á framtal (426)" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <TextBlock HorizontalAlignment="Right" Text="Neikvæður mismunur, geymist og færist til frádráttar á næsta ári (427)" />
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="3" Grid.Column="2">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+        <TextBlock
+            Margin="30,10,0,0"
+            FontWeight="Bold"
+            Text="Útreikningur á hagnaði/tapí" />
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Text="Hlutdeild í rekstrarhagnaði/tapí reit 415" />
+                    <TextBlock HorizontalAlignment="Right" Text="(421)" />
+
+                </Grid>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Text="Ónotað tap samkvæmt RSK 4.25 með skattframtali 2022" />
+                    <TextBlock HorizontalAlignment="Right" Text="(429)" />
+
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <TextBlock HorizontalAlignment="Right" Text="Samtals hagnaður, færist á framtal (422)" />
+            </Border>
+            <Border
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <TextBlock HorizontalAlignment="Right" Text="Yfirfæranlegt tap til næsta árs (423)" />
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="3" Grid.Column="2">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+        <TextBlock
+            Margin="30,10,0,0"
+            FontWeight="Bold"
+            Text="Hrein eign sem færa skal í reit 5040 á skattframtali" />
+
+        <Grid Margin="30,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Text="Eigið fé félagsins, fært af reit 416/417" />
+                    <TextBlock HorizontalAlignment="Right" Text="(424)" />
+
+                </Grid>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0">
+                <TextBlock HorizontalAlignment="Left" Text="Eignarhiuti framteljanda/eiganda (%) í árslok" />
+            </Border>
+            <Border
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <TextBlock HorizontalAlignment="Right" Text="Hiutdeild framteljanda/eiganda í eigin fé í árslok (kr.) (425)" />
+            </Border>
+
+
+            <Border Grid.Row="0" Grid.Column="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2">
+                <TextBox BorderBrush="{StaticResource MediumBrush}" BorderThickness="2" />
+            </Border>
+        </Grid>
+
+        <TextBlock
+            Margin="30,10,0,0"
+            FontWeight="Bold"
+            Text="Athugasemdir" />
+
+        <Grid Height="100" Margin="30,0,20,0">
+            <TextBox
+                Background="#FFECECEC"
+                BorderBrush="{StaticResource MediumBrush}"
+                BorderThickness="2" />
+        </Grid>
+
+        <StackPanel Margin="30,10,20,0">
+            <TextBlock FontWeight="Bold" Text="Skattskyldur hagnaður samkvæmt islenskum reglum" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border>
+                    <TextBlock VerticalAlignment="Center" Text="Hagnaður/tap i islenskum kronum, samkvæmt reit 413" />
+                </Border>
+                <TextBox
+                    Grid.Column="1"
+                    VerticalContentAlignment="Center"
+                    Background="Gray"
+                    BorderBrush="Black"
+                    BorderThickness="0,1,1,1"
+                    Foreground="White"
+                    IsEnabled="False"
+                    Text="35,617,070"
+                    TextAlignment="Right" />
+            </Grid>
+            <StackPanel x:Name="RowsContainer">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <Border BorderThickness="1,0,1,1">
+                        <TextBlock VerticalAlignment="Center" Text="Skattaleg leiðretting, hvaða?" />
+                    </Border>
+                    <TextBox
+                        Grid.Column="2"
+                        VerticalContentAlignment="Center"
+                        BorderBrush="Black"
+                        BorderThickness="0,0,1,1"
+                        Text="59,642,691"
+                        TextAlignment="Right" />
+                    <Border Grid.Column="1" BorderThickness="0,0,1,1">
+                        <TextBox
+                            Margin="2"
+                            HorizontalContentAlignment="Left"
+                            VerticalContentAlignment="Center"
+                            BorderBrush="#FFDADADA"
+                            BorderThickness="1">
+                            Bakfærour 2/3 hlutar gengistaps arsins 2021
+                        </TextBox>
+                    </Border>
+
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <Border BorderThickness="1,0,1,1">
+                        <TextBlock VerticalAlignment="Center" Text="Skattaleg leiðretting, hvaða?" />
+                    </Border>
+                    <TextBox
+                        Grid.Column="2"
+                        VerticalContentAlignment="Center"
+                        BorderBrush="Black"
+                        BorderThickness="0,0,1,1"
+                        Text="-40,992,778"
+                        TextAlignment="Right" />
+                    <Border Grid.Column="1" BorderThickness="0,0,1,1">
+                        <TextBox
+                            Margin="2"
+                            HorizontalContentAlignment="Left"
+                            VerticalContentAlignment="Center"
+                            BorderBrush="#FFDADADA"
+                            BorderThickness="1">
+                            Gjaldfærsla gengistaps v/dreifingar arsins 2019
+                        </TextBox>
+                    </Border>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <Border BorderThickness="1,0,1,1">
+                        <TextBlock VerticalAlignment="Center" Text="Skattaleg leiðretting, hvaða?" />
+                    </Border>
+                    <TextBox
+                        Grid.Column="2"
+                        VerticalContentAlignment="Center"
+                        BorderBrush="Black"
+                        BorderThickness="0,0,1,1"
+                        Text="-68,177,523"
+                        TextAlignment="Right" />
+                    <Border Grid.Column="1" BorderThickness="0,0,1,1">
+                        <TextBox
+                            Margin="2"
+                            HorizontalContentAlignment="Left"
+                            VerticalContentAlignment="Center"
+                            BorderBrush="#FFDADADA"
+                            BorderThickness="1">
+                            Gjaldfærsla gengistaps v/dreifingar arsins 2020
+                        </TextBox>
+                    </Border>
+                </Grid>
+            </StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Border Background="{StaticResource MediumBrush}" BorderThickness="1,0,1,1">
+                    <Grid>
+                        <Button
+                            Width="80"
+                            Height="20"
+                            Margin="5"
+                            Padding="0"
+                            HorizontalAlignment="Left"
+                            Click="Button_Click"
+                            Content="Ny lina"
+                            FontSize="9" />
+                        <TextBlock
+                            HorizontalAlignment="Right"
+                            FontWeight="Bold"
+                            Text="Samtals i ISK" />
+                    </Grid>
+                </Border>
+                <TextBox
+                    Grid.Column="1"
+                    VerticalContentAlignment="Center"
+                    Background="Gray"
+                    BorderBrush="Black"
+                    BorderThickness="0,0,1,1"
+                    Foreground="White"
+                    IsEnabled="False"
+                    Text="-13,910,540"
+                    TextAlignment="Right" />
+            </Grid>
+        </StackPanel>
+    </StackPanel>
+
+</Page>

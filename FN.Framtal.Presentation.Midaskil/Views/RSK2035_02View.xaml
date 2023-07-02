@@ -1,0 +1,50 @@
+﻿<Page x:Class="FN.Framtal.Presentation.Midaskil.Views.RSK2035_02View"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FN.Framtal.Presentation.Midaskil.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="600"
+      Title="RSK2035_02View" Background="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="60"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="225"/>
+            <RowDefinition Height="105"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center">
+            <Bold>
+                SKÝRINGAR
+            </Bold>
+        </TextBlock>
+        <TextBlock LineHeight="13.2" FontSize="9.3" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top">
+            Samkvæmt ákvörðun ríkisskattstjóra, um skilaskyldu og skilafrest fyrir launaskýrslur o.fl., skv. 92. gr. laga nr. 90/2003,
+            um tekjuskatt, ber öllum aðilum, sem í rekstri sínum eða annarri starfsemi hafa haft kostnað af kaupum, leigu eða rekstri
+            fólksbifreiðar og ekki fylla út eyðublað RSK 4.03 vegna hennar, að fylla út og skila ríkisskattstjóra bifreiðahlunnindamiða,
+            hvort sem um er að ræða afnot starfsmanna af fólksbifreiðum launagreiðanda eða ekki.<LineBreak/>
+            <LineBreak/>
+            Um er að ræða afnot af fólksbifreið, þ. m. t. skutbifreið (station), jeppabifreið eða annarri bifreið sem hægt er að hafa
+            sambærileg not af, sem rekin er að öllu leyti eða hluta á kostnað launagreiðanda og skiptir ekki máli í því sambandi
+            hvort viðkomandi bifreið er í eigu launagreiðanda eða er á fjámögnunarleigusamningi.<LineBreak/>
+            <LineBreak/>
+            Ef tveir eða fleiri starfsmenn hafa not af sömu bifreið ber að skila bifreiðahlunnindamiða fyrir hvern starfsmann fyrir sig.
+            Hafi starfsmaður haft not af fleiri en einni bifreið ber að skila bifreiðahlunnindamiða fyrir hverja bifreið fyrir sig.<LineBreak/>
+            <LineBreak/>
+            Reitir eyðublaðsins skulu fylltir út eins og yfirskrift þeirra ber með sér, en í reiti 11 til 16 skal skrá <Bold>X</Bold> viðeigandi reit.
+            Efst í hægra horn eyðublaðsins skal skrá viðkomandi tekjuár.<LineBreak/>
+            <LineBreak/>
+            Nánari upplýsingar um matsverð bifreiða, sbr. reit 8, er að finna í bæklingi RSK 6.03 - Bifreiðaskrá RSK, sem gefinn er út
+            árlega og hægt er að nálgast á vefsíðu ríkisskattstjóra <Bold><Italic>www.skatturinn.is.</Italic></Bold>
+        </TextBlock>
+
+    </Grid>
+</Page>
